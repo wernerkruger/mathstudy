@@ -78,7 +78,7 @@ $$
 - Along a curve: $\frac{d}{dt}f(\gamma(t))=\nabla f(\gamma(t))\cdot\gamma'(t)$.
 - Product rule for bilinear maps: $D(B(f,g))(a)h=B(Df(a)h,g(a))+B(f(a),Dg(a)h)$.
 - Derivative of matrix inversion: $D(X\mapsto X^{-1})(A)H=-A^{-1}HA^{-1}$.
-- Derivative of the determinant: $D\det(A)H=\det(A)\operatorname{tr}(A^{-1}H)$ (Problem 21).
+- Derivative of the determinant: $D\det(A)H=\det(A)\mathrm{tr}(A^{-1}H)$ (Problem 21).
 
 ---
 
@@ -121,7 +121,7 @@ $$
 \nabla f(a)=\lambda\nabla g(a)\quad\text{for some }\lambda\in\mathbb{R}.
 $$
 
-*Why.* For any curve $\gamma$ in $S$ through $a$, $f\circ\gamma$ has a critical point at $a$, so $\nabla f(a)\perp\gamma'(0)$. The tangent vectors $\gamma'(0)$ fill the tangent space $\nabla g(a)^\perp$. This step needs the implicit function theorem, which is proved in 2.4. So $\nabla f(a)\in(\nabla g(a)^\perp)^\perp=\operatorname{span}\nabla g(a)$.
+*Why.* For any curve $\gamma$ in $S$ through $a$, $f\circ\gamma$ has a critical point at $a$, so $\nabla f(a)\perp\gamma'(0)$. The tangent vectors $\gamma'(0)$ fill the tangent space $\nabla g(a)^\perp$. This step needs the implicit function theorem, which is proved in 2.4. So $\nabla f(a)\in(\nabla g(a)^\perp)^\perp=\mathrm{span}\,\nabla g(a)$.
 
 **Several constraints.** With constraints $g_1=c_1,\dots,g_k=c_k$, and $\nabla g_1(a),\dots,\nabla g_k(a)$ linearly independent:
 
@@ -194,7 +194,7 @@ Let $C$ be a curve parametrised by $r:[a,b]\to\mathbb{R}^n$, $C^1$, with $r'\neq
 2. $\int_CF\cdot dr$ depends only on the endpoints;
 3. $\oint_CF\cdot dr=0$ for every closed curve $C$.
 
-If $F$ is $C^1$ and conservative, then $\operatorname{curl}F=0$; in 2D, $Q_x=P_y$. **The converse holds when $U$ is simply connected**, but not in general.
+If $F$ is $C^1$ and conservative, then $\mathrm{curl}\,F=0$; in 2D, $Q_x=P_y$. **The converse holds when $U$ is simply connected**, but not in general.
 
 **The key counterexample.** On $U=\mathbb{R}^2\setminus\lbrace0\rbrace$, let
 
@@ -213,10 +213,10 @@ Then $Q_x-P_y=0$, but $\oint_{|x|=1}F\cdot dr=2\pi\neq0$. Locally, $F=\nabla\the
 **div and curl.** For $F=(P,Q,R)$:
 
 $$
-\operatorname{div}F=\nabla\cdot F=P_x+Q_y+R_z,\qquad \operatorname{curl}F=\nabla\times F=(R_y-Q_z,\ P_z-R_x,\ Q_x-P_y).
+\mathrm{div}\,F=\nabla\cdot F=P_x+Q_y+R_z,\qquad \mathrm{curl}\,F=\nabla\times F=(R_y-Q_z,\ P_z-R_x,\ Q_x-P_y).
 $$
 
-For $C^2$ fields, $\operatorname{curl}(\nabla\varphi)=0$ and $\operatorname{div}(\operatorname{curl}F)=0$. Both are instances of $d^2=0$; see Section 8.
+For $C^2$ fields, $\mathrm{curl}(\nabla\varphi)=0$ and $\mathrm{div}(\mathrm{curl}\,F)=0$. Both are instances of $d^2=0$; see Section 8.
 
 **Green's Theorem.** Let $D\subset\mathbb{R}^2$ be a bounded region with piecewise $C^1$ boundary, oriented positively (counter-clockwise on the outer boundary, $D$ on the left). For $C^1$ functions $P,Q$:
 
@@ -226,7 +226,7 @@ $$
 
 *Proof idea:* check it for $P$ alone on a type I region and for $Q$ alone on a type II region, then cut a general region into such pieces. The internal edges cancel because they are traversed in opposite directions.
 
-**Area:** $\operatorname{Area}(D)=\frac12\oint_{\partial D}x\,dy-y\,dx$.
+**Area:** $\mathrm{Area}(D)=\frac12\oint_{\partial D}x\,dy-y\,dx$.
 
 **Parametrised surfaces.** For $r:D\to\mathbb{R}^3$, $r(u,v)$, the vectors $r_u,r_v$ span the tangent plane, and $N=r_u\times r_v$ is a normal.
 - Scalar surface integral: $\iint_Sf\,dS=\iint_Df(r(u,v))\,|r_u\times r_v|\,du\,dv$.
@@ -237,7 +237,7 @@ $$
 **Stokes' Theorem.** Let $S$ be an oriented piecewise-smooth surface with boundary curve $\partial S$, oriented compatibly by the right-hand rule: walking along $\partial S$ with your head along $n$, $S$ is on your left. Then
 
 $$
-\oint_{\partial S}F\cdot dr=\iint_S(\operatorname{curl}F)\cdot n\,dS.
+\oint_{\partial S}F\cdot dr=\iint_S(\mathrm{curl}\,F)\cdot n\,dS.
 $$
 
 *Consequence:* the flux of a curl through $S$ depends only on $\partial S$. You can often replace a hard surface with a flat disc that has the same boundary.
@@ -245,16 +245,16 @@ $$
 **Divergence (Gauss) Theorem.** Let $E\subset\mathbb{R}^3$ be a bounded solid with piecewise-smooth boundary surface $\partial E$ and **outward** normal. Then
 
 $$
-\iint_{\partial E}F\cdot n\,dS=\iiint_E\operatorname{div}F\,dV.
+\iint_{\partial E}F\cdot n\,dS=\iiint_E\mathrm{div}\,F\,dV.
 $$
 
-**Pitfall (singularities).** The theorems need $F$ to be $C^1$ on the whole region, *including* the interior. For $F=x/|x|^3$ on $\mathbb{R}^3\setminus\lbrace0\rbrace$, $\operatorname{div}F=0$, yet the flux through any sphere centred at $0$ is $4\pi$ (Problem 23). This is Gauss's law in physics.
+**Pitfall (singularities).** The theorems need $F$ to be $C^1$ on the whole region, *including* the interior. For $F=x/|x|^3$ on $\mathbb{R}^3\setminus\lbrace0\rbrace$, $\mathrm{div}\,F=0$, yet the flux through any sphere centred at $0$ is $4\pi$ (Problem 23). This is Gauss's law in physics.
 
 **Worked example (flux through a paraboloid).** Find the upward flux of $F=(0,0,z)$ through $S=\lbrace z=1-x^2-y^2,\ z\ge0\rbrace$.
 - *Directly:* parametrise as a graph with $N=(-g_x,-g_y,1)=(2x,2y,1)$. Then $F\cdot N=z=1-r^2$, and the flux is $\int_0^{2\pi}\int_0^1(1-r^2)\,r\,dr\,d\theta=2\pi\cdot\frac14=\frac\pi2$.
-- *Via Gauss:* close the surface with the unit disc $D$ in $z=0$, whose outward normal is $-e_3$. On $D$, $F\cdot(-e_3)=-z=0$, so $D$ contributes no flux. The enclosed solid $E$ has $\operatorname{div}F=1$, so the flux equals $\operatorname{vol}(E)=\int_0^{2\pi}\int_0^1(1-r^2)\,r\,dr\,d\theta=\frac\pi2$. The two methods agree.
+- *Via Gauss:* close the surface with the unit disc $D$ in $z=0$, whose outward normal is $-e_3$. On $D$, $F\cdot(-e_3)=-z=0$, so $D$ contributes no flux. The enclosed solid $E$ has $\mathrm{div}\,F=1$, so the flux equals $\mathrm{vol}(E)=\int_0^{2\pi}\int_0^1(1-r^2)\,r\,dr\,d\theta=\frac\pi2$. The two methods agree.
 
-**Physical meaning.** $\operatorname{div}F(p)$ is the outward flux per unit volume of a small ball at $p$. $\operatorname{curl}F(p)\cdot n$ is the circulation per unit area of a small disc at $p$ with normal $n$. The integral theorems "add up" these local quantities, and the internal contributions cancel.
+**Physical meaning.** $\mathrm{div}\,F(p)$ is the outward flux per unit volume of a small ball at $p$. $\mathrm{curl}\,F(p)\cdot n$ is the circulation per unit area of a small disc at $p$ with normal $n$. The integral theorems "add up" these local quantities, and the internal contributions cancel.
 
 ---
 
@@ -265,12 +265,12 @@ All of the theorems above are cases of one theorem. In the language of **differe
 | Classical | Form degree | $d$ acts as | Theorem |
 |---|---|---|---|
 | FTC / gradient theorem | 0-form $\varphi$ | $d\varphi\leftrightarrow\nabla\varphi$ | $\int_C d\varphi=\varphi(b)-\varphi(a)$ |
-| Green / Stokes | 1-form $P\,dx+Q\,dy+R\,dz$ | $d\leftrightarrow\operatorname{curl}$ | $\int_S d\omega=\oint_{\partial S}\omega$ |
-| Divergence | 2-form (flux) | $d\leftrightarrow\operatorname{div}$ | $\int_E d\omega=\int_{\partial E}\omega$ |
+| Green / Stokes | 1-form $P\,dx+Q\,dy+R\,dz$ | $d\leftrightarrow\mathrm{curl}$ | $\int_S d\omega=\oint_{\partial S}\omega$ |
+| Divergence | 2-form (flux) | $d\leftrightarrow\mathrm{div}$ | $\int_E d\omega=\int_{\partial E}\omega$ |
 
 **Generalised Stokes:** $\displaystyle\int_Md\omega=\int_{\partial M}\omega$.
 
-The identities $\operatorname{curl}\nabla=0$ and $\operatorname{div}\operatorname{curl}=0$ both say $d\circ d=0$. "Curl-free ⇒ conservative on simply connected domains" is the statement that $H^1_{dR}$ vanishes there. The field in Section 6 is a closed 1-form that is not exact, which shows $H^1_{dR}(\mathbb{R}^2\setminus\lbrace0\rbrace)\neq0$.
+The identities $\mathrm{curl}\,\nabla=0$ and $\mathrm{div}\,\mathrm{curl}=0$ both say $d\circ d=0$. "Curl-free ⇒ conservative on simply connected domains" is the statement that $H^1_{dR}$ vanishes there. The field in Section 6 is a closed 1-form that is not exact, which shows $H^1_{dR}(\mathbb{R}^2\setminus\lbrace0\rbrace)\neq0$.
 
 ---
 

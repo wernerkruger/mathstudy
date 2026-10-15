@@ -13,14 +13,14 @@ Spend at least 30 minutes on each problem (45 minutes on Qualifying-exam level p
 
 **4.** Show that the norm of $\ell^p$ ($1\le p\le\infty$) comes from an inner product only when $p=2$.
 
-**5.** In the real Hilbert space $L^2[0,1]$, find the closest point to $f(x)=x^2$ in the subspace $\operatorname{span}\lbrace1,x\rbrace$, and compute the distance.
+**5.** In the real Hilbert space $L^2[0,1]$, find the closest point to $f(x)=x^2$ in the subspace $\mathrm{span}\,\lbrace1,x\rbrace$, and compute the distance.
 
 **6.** (a) Let $X$ be a Banach space. Prove that every weakly convergent sequence in $X$ is bounded.
 (b) Let $(e_n)$ be an orthonormal sequence in $H$. Prove that $e_n\rightharpoonup0$ weakly but not in norm.
 
 ## Core
 
-**7.** (a) Prove Riesz's lemma: if $M$ is a closed proper subspace of a normed space $X$ and $0<\theta<1$, there is $x\in X$ with $\lVert x\rVert=1$ and $\operatorname{dist}(x,M)\ge\theta$.
+**7.** (a) Prove Riesz's lemma: if $M$ is a closed proper subspace of a normed space $X$ and $0<\theta<1$, there is $x\in X$ with $\lVert x\rVert=1$ and $\mathrm{dist}(x,M)\ge\theta$.
 (b) Deduce that the closed unit ball of $X$ is compact if and only if $X$ is finite-dimensional.
 
 **8.** Let $X$ be a normed space.
@@ -46,15 +46,15 @@ Spend at least 30 minutes on each problem (45 minutes on Qualifying-exam level p
 
 **17.** Let $K$ be the integral operator on $L^2[0,1]$ with kernel $k(x,y)=\min(x,y)$. Find all eigenvalues and eigenfunctions of $K$, and deduce that $\lbrace\sqrt2\sin\left((n-\tfrac12)\pi x\right)\rbrace_{n\ge1}$ is an orthonormal basis of $L^2[0,1]$.
 
-**18.** Let $T\in B(H)$. Prove that $\ker T^*=(\operatorname{ran}T)^\perp$ and $\overline{\operatorname{ran}T}=(\ker T^*)^\perp$.
+**18.** Let $T\in B(H)$. Prove that $\ker T^*=(\mathrm{ran}\,T)^\perp$ and $\overline{\mathrm{ran}\,T}=(\ker T^*)^\perp$.
 
 ## Qualifying-exam level
 
 **19.** Let $K$ be a compact operator on $H$ and $T=I-K$.
-(a) Prove that $\operatorname{ran}T$ is closed.
+(a) Prove that $\mathrm{ran}\,T$ is closed.
 (b) Prove that if $T$ is injective then $T$ is surjective.
 
-**20.** Let $T\in B(H)$ and suppose there is $c>0$ with $\operatorname{Re}\langle Tx,x\rangle\ge c\lVert x\rVert^2$ for all $x$. Prove that $T$ is invertible and $\lVert T^{-1}\rVert\le1/c$.
+**20.** Let $T\in B(H)$ and suppose there is $c>0$ with $\mathrm{Re}\,\langle Tx,x\rangle\ge c\lVert x\rVert^2$ for all $x$. Prove that $T$ is invertible and $\lVert T^{-1}\rVert\le1/c$.
 
 **21.** (a) Prove that every infinite-dimensional separable Hilbert space is isometrically isomorphic to $\ell^2$.
 (b) Prove that a Hilbert space with an uncountable orthonormal set is not separable.
@@ -65,6 +65,6 @@ Spend at least 30 minutes on each problem (45 minutes on Qualifying-exam level p
 You may use that $c_0^*\cong\ell^1$, $(\ell^1)^*\cong\ell^\infty$ and $L^1[0,1]^*\cong L^\infty[0,1]$ via the usual pairings, and Problem 8(b).
 
 **23.** Let $P\in B(H)$ with $P^2=P$ and $P\neq0$. Prove that the following are equivalent:
-(i) $\operatorname{ran}P\perp\ker P$ (i.e. $P$ is an orthogonal projection);
+(i) $\mathrm{ran}\,P\perp\ker P$ (i.e. $P$ is an orthogonal projection);
 (ii) $P=P^*$;
 (iii) $\lVert P\rVert=1$.

@@ -88,7 +88,7 @@ $$
 
 **C4.** `[1.3]` Let $V$ be the space of real polynomials of degree at most 2 and $T(p) = p'$. Write the matrix of $T$ in the basis $1, x, x^2$. Find all eigenvalues and eigenvectors. Is $T$ diagonalisable? What is its Jordan normal form?
 
-**C5.** `[1.3]` In $\mathbb{R}^3$ with the dot product, apply Gram–Schmidt to $v_1 = (1,1,0)$, $v_2 = (1,0,1)$. Then find the orthogonal projection of $e_3 = (0,0,1)$ onto $W = \operatorname{span}(v_1, v_2)$.
+**C5.** `[1.3]` In $\mathbb{R}^3$ with the dot product, apply Gram–Schmidt to $v_1 = (1,1,0)$, $v_2 = (1,0,1)$. Then find the orthogonal projection of $e_3 = (0,0,1)$ onto $W = \mathrm{span}(v_1, v_2)$.
 
 **C6.** `[1.3]` Prove that every eigenvalue of a real symmetric matrix is real.
 

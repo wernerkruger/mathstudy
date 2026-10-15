@@ -8,8 +8,8 @@ Spend at least 30 minutes on each problem (45 minutes on Qualifying-exam level p
 
 **2.** Prove that $\mathbb{Q}\otimes_\mathbb{Z}\mathbb{Q}/\mathbb{Z}=0$ and that $\mathbb{Q}\otimes_\mathbb{Z}\mathbb{Q}\cong\mathbb{Q}$.
 
-**3.** (a) Prove that $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$.
-(b) Prove that $\operatorname{Hom}_\mathbb{Z}(\mathbb{Q},\mathbb{Z})=0$.
+**3.** (a) Prove that $\mathrm{Hom}_\mathbb{Z}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$.
+(b) Prove that $\mathrm{Hom}_\mathbb{Z}(\mathbb{Q},\mathbb{Z})=0$.
 
 **4.** (a) Show that $\mathbb{Z}$ is not an injective $\mathbb{Z}$-module.
 (b) Using Baer's criterion, show that $\mathbb{Q}$ is an injective $\mathbb{Z}$-module.
@@ -27,7 +27,7 @@ Spend at least 30 minutes on each problem (45 minutes on Qualifying-exam level p
 (c) there is an isomorphism $\theta:M'\oplus M''\to M$ with $\theta(x,0)=f(x)$ and $g\theta(x,y)=y$.
 Give an example of a short exact sequence of $\mathbb{Z}$-modules that does not split.
 
-**8.** Prove that $\operatorname{Hom}_A(M,-)$ is left exact, and give an example showing that it is not exact.
+**8.** Prove that $\mathrm{Hom}_A(M,-)$ is left exact, and give an example showing that it is not exact.
 
 **9.** Prove that $M\otimes_A-$ is right exact (you may use the Hom–tensor adjunction), and give an example showing that it is not left exact.
 
@@ -42,8 +42,8 @@ Give an example of a short exact sequence of $\mathbb{Z}$-modules that does not 
 
 **13.** Prove that the nilradical of $A$ equals the intersection of all prime ideals of $A$.
 
-**14.** (a) Describe $\operatorname{Spec}\mathbb{Z}$ and its closed sets. Which points are closed? What is the closure of $\lbrace(0)\rbrace$?
-(b) Prove that $\operatorname{Spec}A$ is quasi-compact for every ring $A$.
+**14.** (a) Describe $\mathrm{Spec}\,\mathbb{Z}$ and its closed sets. Which points are closed? What is the closure of $\lbrace(0)\rbrace$?
+(b) Prove that $\mathrm{Spec}\,A$ is quasi-compact for every ring $A$.
 
 **15.** (Hilbert basis theorem.) Prove that if $A$ is Noetherian then so is $A[x]$.
 

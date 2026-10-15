@@ -96,7 +96,7 @@ Each week: ~3 h reading and note-taking, ~1–1.5 h video, ~2 h exercises.
 - [ ] Hairy ball theorem
 - [ ] Invariance of dimension
 - [ ] Cellular homology and the cellular boundary formula
-- [ ] Euler characteristic $=\sum(-1)^n c_n=\sum(-1)^n\operatorname{rank}H_n$
+- [ ] Euler characteristic $=\sum(-1)^n c_n=\sum(-1)^n\mathrm{rank}\,H_n$
 - [ ] Homology of $\mathbb{RP}^n$, $\mathbb{CP}^n$, closed surfaces
 - [ ] Hurewicz in degree 1: $H_1\cong\pi_1^{ab}$ (path-connected)
 - [ ] Singular cohomology; universal coefficient theorem

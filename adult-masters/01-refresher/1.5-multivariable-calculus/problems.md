@@ -54,13 +54,13 @@ $$
 **20.** (a) Prove that if $f$ is $C^2$ on an open set in $\mathbb{R}^2$, then $f_{xy}=f_{yx}$. (Hint: consider $\Delta(h)=f(a+h,b+h)-f(a+h,b)-f(a,b+h)+f(a,b)$ and apply the mean value theorem twice.)
 (b) Let $f(x,y)=\dfrac{xy(x^2-y^2)}{x^2+y^2}$ for $(x,y)\ne0$ and $f(0,0)=0$. Compute $\frac{\partial}{\partial y}\frac{\partial f}{\partial x}(0,0)$ and $\frac{\partial}{\partial x}\frac{\partial f}{\partial y}(0,0)$, and show that they differ.
 
-**21.** Show that $\det:M_n(\mathbb{R})\to\mathbb{R}$ is differentiable at $I$ with $D\det(I)(H)=\operatorname{tr}H$. Deduce that for invertible $A$, $D\det(A)(H)=\det A\cdot\operatorname{tr}(A^{-1}H)$.
+**21.** Show that $\det:M_n(\mathbb{R})\to\mathbb{R}$ is differentiable at $I$ with $D\det(I)(H)=\mathrm{tr}\,H$. Deduce that for invertible $A$, $D\det(A)(H)=\det A\cdot\mathrm{tr}(A^{-1}H)$.
 
 **22.** Let $A$ be a real symmetric $n\times n$ matrix and $q(x)=x^tAx$.
 (a) Show that $\nabla q(x)=2Ax$.
 (b) Use Lagrange multipliers on the unit sphere to show that $A$ has a real eigenvalue, and that $\max_{|x|=1}q(x)$ is the largest eigenvalue of $A$.
 
 **23.** Let $F(x)=x/|x|^3$ on $\mathbb{R}^3\setminus\lbrace0\rbrace$.
-(a) Show that $\operatorname{div}F=0$.
+(a) Show that $\mathrm{div}\,F=0$.
 (b) Show that the outward flux of $F$ through the sphere $|x|=R$ is $4\pi$, for every $R>0$.
 (c) Explain why (a) and (b) do not contradict the divergence theorem. Show that the flux through *any* closed surface $S$ that bounds a nice region containing $0$ in its interior is $4\pi$.

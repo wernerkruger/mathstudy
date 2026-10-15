@@ -26,7 +26,7 @@ A map $F:M\to N$ is **smooth** if for all charts, $\psi\circ F\circ\varphi^{-1}$
 
 **Bump functions.** $f(t)=e^{-1/t}$ for $t>0$ and $0$ otherwise is smooth. From it build $h:\mathbb{R}^n\to[0,1]$ smooth, equal to $1$ on $\overline{B_1}$ and supported in $B_2$.
 
-**Theorem.** For any open cover $\lbrace U_\alpha\rbrace$ of $M$ there is a smooth partition of unity $\lbrace\psi_\alpha\rbrace$ subordinate to it: $\operatorname{supp}\psi_\alpha\subseteq U_\alpha$, the supports are locally finite, and $\sum_\alpha\psi_\alpha=1$.
+**Theorem.** For any open cover $\lbrace U_\alpha\rbrace$ of $M$ there is a smooth partition of unity $\lbrace\psi_\alpha\rbrace$ subordinate to it: $\mathrm{supp}\,\psi_\alpha\subseteq U_\alpha$, the supports are locally finite, and $\sum_\alpha\psi_\alpha=1$.
 
 *Consequences.* Smooth Urysohn functions; extension of smooth functions from closed sets; existence of Riemannian metrics; existence of smooth exhaustion functions; Whitney embedding. **Partitions of unity are the main tool for passing from local to global** whenever the object being built is convex (metrics, inner products, connections) — but not for things like nonvanishing vector fields or forms, where averaging can produce zero.
 
@@ -61,7 +61,7 @@ The **tangent bundle** $TM=\bigsqcup_pT_pM$ is a smooth $2n$-manifold with chart
 
 ### 3.1 The rank theorem
 
-The **rank** of $F$ at $p$ is $\operatorname{rank}dF_p$. $F$ is an **immersion** if $dF_p$ is injective everywhere, a **submersion** if surjective everywhere. A **smooth embedding** is an immersion that is a homeomorphism onto its image (with the subspace topology).
+The **rank** of $F$ at $p$ is $\mathrm{rank}\,dF_p$. $F$ is an **immersion** if $dF_p$ is injective everywhere, a **submersion** if surjective everywhere. A **smooth embedding** is an immersion that is a homeomorphism onto its image (with the subspace topology).
 
 **Inverse function theorem.** If $dF_p$ is invertible, $F$ is a diffeomorphism near $p$.
 
@@ -92,13 +92,13 @@ More generally, the constant-rank level set theorem: if $F$ has constant rank $r
 **Examples.**
 - $S^n=f^{-1}(1)$ for $f(x)=|x|^2$; $df_x(v)=2x\cdot v$ is onto for $x\ne0$. $T_xS^n=x^\perp$.
 - $O(n)=\Phi^{-1}(I)$ for $\Phi:GL(n)\to\mathrm{Sym}(n)$, $\Phi(A)=A^TA$. $d\Phi_A(B)=B^TA+A^TB$; given $C\in\mathrm{Sym}(n)$, $B=\tfrac12AC$ gives $d\Phi_A(B)=C$. So $O(n)$ is a submanifold of dimension $n^2-\tfrac{n(n+1)}2=\tfrac{n(n-1)}2$, with $T_IO(n)=\lbrace B:B^T+B=0\rbrace$.
-- $SL(n)=\det^{-1}(1)$; $d(\det)_A(B)=\det(A)\operatorname{tr}(A^{-1}B)$, so $1$ is a regular value.
+- $SL(n)=\det^{-1}(1)$; $d(\det)_A(B)=\det(A)\mathrm{tr}(A^{-1}B)$, so $1$ is a regular value.
 
 **Sard's theorem.** The set of critical values of a smooth map has measure zero. Hence regular values are dense.
 
 **Whitney embedding theorem.** Every smooth $n$-manifold embeds in $\mathbb{R}^{2n}$ (easy version: $\mathbb{R}^{2n+1}$) and immerses in $\mathbb{R}^{2n-1}$ for $n>1$.
 
-**Transversality.** $F:M\to N$ is transverse to an embedded submanifold $S\subseteq N$ if $dF_p(T_pM)+T_{F(p)}S=T_{F(p)}N$ whenever $F(p)\in S$. Then $F^{-1}(S)$ is an embedded submanifold of codimension $\operatorname{codim}S$.
+**Transversality.** $F:M\to N$ is transverse to an embedded submanifold $S\subseteq N$ if $dF_p(T_pM)+T_{F(p)}S=T_{F(p)}N$ whenever $F(p)\in S$. Then $F^{-1}(S)$ is an embedded submanifold of codimension $\mathrm{codim}\,S$.
 
 ---
 
@@ -134,7 +134,7 @@ Properties: bilinear, antisymmetric, Jacobi identity, $[fX,gY]=fg[X,Y]+f(Xg)Y-g(
 
 ### 4.3 Frobenius
 
-A rank-$k$ **distribution** $D\subseteq TM$ is **involutive** if $[X,Y]\in D$ whenever $X,Y\in D$, and **integrable** if each point lies in a $k$-dimensional submanifold tangent to $D$. **Frobenius theorem:** involutive ⇔ integrable (⇔ locally of the form $\operatorname{span}\lbrace\partial_1,\dots,\partial_k\rbrace$). Example of non-integrability: the contact distribution $\ker(dz-y\,dx)$ on $\mathbb{R}^3$.
+A rank-$k$ **distribution** $D\subseteq TM$ is **involutive** if $[X,Y]\in D$ whenever $X,Y\in D$, and **integrable** if each point lies in a $k$-dimensional submanifold tangent to $D$. **Frobenius theorem:** involutive ⇔ integrable (⇔ locally of the form $\mathrm{span}\,\lbrace\partial_1,\dots,\partial_k\rbrace$). Example of non-integrability: the contact distribution $\ker(dz-y\,dx)$ on $\mathbb{R}^3$.
 
 ---
 
@@ -178,7 +178,7 @@ $d\circ d=0$ is equality of mixed partials. **Naturality:** $F^*(d\omega)=d(F^*\
 
 **Invariant formula for 1-forms:** $d\omega(X,Y)=X(\omega(Y))-Y(\omega(X))-\omega([X,Y])$.
 
-**In $\mathbb{R}^3$** $d$ on 0-, 1-, 2-forms is grad, curl, div, and $d^2=0$ encodes $\operatorname{curl}\operatorname{grad}=0$ and $\operatorname{div}\operatorname{curl}=0$.
+**In $\mathbb{R}^3$** $d$ on 0-, 1-, 2-forms is grad, curl, div, and $d^2=0$ encodes $\mathrm{curl}\,\mathrm{grad}=0$ and $\mathrm{div}\,\mathrm{curl}=0$.
 
 **Lie derivative of forms and Cartan's formula.**
 $$
@@ -217,7 +217,7 @@ with $\partial M$ carrying the Stokes orientation (if $\partial M=\emptyset$, th
 
 *Proof sketch.* By a partition of unity, reduce to $\omega$ supported in one chart. For $\mathbb{H}^n$ write $\omega=\sum_i\omega_i\,dx^1\wedge\dots\wedge\widehat{dx^i}\wedge\dots\wedge dx^n$, so $d\omega=\sum_i(-1)^{i-1}\partial_i\omega_i\,dx^1\wedge\dots\wedge dx^n$. Integrate each term with Fubini: for $i<n$ the integral of $\partial_i\omega_i$ in $x^i$ is $0$ (compact support); for $i=n$ it gives $-\omega_n(x',0)$. So $\int_{\mathbb{H}^n}d\omega=(-1)^{n}\int_{\mathbb{R}^{n-1}}\omega_n(x',0)\,dx'$, which is exactly $\int_{\partial\mathbb{H}^n}\omega$ with the orientation $(-1)^n\times$standard. $\square$
 
-**Special cases.** Fundamental theorem of calculus ($n=1$); Green's theorem; divergence theorem $\int_M\operatorname{div}X\,dV=\int_{\partial M}\langle X,N\rangle\,dA$; classical Stokes for surfaces in $\mathbb{R}^3$.
+**Special cases.** Fundamental theorem of calculus ($n=1$); Green's theorem; divergence theorem $\int_M\mathrm{div}\,X\,dV=\int_{\partial M}\langle X,N\rangle\,dA$; classical Stokes for surfaces in $\mathbb{R}^3$.
 
 **Corollaries.**
 - On a compact oriented manifold without boundary, $\int_Md\eta=0$. So a volume form is never exact, and $H^n_{dR}(M)\ne0$.
@@ -229,7 +229,7 @@ with $\partial M$ carrying the Stokes orientation (if $\partial M=\emptyset$, th
 ## 7. de Rham cohomology
 
 $$
-H^k_{dR}(M)=\frac{\ker\big(d:\Omega^k(M)\to\Omega^{k+1}(M)\big)}{\operatorname{im}\big(d:\Omega^{k-1}(M)\to\Omega^k(M)\big)}.
+H^k_{dR}(M)=\frac{\ker\big(d:\Omega^k(M)\to\Omega^{k+1}(M)\big)}{\mathrm{im}\,\big(d:\Omega^{k-1}(M)\to\Omega^k(M)\big)}.
 $$
 It is a contravariant functor, and the wedge product makes $H^*_{dR}(M)$ a graded-commutative ring.
 
@@ -262,9 +262,9 @@ A **Riemannian metric** $g$ is a smoothly varying inner product on each $T_pM$. 
 
 **Lengths and distance.** $L(\gamma)=\int_a^b|\gamma'(t)|_g\,dt$; $d_g(p,q)=\inf L(\gamma)$ over piecewise smooth curves. $d_g$ is a metric inducing the manifold topology.
 
-**Musical isomorphisms.** $g$ gives $TM\cong T^*M$: $X^\flat=g(X,\cdot)$, i.e. $(X^\flat)_j=g_{ij}X^i$; inverse $\sharp$ uses $g^{ij}$. **Gradient:** $\operatorname{grad}f=(df)^\sharp$, so $g(\operatorname{grad}f,X)=Xf$; in coordinates $\operatorname{grad}f=g^{ij}\partial_jf\,\partial_i$.
+**Musical isomorphisms.** $g$ gives $TM\cong T^*M$: $X^\flat=g(X,\cdot)$, i.e. $(X^\flat)_j=g_{ij}X^i$; inverse $\sharp$ uses $g^{ij}$. **Gradient:** $\mathrm{grad}\,f=(df)^\sharp$, so $g(\mathrm{grad}\,f,X)=Xf$; in coordinates $\mathrm{grad}\,f=g^{ij}\partial_jf\,\partial_i$.
 
-**Riemannian volume form.** On an oriented Riemannian manifold there is a unique $n$-form $dV_g$ with $dV_g(E_1,\dots,E_n)=1$ on positive orthonormal frames; in coordinates $dV_g=\sqrt{\det(g_{ij})}\,dx^1\wedge\dots\wedge dx^n$. **Divergence** is defined by $d(i_XdV_g)=(\operatorname{div}X)\,dV_g$, and Stokes becomes the divergence theorem.
+**Riemannian volume form.** On an oriented Riemannian manifold there is a unique $n$-form $dV_g$ with $dV_g(E_1,\dots,E_n)=1$ on positive orthonormal frames; in coordinates $dV_g=\sqrt{\det(g_{ij})}\,dx^1\wedge\dots\wedge dx^n$. **Divergence** is defined by $d(i_XdV_g)=(\mathrm{div}\,X)\,dV_g$, and Stokes becomes the divergence theorem.
 
 **Isometries** preserve $g$. Examples: round metric on $S^n$ (induced from $\mathbb{R}^{n+1}$), flat metric on $T^n$, hyperbolic metric $\frac{dx^2+dy^2}{y^2}$ on the upper half-plane. Curvature, connections and geodesics are the subject of the [Riemannian geometry elective](../../04-electives/riemannian-geometry/).
 
@@ -286,7 +286,7 @@ Let $T^2=\mathbb{R}^2/\mathbb{Z}^2$ with coordinates $(x,y)$ defined mod 1. The 
 
 Claim: $H^1_{dR}(T^2)$ has basis $[dx],[dy]$. Given a closed 1-form $\omega$, let $a=\int_a\omega$, $b=\int_b\omega$ over the two standard loops. Then $\eta=\omega-a\,dx-b\,dy$ is closed with zero integrals over $a$ and $b$. Pull $\eta$ back to $\mathbb{R}^2$: there it is exact, $\eta=df$ (Poincaré lemma). The periods vanish, so $f(x+1,y)=f(x,y)$ and $f(x,y+1)=f(x,y)$ (the difference is the integral of $\eta$ over a translate of $a$ or $b$, which is homotopic to $a$ or $b$). So $f$ descends to $T^2$ and $[\omega]=a[dx]+b[dy]$. Independence follows by integrating over $a$ and $b$. Together with $H^0=\mathbb{R}$ and $H^2=\mathbb{R}$ (compact, connected, orientable), $H^*_{dR}(T^2)=\Lambda^*(\mathbb{R}^2)$, with $[dx]\wedge[dy]$ generating $H^2$. This matches the cohomology ring of $T^2$ in [3.4 §5.2](../3.4-algebraic-topology/notes.md), as de Rham's theorem predicts.
 
-**Degree computation.** The map $F:T^2\to T^2$ induced by an integer matrix $A=\begin{pmatrix}p&q\\r&s\end{pmatrix}$ satisfies $F^*(dx\wedge dy)=(ps-qr)\,dx\wedge dy$, so $\deg F=\det A$. Check with regular values: $F$ is a $|\det A|$-sheeted covering when $\det A\ne0$, each sheet contributing $\operatorname{sign}\det A$.
+**Degree computation.** The map $F:T^2\to T^2$ induced by an integer matrix $A=\begin{pmatrix}p&q\\r&s\end{pmatrix}$ satisfies $F^*(dx\wedge dy)=(ps-qr)\,dx\wedge dy$, so $\deg F=\det A$. Check with regular values: $F$ is a $|\det A|$-sheeted covering when $\det A\ne0$, each sheet contributing $\mathrm{sign}\,\det A$.
 
 ## 9. Common pitfalls
 

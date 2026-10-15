@@ -26,11 +26,11 @@ Df(x,y) = \begin{pmatrix}2xy & x^2\\ y\cos(xy) & x\cos(xy)\\ e^{x+y} & e^{x+y}\e
 $$
 (All partials are continuous, so $f$ is differentiable and this is its derivative.)
 
-(b) By the Leibniz formula, $\det(I+H) = \sum_\sigma\operatorname{sgn}\sigma\prod_i(\delta_{i\sigma(i)} + h_{i\sigma(i)})$. The identity permutation contributes $\prod_i(1 + h_{ii}) = 1 + \sum_ih_{ii} + (\text{products of at least two entries of } H)$. A permutation $\sigma\ne\mathrm{id}$ moves at least two indices $i$, and for those $\delta_{i\sigma(i)} = 0$, so its term is a product containing at least two entries of $H$. Hence
+(b) By the Leibniz formula, $\det(I+H) = \sum_\sigma\mathrm{sgn}\,\sigma\prod_i(\delta_{i\sigma(i)} + h_{i\sigma(i)})$. The identity permutation contributes $\prod_i(1 + h_{ii}) = 1 + \sum_ih_{ii} + (\text{products of at least two entries of } H)$. A permutation $\sigma\ne\mathrm{id}$ moves at least two indices $i$, and for those $\delta_{i\sigma(i)} = 0$, so its term is a product containing at least two entries of $H$. Hence
 $$
-\det(I+H) = 1 + \operatorname{tr}H + R(H),
+\det(I+H) = 1 + \mathrm{tr}\,H + R(H),
 $$
-where $R$ is a polynomial in the entries of $H$ with every monomial of degree at least 2. Since each entry satisfies $|h_{ij}|\le\|H\|$, for $\|H\|\le1$ we get $|R(H)|\le C\|H\|^2$ for a constant $C$ (depending only on $n$). So $\det(I+H) - \det(I) - \operatorname{tr}H = o(\|H\|)$, i.e. $D(\det)(I)H = \operatorname{tr}H$.
+where $R$ is a polynomial in the entries of $H$ with every monomial of degree at least 2. Since each entry satisfies $|h_{ij}|\le\|H\|$, for $\|H\|\le1$ we get $|R(H)|\le C\|H\|^2$ for a constant $C$ (depending only on $n$). So $\det(I+H) - \det(I) - \mathrm{tr}\,H = o(\|H\|)$, i.e. $D(\det)(I)H = \mathrm{tr}\,H$.
 
 ### 5.
 
@@ -131,7 +131,7 @@ $$
 
 (a) Since $\nabla g(p)\ne0$, after relabelling coordinates $\partial_ng(p)\ne0$. Write $x = (x',x_n)$. By the implicit function theorem there are a neighbourhood $V$ of $p'$ and a $C^1$ function $h$ on $V$ such that, near $p$, $M$ is the graph $x_n = h(x')$. Let $v\in\mathbb R^n$ with $\nabla g(p)\cdot v = 0$, and define $\gamma(t) = (p' + tv',\ h(p'+tv'))$ for small $t$. Then $\gamma(t)\in M$, $\gamma(0) = p$, and differentiating $g(x',h(x')) = 0$ gives $\partial_ng(p)\,Dh(p')v' = -\sum_{i<n}\partial_ig(p)v_i = \partial_ng(p)v_n$, so $\gamma'(0) = (v',Dh(p')v') = v$. Since $f\circ\gamma$ has a local maximum at $t = 0$, $0 = (f\circ\gamma)'(0) = \nabla f(p)\cdot v$.
 
-So $\nabla f(p)$ is orthogonal to every vector orthogonal to $\nabla g(p)$, i.e. $\nabla f(p)\in(\nabla g(p)^\perp)^\perp = \operatorname{span}\nabla g(p)$: $\nabla f(p) = \lambda\nabla g(p)$.
+So $\nabla f(p)$ is orthogonal to every vector orthogonal to $\nabla g(p)$, i.e. $\nabla f(p)\in(\nabla g(p)^\perp)^\perp = \mathrm{span}\,\nabla g(p)$: $\nabla f(p) = \lambda\nabla g(p)$.
 
 (b) The ellipse $M = \lbrace g = 0\rbrace$, $g = \frac{x^2}{4} + y^2 - 1$, is compact, so $xy$ attains a maximum and a minimum on it. $\nabla g = (x/2, 2y)$ vanishes only at $0\notin M$. By (a) (applied to $f$ and $-f$), at an extremum $(y,x) = \lambda(x/2,2y)$, i.e. $y = \lambda x/2$ and $x = 2\lambda y$. Then $y = \lambda^2y$. If $y = 0$ then $x = 0$, not on $M$; so $\lambda^2 = 1$.
 - $\lambda = 1$: $x = 2y$, and $\frac{4y^2}{4} + y^2 = 1$ gives $y = \pm\frac1{\sqrt2}$, $xy = 2y^2 = 1$.

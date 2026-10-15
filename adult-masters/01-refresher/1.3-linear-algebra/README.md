@@ -70,7 +70,7 @@ Section numbers are from Axler, 4th edition (for example, 3B means Chapter 3, Se
 - [ ] Injective ⇔ null space is $\lbrace 0\rbrace$; for an operator on a finite-dimensional space, injective ⇔ surjective ⇔ invertible
 - [ ] Matrix of a linear map; matrix of a composition; change-of-basis formula; similarity
 - [ ] Isomorphism $\mathcal{L}(V,W) \cong \mathbb{F}^{m\times n}$
-- [ ] Quotient space $V/U$; $\dim V/U = \dim V - \dim U$; $V/\operatorname{null}T \cong \operatorname{range}T$
+- [ ] Quotient space $V/U$; $\dim V/U = \dim V - \dim U$; $V/\mathrm{null}\,T \cong \mathrm{range}\,T$
 - [ ] Dual space, dual basis, dual map; annihilator; $\dim U^0 = \dim V - \dim U$; row rank = column rank
 - [ ] Determinant: alternating multilinear characterisation; $\det(AB)=\det A\det B$; $A$ invertible ⇔ $\det A\neq 0$
 - [ ] Eigenvalue, eigenvector, eigenspace; eigenvectors for distinct eigenvalues are independent

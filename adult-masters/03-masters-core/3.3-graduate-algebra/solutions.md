@@ -27,7 +27,7 @@ So every element has the form $c\left(\frac1{N^2}\otimes1\right)=\frac{c}{N^2}\o
 
 ### 3.
 
-(a) A homomorphism $\varphi:\mathbb{Z}/m\to\mathbb{Z}/n$ is determined by $y=\varphi(\bar1)$, which must satisfy $my=0$ in $\mathbb{Z}/n$; conversely each such $y$ defines a homomorphism. So $\operatorname{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\lbrace y\in\mathbb{Z}/n:my=0\rbrace$. Now $my\equiv0\pmod n$ iff $\frac nd\mid\frac md y$ iff $\frac nd\mid y$ (as $\gcd(\frac md,\frac nd)=1$). So the solutions are the multiples of $n/d$ in $\mathbb{Z}/n$, a cyclic subgroup of order $d$.
+(a) A homomorphism $\varphi:\mathbb{Z}/m\to\mathbb{Z}/n$ is determined by $y=\varphi(\bar1)$, which must satisfy $my=0$ in $\mathbb{Z}/n$; conversely each such $y$ defines a homomorphism. So $\mathrm{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\lbrace y\in\mathbb{Z}/n:my=0\rbrace$. Now $my\equiv0\pmod n$ iff $\frac nd\mid\frac md y$ iff $\frac nd\mid y$ (as $\gcd(\frac md,\frac nd)=1$). So the solutions are the multiples of $n/d$ in $\mathbb{Z}/n$, a cyclic subgroup of order $d$.
 
 (b) Let $\varphi:\mathbb{Q}\to\mathbb{Z}$ and $q\in\mathbb{Q}$. For every $n\ge1$, $\varphi(q)=n\varphi(q/n)$ is divisible by $n$. The only integer divisible by every $n$ is $0$.
 
@@ -83,17 +83,17 @@ $$
 
 Let $0\to N'\xrightarrow{f}N\xrightarrow{g}N''$ be exact and write $f_*(\varphi)=f\circ\varphi$, $g_*(\psi)=g\circ\psi$.
 - *$f_*$ injective:* if $f\varphi=0$ then $\varphi=0$ since $f$ is injective.
-- *$\operatorname{im}f_*\subseteq\ker g_*$:* $g f\varphi=0$ since $gf=0$.
-- *$\ker g_*\subseteq\operatorname{im}f_*$:* if $g\psi=0$ then $\psi(M)\subseteq\ker g=f(N')$. Since $f$ is an isomorphism onto its image, $\varphi=f^{-1}\circ\psi:M\to N'$ is a well-defined homomorphism with $f\varphi=\psi$.
+- *$\mathrm{im}\,f_*\subseteq\ker g_*$:* $g f\varphi=0$ since $gf=0$.
+- *$\ker g_*\subseteq\mathrm{im}\,f_*$:* if $g\psi=0$ then $\psi(M)\subseteq\ker g=f(N')$. Since $f$ is an isomorphism onto its image, $\varphi=f^{-1}\circ\psi:M\to N'$ is a well-defined homomorphism with $f\varphi=\psi$.
 
-*Not exact:* $\mathbb{Z}\to\mathbb{Z}/2\to0$ is onto, but applying $\operatorname{Hom}(\mathbb{Z}/2,-)$ gives $0=\operatorname{Hom}(\mathbb{Z}/2,\mathbb{Z})\to\operatorname{Hom}(\mathbb{Z}/2,\mathbb{Z}/2)\cong\mathbb{Z}/2$, which is not onto.
+*Not exact:* $\mathbb{Z}\to\mathbb{Z}/2\to0$ is onto, but applying $\mathrm{Hom}(\mathbb{Z}/2,-)$ gives $0=\mathrm{Hom}(\mathbb{Z}/2,\mathbb{Z})\to\mathrm{Hom}(\mathbb{Z}/2,\mathbb{Z}/2)\cong\mathbb{Z}/2$, which is not onto.
 
 ### 9.
 
-*Lemma.* $X'\xrightarrow{u}X\xrightarrow{v}X''\to0$ is exact iff for every module $P$, $0\to\operatorname{Hom}(X'',P)\xrightarrow{v^*}\operatorname{Hom}(X,P)\xrightarrow{u^*}\operatorname{Hom}(X',P)$ is exact.
-*Proof of "⇐":* take $P=X''/\operatorname{im}v$ and the projection $\pi$: $v^*\pi=\pi v=0$, so $\pi=0$ by injectivity of $v^*$, i.e. $v$ is onto. Take $P=X''$: $u^*v^*(\mathrm{id})=vu=0$, so $\operatorname{im}u\subseteq\ker v$. Take $P=X/\operatorname{im}u$ and the projection $q$: $u^*q=0$, so $q=v^*h=hv$ for some $h$, and then $\ker v\subseteq\ker q=\operatorname{im}u$. ("⇒" is the left exactness of $\operatorname{Hom}(-,P)$, proved like Problem 8.)
+*Lemma.* $X'\xrightarrow{u}X\xrightarrow{v}X''\to0$ is exact iff for every module $P$, $0\to\mathrm{Hom}(X'',P)\xrightarrow{v^*}\mathrm{Hom}(X,P)\xrightarrow{u^*}\mathrm{Hom}(X',P)$ is exact.
+*Proof of "⇐":* take $P=X''/\mathrm{im}\,v$ and the projection $\pi$: $v^*\pi=\pi v=0$, so $\pi=0$ by injectivity of $v^*$, i.e. $v$ is onto. Take $P=X''$: $u^*v^*(\mathrm{id})=vu=0$, so $\mathrm{im}\,u\subseteq\ker v$. Take $P=X/\mathrm{im}\,u$ and the projection $q$: $u^*q=0$, so $q=v^*h=hv$ for some $h$, and then $\ker v\subseteq\ker q=\mathrm{im}\,u$. ("⇒" is the left exactness of $\mathrm{Hom}(-,P)$, proved like Problem 8.)
 
-Now let $N'\to N\to N''\to0$ be exact. For any $P$, the sequence $0\to\operatorname{Hom}(N'',\operatorname{Hom}(M,P))\to\operatorname{Hom}(N,\operatorname{Hom}(M,P))\to\operatorname{Hom}(N',\operatorname{Hom}(M,P))$ is exact (left exactness of $\operatorname{Hom}(-,Q)$). By the natural adjunction $\operatorname{Hom}(N,\operatorname{Hom}(M,P))\cong\operatorname{Hom}(M\otimes N,P)$, this is the sequence $0\to\operatorname{Hom}(M\otimes N'',P)\to\operatorname{Hom}(M\otimes N,P)\to\operatorname{Hom}(M\otimes N',P)$. (Naturality of the adjunction in $N$ is exactly what makes the maps match.) By the lemma, $M\otimes N'\to M\otimes N\to M\otimes N''\to0$ is exact.
+Now let $N'\to N\to N''\to0$ be exact. For any $P$, the sequence $0\to\mathrm{Hom}(N'',\mathrm{Hom}(M,P))\to\mathrm{Hom}(N,\mathrm{Hom}(M,P))\to\mathrm{Hom}(N',\mathrm{Hom}(M,P))$ is exact (left exactness of $\mathrm{Hom}(-,Q)$). By the natural adjunction $\mathrm{Hom}(N,\mathrm{Hom}(M,P))\cong\mathrm{Hom}(M\otimes N,P)$, this is the sequence $0\to\mathrm{Hom}(M\otimes N'',P)\to\mathrm{Hom}(M\otimes N,P)\to\mathrm{Hom}(M\otimes N',P)$. (Naturality of the adjunction in $N$ is exactly what makes the maps match.) By the lemma, $M\otimes N'\to M\otimes N\to M\otimes N''\to0$ is exact.
 
 *Not left exact:* $0\to\mathbb{Z}\xrightarrow{2}\mathbb{Z}$ is exact, but after $\mathbb{Z}/2\otimes_\mathbb{Z}-$ it becomes $\mathbb{Z}/2\xrightarrow{2=0}\mathbb{Z}/2$, which is not injective.
 
@@ -131,7 +131,7 @@ So the localised sequence is exact.
 
 (a) The prime ideals of the PID $\mathbb{Z}$ are $(0)$ and $(p)$ for primes $p$. Closed sets are $V(n)$ for $n\ge0$ (every ideal is $(n)$). $V(0)$ is everything; $V(1)=\emptyset$; for $n\ge2$, $V(n)=\lbrace(p):p\mid n\rbrace$, a finite set of non-zero primes, and every finite set of non-zero primes arises (take $n$ = their product). So the closed sets are $\emptyset$, the whole space, and the finite sets of non-zero primes. The closed points are the $(p)$ (since $V(p)=\lbrace(p)\rbrace$). The closure of $\lbrace(0)\rbrace$ is $V(0)$, the whole space: $(0)$ is a dense "generic point" and is not closed.
 
-(b) The sets $D(f)$ form a base, so it suffices to show that every cover $\operatorname{Spec}A=\bigcup_{i\in I}D(f_i)$ has a finite subcover. The cover condition says $\bigcap_iV(f_i)=V(\lbrace f_i\rbrace_{i})=V(\mathfrak{a})=\emptyset$, where $\mathfrak{a}$ is the ideal generated by the $f_i$. If $\mathfrak{a}\ne A$, it lies in a maximal ideal, which would be a point of $V(\mathfrak{a})$. So $\mathfrak{a}=A$, and $1=\sum_{j=1}^na_jf_{i_j}$ for finitely many indices. Then $(f_{i_1},\dots,f_{i_n})=A$, so $V(f_{i_1},\dots,f_{i_n})=\emptyset$, i.e. $D(f_{i_1})\cup\cdots\cup D(f_{i_n})=\operatorname{Spec}A$.
+(b) The sets $D(f)$ form a base, so it suffices to show that every cover $\mathrm{Spec}\,A=\bigcup_{i\in I}D(f_i)$ has a finite subcover. The cover condition says $\bigcap_iV(f_i)=V(\lbrace f_i\rbrace_{i})=V(\mathfrak{a})=\emptyset$, where $\mathfrak{a}$ is the ideal generated by the $f_i$. If $\mathfrak{a}\ne A$, it lies in a maximal ideal, which would be a point of $V(\mathfrak{a})$. So $\mathfrak{a}=A$, and $1=\sum_{j=1}^na_jf_{i_j}$ for finitely many indices. Then $(f_{i_1},\dots,f_{i_n})=A$, so $V(f_{i_1},\dots,f_{i_n})=\emptyset$, i.e. $D(f_{i_1})\cup\cdots\cup D(f_{i_n})=\mathrm{Spec}\,A$.
 
 ### 15.
 
@@ -241,11 +241,11 @@ using the Chinese remainder theorem ($(x-i)$ and $(x+i)$ are comaximal since the
 
 ### 24.
 
-Let $W=\operatorname{Res}^G_AV$. Since $A$ is abelian, $W$ is a direct sum of one-dimensional representations of $A$ (Maschke and Problem 19). Pick one, a character $\lambda:A\to\mathbb{C}^\times$ with $\operatorname{Hom}_A(\lambda,W)\ne0$. By Frobenius reciprocity,
+Let $W=\mathrm{Res}^G_AV$. Since $A$ is abelian, $W$ is a direct sum of one-dimensional representations of $A$ (Maschke and Problem 19). Pick one, a character $\lambda:A\to\mathbb{C}^\times$ with $\mathrm{Hom}_A(\lambda,W)\ne0$. By Frobenius reciprocity,
 $$
-\operatorname{Hom}_G(\operatorname{Ind}_A^G\lambda,V)\cong\operatorname{Hom}_A(\lambda,\operatorname{Res}^G_AV)\neq0 .
+\mathrm{Hom}_G(\mathrm{Ind}_A^G\lambda,V)\cong\mathrm{Hom}_A(\lambda,\mathrm{Res}^G_AV)\neq0 .
 $$
-So there is a non-zero $G$-map $\operatorname{Ind}_A^G\lambda\to V$. Its image is a non-zero subrepresentation of the irreducible $V$, so the map is onto. Hence $\dim V\le\dim\operatorname{Ind}_A^G\lambda=[G:A]\cdot1$.
+So there is a non-zero $G$-map $\mathrm{Ind}_A^G\lambda\to V$. Its image is a non-zero subrepresentation of the irreducible $V$, so the map is onto. Hence $\dim V\le\dim\mathrm{Ind}_A^G\lambda=[G:A]\cdot1$.
 
 ### 25.
 

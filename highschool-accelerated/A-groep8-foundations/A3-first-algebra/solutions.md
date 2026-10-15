@@ -66,7 +66,7 @@ Try every problem properly before reading its solution.
 
 The graph is a straight line through $(0, 25)$ rising 40 per hour.
 
-(c) $25 + 40\cdot 2.5 = 25 + 100 = $ **€125**.
+(c) $25 + 40\cdot 2.5 = 25 + 100 =$ **€125**.
 
 (d) $25 + 40t = 165$, so $40t = 140$, $t = 3.5$: **3½ hours**.
 
@@ -138,7 +138,7 @@ Let the smallest be $n$: $n + (n + 1) + (n + 2) + (n + 3) = 154$, so $4n + 6 = 1
 
 Let $t$ be the time in hours. Together they cover 60 km: $18t + 22t = 60$, $40t = 60$, $t = 1.5$.
 
-They meet after **1½ hours**, when the cyclist from A has ridden $18 \cdot 1.5 = $ **27 km** from A. (Check: the other has ridden $22\cdot 1.5 = 33$ km, and $27 + 33 = 60$ ✓.)
+They meet after **1½ hours**, when the cyclist from A has ridden $18 \cdot 1.5 =$ **27 km** from A. (Check: the other has ridden $22\cdot 1.5 = 33$ km, and $27 + 33 = 60$ ✓.)
 
 ### 14.
 

@@ -127,5 +127,5 @@ $ABCD$ is a cyclic quadrilateral (*koordenvierhoek*). The lines $AB$ and $DC$ in
 | Distance from $(p, q)$ to $ax + by = c$ | $\dfrac{\lvert ap + bq - c\rvert}{\sqrt{a^2 + b^2}}$ |
 | Angle between vectors | $\cos\varphi = \dfrac{\vec u\cdot\vec v}{\lvert\vec u\rvert\,\lvert\vec v\rvert}$ |
 | Trigonometry | $\sin 2x = 2\sin x\cos x$, $\cos 2x = 1 - 2\sin^2x = 2\cos^2x - 1$ |
-| Expected value, variance | $E(X) = \sum x\,P(X = x)$, $\operatorname{Var}(X) = E(X^2) - E(X)^2$ |
+| Expected value, variance | $E(X) = \sum x\,P(X = x)$, $\mathrm{Var}(X) = E(X^2) - E(X)^2$ |
 | Euler's method | $V_{n+1} = V_n + \Delta t\cdot V'(t_n)$ |

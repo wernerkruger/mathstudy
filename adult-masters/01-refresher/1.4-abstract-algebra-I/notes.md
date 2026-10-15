@@ -38,7 +38,7 @@ $\langle g\rangle=\lbrace g^k:k\in\mathbb{Z}\rbrace$. A group is *cyclic* if $G=
 
 Every permutation is a product of disjoint cycles, uniquely up to order. Its *cycle type* is the multiset of cycle lengths. The order of a permutation is the lcm of its cycle lengths.
 
-Every permutation is also a product of transpositions. The parity of the number of transpositions is well defined, which gives the **sign** homomorphism $\operatorname{sgn}:S_n\to\lbrace\pm1\rbrace$. A $k$-cycle has sign $(-1)^{k-1}$. The kernel of $\operatorname{sgn}$ is the alternating group $A_n$, of order $n!/2$ for $n\ge2$.
+Every permutation is also a product of transpositions. The parity of the number of transpositions is well defined, which gives the **sign** homomorphism $\mathrm{sgn}:S_n\to\lbrace\pm1\rbrace$. A $k$-cycle has sign $(-1)^{k-1}$. The kernel of $\mathrm{sgn}$ is the alternating group $A_n$, of order $n!/2$ for $n\ge2$.
 
 **Conjugation in $S_n$.**
 
@@ -77,9 +77,9 @@ Kernels are normal: if $\varphi(n)=e$, then $\varphi(gng^{-1})=\varphi(g)\varphi
 
 **Quotient group.** If $N\trianglelefteq G$, the cosets form a group $G/N$ with $(aN)(bN)=abN$. Normality is **exactly** what makes this well defined. If $aN=a'N$ and $bN=b'N$, write $a'=an_1$ and $b'=bn_2$. Then $a'b'=an_1bn_2=ab(b^{-1}n_1b)n_2\in abN$. The map $\pi:G\to G/N$ is a surjective homomorphism with kernel $N$.
 
-**First Isomorphism Theorem.** If $\varphi:G\to H$ is a homomorphism, then $G/\ker\varphi\cong\operatorname{im}\varphi$, via $g\ker\varphi\mapsto\varphi(g)$.
+**First Isomorphism Theorem.** If $\varphi:G\to H$ is a homomorphism, then $G/\ker\varphi\cong\mathrm{im}\,\varphi$, via $g\ker\varphi\mapsto\varphi(g)$.
 
-*Proof.* The map is well defined and injective because $\varphi(a)=\varphi(b)\iff a^{-1}b\in\ker\varphi\iff a\ker\varphi=b\ker\varphi$. It is a homomorphism because $\varphi$ is, and it is clearly onto $\operatorname{im}\varphi$. $\square$
+*Proof.* The map is well defined and injective because $\varphi(a)=\varphi(b)\iff a^{-1}b\in\ker\varphi\iff a\ker\varphi=b\ker\varphi$. It is a homomorphism because $\varphi$ is, and it is clearly onto $\mathrm{im}\,\varphi$. $\square$
 
 **How to use it.** To identify $G/N$, find a surjective homomorphism out of $G$ whose kernel is $N$. Examples:
 - $\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n$.
@@ -97,7 +97,7 @@ Kernels are normal: if $\varphi(n)=e$, then $\varphi(gng^{-1})=\varphi(g)\varphi
 
 ## 6. Direct products and finite abelian groups
 
-$G\times H$ has the componentwise operation, and $|(g,h)|=\operatorname{lcm}(|g|,|h|)$. Hence $\mathbb{Z}_m\times\mathbb{Z}_n\cong\mathbb{Z}_{mn}$ iff $\gcd(m,n)=1$.
+$G\times H$ has the componentwise operation, and $|(g,h)|=\mathrm{lcm}(|g|,|h|)$. Hence $\mathbb{Z}_m\times\mathbb{Z}_n\cong\mathbb{Z}_{mn}$ iff $\gcd(m,n)=1$.
 
 **Internal direct product.** If $H,K\trianglelefteq G$, $H\cap K=\lbrace e\rbrace$ and $HK=G$, then $G\cong H\times K$. The key step: for $h\in H$ and $k\in K$, the commutator $hkh^{-1}k^{-1}$ lies in $H\cap K$, so $hk=kh$.
 
@@ -109,7 +109,7 @@ This theorem is a special case of the structure theorem for finitely generated m
 
 ## 7. Group actions
 
-An *action* of $G$ on a set $X$ is a map $G\times X\to X$, $(g,x)\mapsto g\cdot x$, with $e\cdot x=x$ and $g\cdot(h\cdot x)=(gh)\cdot x$. Equivalently, it is a homomorphism $G\to\operatorname{Sym}(X)$.
+An *action* of $G$ on a set $X$ is a map $G\times X\to X$, $(g,x)\mapsto g\cdot x$, with $e\cdot x=x$ and $g\cdot(h\cdot x)=(gh)\cdot x$. Equivalently, it is a homomorphism $G\to\mathrm{Sym}(X)$.
 - The *orbit* of $x$ is $\mathcal{O}_x=G\cdot x$. The orbits partition $X$.
 - The *stabiliser* of $x$ is $G_x=\lbrace g:g\cdot x=x\rbrace\le G$.
 
@@ -122,7 +122,7 @@ $$
 *Example.* The rotation group of a cube acts transitively on the 6 faces. The stabiliser of a face is the 4 rotations about the axis through that face's centre. So the group has order 24. It is isomorphic to $S_4$, acting on the 4 long diagonals.
 
 **Key actions.**
-1. **Left multiplication** on $G$ itself. This gives **Cayley's Theorem**: every group embeds in $\operatorname{Sym}(G)$, so every group of order $n$ embeds in $S_n$.
+1. **Left multiplication** on $G$ itself. This gives **Cayley's Theorem**: every group embeds in $\mathrm{Sym}(G)$, so every group of order $n$ embeds in $S_n$.
 2. **Left multiplication on cosets** $G/H$. This gives a homomorphism $G\to S_{[G:H]}$ whose kernel lies in $H$. *Useful consequence:* if $G$ is simple and $[G:H]=k>1$, then $G$ embeds in $S_k$, so $|G|$ divides $k!$.
 3. **Conjugation** $g\cdot x=gxg^{-1}$. The orbits are conjugacy classes. The stabiliser of $x$ is the centraliser $C_G(x)$. The fixed points are the centre $Z(G)$.
 
@@ -134,7 +134,7 @@ $$
 
 **Corollary.** A nontrivial finite $p$-group (order $p^n$, $n\ge1$) has nontrivial centre. *Proof.* Each $[G:C_G(x_i)]$ is a power of $p$ greater than 1, so it is divisible by $p$. Hence $p$ divides $|Z(G)|$, and $|Z(G)|\ge p$. $\square$ Consequence: every group of order $p^2$ is abelian (Problem 13).
 
-**Burnside's counting lemma.** The number of orbits equals $\frac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|$. It is the standard tool for counting colourings up to symmetry.
+**Burnside's counting lemma.** The number of orbits equals $\frac1{|G|}\sum_{g\in G}|\mathrm{Fix}(g)|$. It is the standard tool for counting colourings up to symmetry.
 
 ## 8. Cauchy's theorem
 
@@ -177,9 +177,9 @@ A *ring* $R$ has addition (an abelian group) and an associative multiplication t
 
 **Ideals.** An *ideal* $I\subseteq R$ is an additive subgroup with $rI\subseteq I$ for all $r\in R$. Ideals are exactly the kernels of ring homomorphisms. If an ideal contains a unit, it is all of $R$. Notation: $(a)=aR$ is a principal ideal, and $(a_1,\dots,a_n)$ is the ideal generated by $a_1,\dots,a_n$.
 
-**Quotient ring.** $R/I$ consists of the additive cosets $a+I$, with $(a+I)(b+I)=ab+I$. This is well defined *because* $I$ absorbs multiplication. The isomorphism theorems and the correspondence theorem hold just as for groups. In particular $R/\ker\varphi\cong\operatorname{im}\varphi$.
+**Quotient ring.** $R/I$ consists of the additive cosets $a+I$, with $(a+I)(b+I)=ab+I$. This is well defined *because* $I$ absorbs multiplication. The isomorphism theorems and the correspondence theorem hold just as for groups. In particular $R/\ker\varphi\cong\mathrm{im}\,\varphi$.
 
-**Characteristic.** $\operatorname{char}R$ is the least $n\ge1$ with $n\cdot1=0$, or $0$ if there is none. The characteristic of an integral domain is $0$ or a prime.
+**Characteristic.** $\mathrm{char}\,R$ is the least $n\ge1$ with $n\cdot1=0$, or $0$ if there is none. The characteristic of an integral domain is $0$ or a prime.
 
 ## 11. Prime and maximal ideals
 
@@ -197,7 +197,7 @@ Let $R$ be commutative. An ideal $P\neq R$ is *prime* if $ab\in P\Rightarrow a\i
 - $(2,x)$ is maximal: $\mathbb{Z}[x]/(2,x)\cong\mathbb{F}_2$.
 - $(x^2+1)$ is prime, since $\mathbb{Z}[x]/(x^2+1)\cong\mathbb{Z}[i]$.
 
-**Field of fractions.** Every integral domain $D$ embeds in a smallest field $\operatorname{Frac}(D)$, consisting of formal fractions $a/b$ with $a/b=c/d\iff ad=bc$. For example, $\operatorname{Frac}(\mathbb{Z})=\mathbb{Q}$ and $\operatorname{Frac}(F[x])=F(x)$.
+**Field of fractions.** Every integral domain $D$ embeds in a smallest field $\mathrm{Frac}(D)$, consisting of formal fractions $a/b$ with $a/b=c/d\iff ad=bc$. For example, $\mathrm{Frac}(\mathbb{Z})=\mathbb{Q}$ and $\mathrm{Frac}(F[x])=F(x)$.
 
 **Chinese Remainder Theorem.** If $I+J=R$ (the ideals are *comaximal*), then $R/(I\cap J)\cong R/I\times R/J$, and $I\cap J=IJ$ when $R$ is commutative. For $R=\mathbb{Z}$: $\mathbb{Z}_{mn}\cong\mathbb{Z}_m\times\mathbb{Z}_n$ as rings when $\gcd(m,n)=1$. Taking units gives $U(mn)\cong U(m)\times U(n)$, so $\varphi$ is multiplicative.
 

@@ -18,8 +18,8 @@ Over $\mathbb{F}_2$ the list is **not** a basis: $(1,1,0)+(1,0,1)+(0,1,1)=(2,2,2
 $$
 M(D)=\begin{pmatrix}0&1&0&0\\0&0&2&0\\0&0&0&3\\0&0&0&0\end{pmatrix}.
 $$
-- $\operatorname{null}D$ is the constants, $\operatorname{span}(1)$, of dimension 1.
-- $\operatorname{range}D=\mathcal{P}_2(\mathbb{R})$, of dimension 3. This agrees with rank–nullity: $1+3=4$.
+- $\mathrm{null}\,D$ is the constants, $\mathrm{span}(1)$, of dimension 1.
+- $\mathrm{range}\,D=\mathcal{P}_2(\mathbb{R})$, of dimension 3. This agrees with rank–nullity: $1+3=4$.
 - $D^4=0$, but $D^3(x^3)=6\neq0$. So the minimal polynomial is $z^4$.
 - The only eigenvalue is $0$, and $\dim E(0,D)=1$, so there is a single Jordan block: $J=J_4(0)$. Concretely, in the basis $6, 6x, 3x^2, x^3$ the matrix of $D$ is exactly $J_4(0)$, since $D(x^3)=3x^2$, $D(3x^2)=6x$, $D(6x)=6$ and $D(6)=0$.
 
@@ -33,7 +33,7 @@ So $d_3=4$ and $d_4=5$. By induction, $d_n=n+1$: if $d_{n-1}=n$ and $d_{n-2}=n-1
 - For $\lambda=3$: $(A-3I)v=0$ gives $v=(1,1)$.
 - For $\lambda=1$: $v=(1,-1)$.
 
-With $P=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$, we get $P^{-1}AP=\operatorname{diag}(3,1)$. Then $A^n=P\operatorname{diag}(3^n,1)P^{-1}$, which works out to
+With $P=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$, we get $P^{-1}AP=\mathrm{diag}(3,1)$. Then $A^n=P\mathrm{diag}(3^n,1)P^{-1}$, which works out to
 $$
 A^n=\frac12\begin{pmatrix}3^n+1&3^n-1\\3^n-1&3^n+1\end{pmatrix}.
 $$
@@ -52,15 +52,15 @@ These are the normalised Legendre polynomials.
 
 ## Core
 
-**7.** (a) By rank–nullity, $\dim\operatorname{null}T=\dim V-\dim\operatorname{range}T\ge\dim V-\dim W>0$. So $\operatorname{null}T\neq\lbrace 0\rbrace$, and $T$ is not injective.
+**7.** (a) By rank–nullity, $\dim\mathrm{null}\,T=\dim V-\dim\mathrm{range}\,T\ge\dim V-\dim W>0$. So $\mathrm{null}\,T\neq\lbrace 0\rbrace$, and $T$ is not injective.
 
 (b) $U\times W$ is a vector space under componentwise operations, of dimension $\dim U+\dim W$: if $u_i$ and $w_j$ are bases, then the $(u_i,0)$ together with the $(0,w_j)$ form a basis. The map $\Gamma(u,w)=u+w$ is linear with range $U+W$. Its null space is $\lbrace(u,-u):u\in U\cap W\rbrace$, which is isomorphic to $U\cap W$ via $(u,-u)\mapsto u$. Rank–nullity gives $\dim U+\dim W=\dim(U\cap W)+\dim(U+W)$.
 
-**8.** Every $v\in V$ can be written $v=(v-Pv)+Pv$. Here $Pv\in\operatorname{range}P$, and $P(v-Pv)=Pv-P^2v=0$, so $v-Pv\in\operatorname{null}P$. Hence $V=\operatorname{null}P+\operatorname{range}P$.
+**8.** Every $v\in V$ can be written $v=(v-Pv)+Pv$. Here $Pv\in\mathrm{range}\,P$, and $P(v-Pv)=Pv-P^2v=0$, so $v-Pv\in\mathrm{null}\,P$. Hence $V=\mathrm{null}\,P+\mathrm{range}\,P$.
 
-The sum is direct. If $v\in\operatorname{null}P\cap\operatorname{range}P$, write $v=Pw$. Then $0=Pv=P^2w=Pw=v$.
+The sum is direct. If $v\in\mathrm{null}\,P\cap\mathrm{range}\,P$, write $v=Pw$. Then $0=Pv=P^2w=Pw=v$.
 
-On $\operatorname{range}P$, $P$ acts as the identity: $P(Pw)=Pw$. On $\operatorname{null}P$ it acts as $0$. Joining a basis of $\operatorname{null}P$ to a basis of $\operatorname{range}P$ gives a basis of eigenvectors, so $P$ is diagonalisable with eigenvalues in $\lbrace 0,1\rbrace$.
+On $\mathrm{range}\,P$, $P$ acts as the identity: $P(Pw)=Pw$. On $\mathrm{null}\,P$ it acts as $0$. Joining a basis of $\mathrm{null}\,P$ to a basis of $\mathrm{range}\,P$ gives a basis of eigenvectors, so $P$ is diagonalisable with eigenvalues in $\lbrace 0,1\rbrace$.
 
 Alternatively: $P$ satisfies $z^2-z=z(z-1)$, which has distinct roots, so $m_P$ divides it and $P$ is diagonalisable. Both eigenvalues occur unless $P=0$ or $P=I$.
 
@@ -70,27 +70,27 @@ Alternatively: $P$ satisfies $z^2-z=z(z-1)$, which has distinct roots, so $m_P$ 
 
 *By formula:* $P$ has the new basis vectors as columns, $P=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, so $P^{-1}=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$. Then $AP=\begin{pmatrix}1&2\\0&2\end{pmatrix}$ and $P^{-1}AP=\begin{pmatrix}1&0\\0&2\end{pmatrix}$. The two methods agree. $\mathcal{B}'$ is an eigenbasis.
 
-**10.** $\psi\in\operatorname{null}T'$ iff $\psi\circ T=0$ iff $\psi(Tv)=0$ for all $v$ iff $\psi\in(\operatorname{range}T)^0$.
+**10.** $\psi\in\mathrm{null}\,T'$ iff $\psi\circ T=0$ iff $\psi(Tv)=0$ for all $v$ iff $\psi\in(\mathrm{range}\,T)^0$.
 
 Then
 $$
-\dim\operatorname{range}T'=\dim W'-\dim\operatorname{null}T'=\dim W-(\dim W-\dim\operatorname{range}T)=\dim\operatorname{range}T,
+\dim\mathrm{range}\,T'=\dim W'-\dim\mathrm{null}\,T'=\dim W-(\dim W-\dim\mathrm{range}\,T)=\dim\mathrm{range}\,T,
 $$
 using rank–nullity for $T'$ and $\dim U^0=\dim W-\dim U$.
 
-Now let $A=M(T)$ with respect to bases of $V$ and $W$. With respect to the dual bases, $M(T')=A^t$. The column rank of $A$ is $\dim\operatorname{range}T$. The column rank of $A^t$, which is the row rank of $A$, is $\dim\operatorname{range}T'$. These are equal.
+Now let $A=M(T)$ with respect to bases of $V$ and $W$. With respect to the dual bases, $M(T')=A^t$. The column rank of $A$ is $\dim\mathrm{range}\,T$. The column rank of $A^t$, which is the row rank of $A$, is $\dim\mathrm{range}\,T'$. These are equal.
 
 **11.** Both matrices are upper triangular with diagonal $2,2,3$, so $\chi_A=\chi_B=(z-2)^2(z-3)$.
 
-For $B$: $(B-2I)(B-3I)=\operatorname{diag}(0,0,1)\operatorname{diag}(-1,-1,0)=0$. So $m_B=(z-2)(z-3)$, and $B$ is diagonalisable (it is already diagonal).
+For $B$: $(B-2I)(B-3I)=\mathrm{diag}(0,0,1)\mathrm{diag}(-1,-1,0)=0$. So $m_B=(z-2)(z-3)$, and $B$ is diagonalisable (it is already diagonal).
 
-For $A$: $A-2I=\begin{pmatrix}0&1&0\\0&0&0\\0&0&1\end{pmatrix}$ and $A-3I=\begin{pmatrix}-1&1&0\\0&-1&0\\0&0&0\end{pmatrix}$. The $(1,2)$ entry of the product is $0\cdot1+1\cdot(-1)+0=-1\neq0$, so $(z-2)(z-3)$ does not annihilate $A$. Since $m_A$ divides $\chi_A$ and has both $2$ and $3$ as roots, $m_A=(z-2)^2(z-3)$. It has a repeated root, so $A$ is **not** diagonalisable. Also $\dim E(2,A)=3-\operatorname{rank}(A-2I)=3-2=1<2$.
+For $A$: $A-2I=\begin{pmatrix}0&1&0\\0&0&0\\0&0&1\end{pmatrix}$ and $A-3I=\begin{pmatrix}-1&1&0\\0&-1&0\\0&0&0\end{pmatrix}$. The $(1,2)$ entry of the product is $0\cdot1+1\cdot(-1)+0=-1\neq0$, so $(z-2)(z-3)$ does not annihilate $A$. Since $m_A$ divides $\chi_A$ and has both $2$ and $3$ as roots, $m_A=(z-2)^2(z-3)$. It has a repeated root, so $A$ is **not** diagonalisable. Also $\dim E(2,A)=3-\mathrm{rank}(A-2I)=3-2=1<2$.
 
 $A$ and $B$ are **not similar**: similar matrices have the same minimal polynomial. Equivalently, one is diagonalisable and the other is not.
 
 **12.** $T$ satisfies $p(z)=z^3-z=z(z-1)(z+1)$, so $m_T\mid p$. Every divisor of $p$ splits over $\mathbb{R}$ with distinct roots, so $T$ is diagonalisable by the diagonalisability theorem. The eigenvalues are roots of $m_T$, hence of $p$, so they lie in $\lbrace -1,0,1\rbrace$.
 
-**13.** Let $v_1,\dots,v_m$ be eigenvectors with distinct eigenvalues $\lambda_1,\dots,\lambda_m$. Suppose they are dependent. Let $k$ be the smallest index with $v_k\in\operatorname{span}(v_1,\dots,v_{k-1})$. Such a $k$ exists by the linear dependence lemma, and $k\ge2$ since $v_1\neq0$. Then $v_1,\dots,v_{k-1}$ are independent. Write $v_k=\sum_{i<k}a_iv_i$ and apply $T-\lambda_kI$:
+**13.** Let $v_1,\dots,v_m$ be eigenvectors with distinct eigenvalues $\lambda_1,\dots,\lambda_m$. Suppose they are dependent. Let $k$ be the smallest index with $v_k\in\mathrm{span}(v_1,\dots,v_{k-1})$. Such a $k$ exists by the linear dependence lemma, and $k\ge2$ since $v_1\neq0$. Then $v_1,\dots,v_{k-1}$ are independent. Write $v_k=\sum_{i<k}a_iv_i$ and apply $T-\lambda_kI$:
 $$
 0=\sum_{i<k}a_i(\lambda_i-\lambda_k)v_i.
 $$
@@ -113,14 +113,14 @@ So the eigenvalues are $2$, $2+\sqrt2$ and $2-\sqrt2$.
 
 The three eigenvectors are mutually orthogonal, as Problem 14 predicts. Their norms are $\sqrt2$, $2$ and $2$. So
 $$
-Q=\begin{pmatrix}\tfrac1{\sqrt2}&\tfrac12&\tfrac12\\0&-\tfrac{\sqrt2}2&\tfrac{\sqrt2}2\\-\tfrac1{\sqrt2}&\tfrac12&\tfrac12\end{pmatrix},\qquad D=\operatorname{diag}(2,\,2+\sqrt2,\,2-\sqrt2),
+Q=\begin{pmatrix}\tfrac1{\sqrt2}&\tfrac12&\tfrac12\\0&-\tfrac{\sqrt2}2&\tfrac{\sqrt2}2\\-\tfrac1{\sqrt2}&\tfrac12&\tfrac12\end{pmatrix},\qquad D=\mathrm{diag}(2,\,2+\sqrt2,\,2-\sqrt2),
 $$
 and $A=QDQ^t$.
 
 **16.** Solve $(A-\lambda I)v=0$ for each eigenvalue:
 - $\lambda=1$: $v_1=(-1,1,0,0)$.
 - $\lambda=2$: $v_2=(1,-1,0,1)$.
-- $\lambda=4$: $\operatorname{rank}(A-4I)=3$, so $E(4,A)$ is 1-dimensional, spanned by $u=(1,0,-1,1)$.
+- $\lambda=4$: $\mathrm{rank}(A-4I)=3$, so $E(4,A)$ is 1-dimensional, spanned by $u=(1,0,-1,1)$.
 
 The algebraic multiplicity of $4$ is $2$, but its geometric multiplicity is $1$. So there is one Jordan block $J_2(4)$ for $\lambda = 4$, and
 $$
@@ -132,25 +132,25 @@ P=\begin{pmatrix}-1&1&1&1\\1&-1&0&0\\0&0&-1&0\\0&1&1&0\end{pmatrix}
 $$
 with columns $v_1,v_2,u,w$. Then $Au=4u$ and $Aw=u+4w$, so the last two columns produce the block $J_2(4)$, and $P^{-1}AP=J$. You can check $AP=PJ$ column by column.
 
-**17.** (a) $\dim V'=\dim V=3$, so it suffices to show independence. Suppose $a\operatorname{ev}_0+b\operatorname{ev}_1+c\operatorname{ev}_2=0$. Apply it to the polynomials $p_0, p_1, p_2$ from part (b). Each $p_j$ is $1$ at $j$ and $0$ at the other two points, so this gives $a=0$, $b=0$ and $c=0$ in turn.
+**17.** (a) $\dim V'=\dim V=3$, so it suffices to show independence. Suppose $a\mathrm{ev}_0+b\mathrm{ev}_1+c\mathrm{ev}_2=0$. Apply it to the polynomials $p_0, p_1, p_2$ from part (b). Each $p_j$ is $1$ at $j$ and $0$ at the other two points, so this gives $a=0$, $b=0$ and $c=0$ in turn.
 
-(b) We need $\operatorname{ev}_i(p_j)=p_j(i)=\delta_{ij}$. These are the Lagrange interpolation polynomials:
+(b) We need $\mathrm{ev}_i(p_j)=p_j(i)=\delta_{ij}$. These are the Lagrange interpolation polynomials:
 $$
 p_0=\tfrac{(x-1)(x-2)}{2}=\tfrac12x^2-\tfrac32x+1,\quad p_1=\tfrac{x(x-2)}{-1}=-x^2+2x,\quad p_2=\tfrac{x(x-1)}{2}=\tfrac12x^2-\tfrac12x.
 $$
-They form a basis because they are 3 vectors in a 3-dimensional space and are independent: apply $\operatorname{ev}_i$ to $\sum c_jp_j=0$ to get $c_i=0$.
+They form a basis because they are 3 vectors in a 3-dimensional space and are independent: apply $\mathrm{ev}_i$ to $\sum c_jp_j=0$ to get $c_i=0$.
 
 (c) Any $p\in V$ satisfies $p=\sum_i p(i)\,p_i$, because both sides take the same value at $0,1,2$ and a nonzero polynomial of degree $\le 2$ has at most 2 roots. So $p=p_0+3p_1+7p_2=x^2+x+1$. Check: $p(0)=1$, $p(1)=3$, $p(2)=7$.
 
-**18.** (a) The quotient map $\pi:V\to V/U$ is linear and surjective with $\operatorname{null}\pi=U$. Rank–nullity gives $\dim V=\dim U+\dim V/U$.
+**18.** (a) The quotient map $\pi:V\to V/U$ is linear and surjective with $\mathrm{null}\,\pi=U$. Rank–nullity gives $\dim V=\dim U+\dim V/U$.
 
-(b) Let $N = \operatorname{null}T$ and define $\tilde T(v+N)=Tv$.
+(b) Let $N = \mathrm{null}\,T$ and define $\tilde T(v+N)=Tv$.
 - *Well defined:* if $v+N=v'+N$, then $v-v'\in N$, so $Tv-Tv'=T(v-v')=0$.
 - *Linear:* this follows from linearity of $T$ and the definition of the operations on $V/N$.
 - *Injective:* $\tilde T(v+N)=0$ means $Tv=0$, so $v\in N$ and $v+N=0+N$.
-- *Surjective onto $\operatorname{range}T$:* this is clear from the definition.
+- *Surjective onto $\mathrm{range}\,T$:* this is clear from the definition.
 
-(c) Define $\bar T(v+U)=Tv$. If $v-v'\in U\subseteq\operatorname{null}T$, then $Tv=Tv'$, so $\bar T$ is well defined. Linearity is as in (b). This is the *universal property of the quotient*: $T=\bar T\circ\pi$.
+(c) Define $\bar T(v+U)=Tv$. If $v-v'\in U\subseteq\mathrm{null}\,T$, then $Tv=Tv'$, so $\bar T$ is well defined. Linearity is as in (b). This is the *universal property of the quotient*: $T=\bar T\circ\pi$.
 
 **19.** Let $A=\begin{pmatrix}a&b\\c&d'\end{pmatrix}$, so $t=a+d'$ and $d=ad'-bc$. Then
 $$
@@ -184,13 +184,13 @@ Over $\mathbb{R}$, $p$ might have no real roots, and the argument breaks. Rotati
 
 So each $E_j$ has a basis of eigenvectors of $T|_{E_j}$. Each of these vectors is also an eigenvector of $S$, with eigenvalue $\lambda_j$. Joining these bases over $j$ gives a basis of $V$ of common eigenvectors.
 
-**22.** Suppose $T$ is upper triangular with respect to the basis $v_1,\dots,v_n$. Equivalently, $Tv_k\in\operatorname{span}(v_1,\dots,v_k)$ for each $k$, i.e. each $U_k=\operatorname{span}(v_1,\dots,v_k)$ is $T$-invariant.
+**22.** Suppose $T$ is upper triangular with respect to the basis $v_1,\dots,v_n$. Equivalently, $Tv_k\in\mathrm{span}(v_1,\dots,v_k)$ for each $k$, i.e. each $U_k=\mathrm{span}(v_1,\dots,v_k)$ is $T$-invariant.
 
-Apply Gram–Schmidt to $v_1,\dots,v_n$ to get an orthonormal basis $e_1,\dots,e_n$ with $\operatorname{span}(e_1,\dots,e_k)=U_k$ for every $k$. Then $Te_k\in T(U_k)\subseteq U_k=\operatorname{span}(e_1,\dots,e_k)$. So the matrix of $T$ with respect to $e_1,\dots,e_n$ is upper triangular.
+Apply Gram–Schmidt to $v_1,\dots,v_n$ to get an orthonormal basis $e_1,\dots,e_n$ with $\mathrm{span}(e_1,\dots,e_k)=U_k$ for every $k$. Then $Te_k\in T(U_k)\subseteq U_k=\mathrm{span}(e_1,\dots,e_k)$. So the matrix of $T$ with respect to $e_1,\dots,e_n$ is upper triangular.
 
-(The assumption holds over $\mathbb{C}$. By induction using Problem 20: take an eigenvector $v_1$, then apply the induction hypothesis to the operator that $T$ induces on $V/\operatorname{span}(v_1)$.)
+(The assumption holds over $\mathbb{C}$. By induction using Problem 20: take an eigenvector $v_1$, then apply the induction hypothesis to the operator that $T$ induces on $V/\mathrm{span}(v_1)$.)
 
-**23.** (a) Write $N=\bigoplus_iJ_{k_i}(0)$. A Jordan block $J_k(0)$ has $J_k(0)^{k-1}\neq0$ and $J_k(0)^k=0$. So $N^r=0$ iff $r\ge\max k_i$, and $m_N=z^{\max k_i}$. Each block has a 1-dimensional null space, spanned by its first basis vector, so $\dim\operatorname{null}N$ is the number of blocks.
+**23.** (a) Write $N=\bigoplus_iJ_{k_i}(0)$. A Jordan block $J_k(0)$ has $J_k(0)^{k-1}\neq0$ and $J_k(0)^k=0$. So $N^r=0$ iff $r\ge\max k_i$, and $m_N=z^{\max k_i}$. Each block has a 1-dimensional null space, spanned by its first basis vector, so $\dim\mathrm{null}\,N$ is the number of blocks.
 
 (b) Take
 $$
@@ -198,11 +198,11 @@ N_1=J_3(0)\oplus J_3(0)\oplus J_1(0),\qquad N_2=J_3(0)\oplus J_2(0)\oplus J_2(0)
 $$
 Both are $7\times7$ with minimal polynomial $z^3$ and nullity $3$, since each has 3 blocks.
 
-They are not similar. If $N_2=PN_1P^{-1}$, then $N_2^2=PN_1^2P^{-1}$, so $\operatorname{rank}N_1^2=\operatorname{rank}N_2^2$. But $J_3(0)^2$ has rank 1 and $J_2(0)^2=J_1(0)^2=0$. So $\operatorname{rank}N_1^2=1+1+0=2$, while $\operatorname{rank}N_2^2=1+0+0=1$. Contradiction.
+They are not similar. If $N_2=PN_1P^{-1}$, then $N_2^2=PN_1^2P^{-1}$, so $\mathrm{rank}\,N_1^2=\mathrm{rank}\,N_2^2$. But $J_3(0)^2$ has rank 1 and $J_2(0)^2=J_1(0)^2=0$. So $\mathrm{rank}\,N_1^2=1+1+0=2$, while $\mathrm{rank}\,N_2^2=1+0+0=1$. Contradiction.
 
 In general, the ranks of all the powers $N^k$ determine the partition. Minimal polynomial and nullity record only the largest part and the number of parts.
 
-**24.** (a) $\operatorname{tr}(AB)=\sum_i\sum_jA_{ij}B_{ji}=\sum_j\sum_iB_{ji}A_{ij}=\operatorname{tr}(BA)$. So $\operatorname{tr}(AB-BA)=0$. But $\operatorname{tr}I_n=n\neq0$ in $\mathbb{R}$, so $AB-BA=I$ is impossible. The same argument works over any field in which $n\neq0$, in particular any field of characteristic $0$.
+**24.** (a) $\mathrm{tr}(AB)=\sum_i\sum_jA_{ij}B_{ji}=\sum_j\sum_iB_{ji}A_{ij}=\mathrm{tr}(BA)$. So $\mathrm{tr}(AB-BA)=0$. But $\mathrm{tr}\,I_n=n\neq0$ in $\mathbb{R}$, so $AB-BA=I$ is impossible. The same argument works over any field in which $n\neq0$, in particular any field of characteristic $0$.
 
 (b) *Well defined:* $X$ maps the ideal $(x^p)$ into itself. For $D$, $D(x^pg)=px^{p-1}g+x^pg'=x^pg'$, because $p=0$ in $\mathbb{F}_p$. So $D$ also maps $(x^p)$ into itself, and both induce linear maps on the quotient $V$.
 
@@ -212,4 +212,4 @@ $$
 $$
 So $DX-XD=I$ on $V$, which has dimension $p$.
 
-*No contradiction:* $\operatorname{tr}I_p=p=0$ in $\mathbb{F}_p$, so the trace argument in (a) gives no obstruction. The argument in (a) needs $n\neq0$ in the field.
+*No contradiction:* $\mathrm{tr}\,I_p=p=0$ in $\mathbb{F}_p$, so the trace argument in (a) gives no obstruction. The argument in (a) needs $n\neq0$ in the field.

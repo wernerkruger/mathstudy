@@ -53,14 +53,14 @@ The residual $r=x^2-x+\frac16$ is orthogonal to $g$, so $\lVert r\rVert^2=\langl
 
 ### 7.
 
-(a) Take $x_0\notin M$ and let $d=\operatorname{dist}(x_0,M)$; $d>0$ because $M$ is closed. Since $d/\theta>d$, there is $m_0\in M$ with $\lVert x_0-m_0\rVert<d/\theta$. Put $x=\frac{x_0-m_0}{\lVert x_0-m_0\rVert}$. For any $m\in M$, $m_0+\lVert x_0-m_0\rVert m\in M$, so
+(a) Take $x_0\notin M$ and let $d=\mathrm{dist}(x_0,M)$; $d>0$ because $M$ is closed. Since $d/\theta>d$, there is $m_0\in M$ with $\lVert x_0-m_0\rVert<d/\theta$. Put $x=\frac{x_0-m_0}{\lVert x_0-m_0\rVert}$. For any $m\in M$, $m_0+\lVert x_0-m_0\rVert m\in M$, so
 $$
 \lVert x-m\rVert=\frac{\lVert x_0-(m_0+\lVert x_0-m_0\rVert m)\rVert}{\lVert x_0-m_0\rVert}\ge\frac{d}{\lVert x_0-m_0\rVert}>\theta .
 $$
 
 (b) If $\dim X=d<\infty$, choosing a basis gives a linear bijection $\mathbb{F}^d\to X$ which is a homeomorphism (equivalence of norms); the closed unit ball is closed and bounded in $\mathbb{F}^d$-coordinates, hence compact by Heine–Borel.
 
-If $X$ is infinite-dimensional, build unit vectors inductively: given $x_1,\dots,x_{n-1}$, the span $M_{n-1}$ is finite-dimensional, hence closed, and proper. By (a) with $\theta=\frac12$ choose a unit $x_n$ with $\operatorname{dist}(x_n,M_{n-1})\ge\frac12$. Then $\lVert x_n-x_m\rVert\ge\frac12$ for $m<n$, so $(x_n)$ has no Cauchy subsequence, and the unit ball is not (sequentially) compact.
+If $X$ is infinite-dimensional, build unit vectors inductively: given $x_1,\dots,x_{n-1}$, the span $M_{n-1}$ is finite-dimensional, hence closed, and proper. By (a) with $\theta=\frac12$ choose a unit $x_n$ with $\mathrm{dist}(x_n,M_{n-1})\ge\frac12$. Then $\lVert x_n-x_m\rVert\ge\frac12$ for $m<n$, so $(x_n)$ has no Cauchy subsequence, and the unit ball is not (sequentially) compact.
 
 ### 8.
 
@@ -94,7 +94,7 @@ So $z-Tx\perp H$, i.e. $z=Tx$. The graph is closed, so $T$ is bounded.
 
 ### 12.
 
-For $N\ge1$ define $\varphi_N\in c_0^*$ by $\varphi_N(b)=\sum_{n\le N}a_nb_n$. Then $\lvert\varphi_N(b)\rvert\le\left(\sum_{n\le N}\lvert a_n\rvert\right)\lVert b\rVert_\infty$, and choosing $b_n=\overline{\operatorname{sgn}a_n}$ for $n\le N$ and $b_n=0$ for $n>N$ (a finitely supported sequence, so in $c_0$, with $\lVert b\rVert_\infty\le1$) shows $\lVert\varphi_N\rVert=\sum_{n\le N}\lvert a_n\rvert$. (Here $\operatorname{sgn}z=z/\lvert z\rvert$ for $z\neq0$ and $0$ otherwise.)
+For $N\ge1$ define $\varphi_N\in c_0^*$ by $\varphi_N(b)=\sum_{n\le N}a_nb_n$. Then $\lvert\varphi_N(b)\rvert\le\left(\sum_{n\le N}\lvert a_n\rvert\right)\lVert b\rVert_\infty$, and choosing $b_n=\overline{\mathrm{sgn}\,a_n}$ for $n\le N$ and $b_n=0$ for $n>N$ (a finitely supported sequence, so in $c_0$, with $\lVert b\rVert_\infty\le1$) shows $\lVert\varphi_N\rVert=\sum_{n\le N}\lvert a_n\rvert$. (Here $\mathrm{sgn}\,z=z/\lvert z\rvert$ for $z\neq0$ and $0$ otherwise.)
 
 For each fixed $b\in c_0$, $\varphi_N(b)$ converges as $N\to\infty$ by hypothesis, so $\sup_N\lvert\varphi_N(b)\rvert<\infty$. Since $c_0$ is a Banach space (Problem 1), the uniform boundedness principle gives $\sup_N\lVert\varphi_N\rVert<\infty$, that is, $\sum_n\lvert a_n\rvert<\infty$.
 
@@ -110,7 +110,7 @@ Let $\lVert x_n\rVert\le C$. Let $M$ be the closed linear span of $\lbrace x_n\r
 
 ### 14.
 
-*Weak closure of $S$ is contained in $B$.* $B=\bigcap_{\lVert z\rVert\le1}\lbrace x:\operatorname{Re}\langle x,z\rangle\le1\rbrace$ (because $\lVert x\rVert=\sup_{\lVert z\rVert\le1}\operatorname{Re}\langle x,z\rangle$). Each set in the intersection is weakly closed (preimage of a closed set under a weakly continuous map), so $B$ is weakly closed and contains $S$.
+*Weak closure of $S$ is contained in $B$.* $B=\bigcap_{\lVert z\rVert\le1}\lbrace x:\mathrm{Re}\,\langle x,z\rangle\le1\rbrace$ (because $\lVert x\rVert=\sup_{\lVert z\rVert\le1}\mathrm{Re}\,\langle x,z\rangle$). Each set in the intersection is weakly closed (preimage of a closed set under a weakly continuous map), so $B$ is weakly closed and contains $S$.
 
 *$B$ is contained in the weak closure of $S$.* Points of $S$ are trivially in it. Let $\lVert x\rVert<1$. The subspace $\lbrace x\rbrace^\perp$ is infinite-dimensional (it has codimension at most $1$ in an infinite-dimensional space), so it contains an orthonormal sequence $(e_n)$. Put $t=\sqrt{1-\lVert x\rVert^2}>0$ and $y_n=x+te_n$. By Pythagoras $\lVert y_n\rVert^2=\lVert x\rVert^2+t^2=1$, so $y_n\in S$. By Problem 6(b), $y_n\rightharpoonup x$. A weak limit of a sequence in $S$ lies in the weak closure of $S$ (every weak neighbourhood of $x$ contains $y_n$ for large $n$). So $x\in\overline{S}^{w}$.
 
@@ -154,15 +154,15 @@ $$
 $$
 Each eigenspace is one-dimensional (the ODE solution is unique up to scaling). Normalisation: $\int_0^1\sin^2(\omega x)\,dx=\frac12-\frac{\sin2\omega}{4\omega}=\frac12$ since $\sin2\omega=\sin((2n-1)\pi)=0$.
 
-*Basis.* By the spectral theorem, $L^2[0,1]=\ker K\oplus\overline{\operatorname{span}}\lbrace f_n\rbrace=\overline{\operatorname{span}}\lbrace f_n\rbrace$. Eigenvectors of a self-adjoint operator for distinct eigenvalues are orthogonal. So $\lbrace f_n\rbrace$ is an orthonormal basis.
+*Basis.* By the spectral theorem, $L^2[0,1]=\ker K\oplus\overline{\mathrm{span}}\lbrace f_n\rbrace=\overline{\mathrm{span}}\lbrace f_n\rbrace$. Eigenvectors of a self-adjoint operator for distinct eigenvalues are orthogonal. So $\lbrace f_n\rbrace$ is an orthonormal basis.
 
 (Check: the trace $\sum\lambda_n=\frac4{\pi^2}\sum_{n\ge1}\frac1{(2n-1)^2}=\frac4{\pi^2}\cdot\frac{\pi^2}8=\frac12$ equals $\int_0^1k(x,x)\,dx=\int_0^1x\,dx=\frac12$.)
 
 ### 18.
 
-$y\in\ker T^*\iff T^*y=0\iff\langle x,T^*y\rangle=0\ \forall x\iff\langle Tx,y\rangle=0\ \forall x\iff y\in(\operatorname{ran}T)^\perp$.
+$y\in\ker T^*\iff T^*y=0\iff\langle x,T^*y\rangle=0\ \forall x\iff\langle Tx,y\rangle=0\ \forall x\iff y\in(\mathrm{ran}\,T)^\perp$.
 
-For the second identity, take orthogonal complements: $(\ker T^*)^\perp=(\operatorname{ran}T)^{\perp\perp}=\overline{\operatorname{ran}T}$, using $S^{\perp\perp}=\overline S$ for a subspace $S$ (which follows from $H=\overline S\oplus\overline S^\perp$ and $S^\perp=\overline S^\perp$).
+For the second identity, take orthogonal complements: $(\ker T^*)^\perp=(\mathrm{ran}\,T)^{\perp\perp}=\overline{\mathrm{ran}\,T}$, using $S^{\perp\perp}=\overline S$ for a subspace $S$ (which follows from $H=\overline S\oplus\overline S^\perp$ and $S^\perp=\overline S^\perp$).
 
 ---
 
@@ -178,7 +178,7 @@ Let $N=\ker T$.
 
 *Claim: $(u_n)$ is bounded.* If not, pass to a subsequence with $\lVert u_n\rVert\to\infty$ and set $v_n=u_n/\lVert u_n\rVert\in N^\perp$. Then $Tv_n\to0$. By compactness a further subsequence has $Kv_n\to w$. Then $v_n=Tv_n+Kv_n\to w$, so $\lVert w\rVert=1$, $w\in N^\perp$ (closed), and $Tw=\lim Tv_n=0$, i.e. $w\in N$. So $w\in N\cap N^\perp=\lbrace0\rbrace$, contradicting $\lVert w\rVert=1$.
 
-Now $(u_n)$ is bounded, so a subsequence has $Ku_n\to z$. Then $u_n=Tu_n+Ku_n\to f+z=:u$, and $Tu=\lim Tu_n=f$. So $f\in\operatorname{ran}T$, and the range is closed.
+Now $(u_n)$ is bounded, so a subsequence has $Ku_n\to z$. Then $u_n=Tu_n+Ku_n\to f+z=:u$, and $Tu=\lim Tu_n=f$. So $f\in\mathrm{ran}\,T$, and the range is closed.
 
 (b) Suppose $T$ is injective but not surjective. Let $H_n=T^nH$. Note $T^n=(I-K)^n=I-K_n$ where $K_n$ is compact (expand by the binomial theorem; every term except $I$ contains $K$). By (a) applied to $K_n$, each $H_n$ is closed. Clearly $H_0\supseteq H_1\supseteq H_2\supseteq\cdots$. The inclusions are strict: $H_1\neq H_0$ by assumption, and if $H_{n+1}=H_n$ for some $n\ge1$, then for any $x$ we have $T^nx=T^{n+1}y$ for some $y$, so by injectivity of $T^n$, $x=Ty$, i.e. $T$ is onto, a contradiction.
 
@@ -190,11 +190,11 @@ Here $Tx_n\in H_{n+1}$, $x_m\in H_m\subseteq H_{n+1}$ and $Tx_m\in H_{m+1}\subse
 
 ### 20.
 
-*Bounded below.* By Cauchy–Schwarz, $c\lVert x\rVert^2\le\operatorname{Re}\langle Tx,x\rangle\le\lVert Tx\rVert\lVert x\rVert$, so $\lVert Tx\rVert\ge c\lVert x\rVert$. In particular $T$ is injective.
+*Bounded below.* By Cauchy–Schwarz, $c\lVert x\rVert^2\le\mathrm{Re}\,\langle Tx,x\rangle\le\lVert Tx\rVert\lVert x\rVert$, so $\lVert Tx\rVert\ge c\lVert x\rVert$. In particular $T$ is injective.
 
 *Closed range.* If $Tx_n\to y$, then $\lVert x_n-x_m\rVert\le c^{-1}\lVert Tx_n-Tx_m\rVert$, so $(x_n)$ is Cauchy, $x_n\to x$, and $Tx=y$.
 
-*Dense range.* If $y\perp\operatorname{ran}T$ then $0=\operatorname{Re}\langle Ty,y\rangle\ge c\lVert y\rVert^2$, so $y=0$. Thus $(\operatorname{ran}T)^\perp=0$ and the range is dense.
+*Dense range.* If $y\perp\mathrm{ran}\,T$ then $0=\mathrm{Re}\,\langle Ty,y\rangle\ge c\lVert y\rVert^2$, so $y=0$. Thus $(\mathrm{ran}\,T)^\perp=0$ and the range is dense.
 
 So $T$ is a bijection. For $y=Tx$, $\lVert T^{-1}y\rVert=\lVert x\rVert\le c^{-1}\lVert Tx\rVert=c^{-1}\lVert y\rVert$, so $\lVert T^{-1}\rVert\le1/c$.
 
@@ -220,7 +220,7 @@ Recall the fact from Problem 8(b): if $Y^*$ is separable then $Y$ is separable. 
 
 ### 23.
 
-Write $R=\operatorname{ran}P$ and $N=\ker P$. Since $P^2=P$, every $x$ decomposes as $x=Px+(x-Px)$ with $Px\in R$ and $x-Px\in N$, and $Pu=u$ for $u\in R$. Also $\lVert P\rVert\ge1$: pick $u\in R$, $u\neq0$ (possible as $P\neq0$); then $Pu=u$.
+Write $R=\mathrm{ran}\,P$ and $N=\ker P$. Since $P^2=P$, every $x$ decomposes as $x=Px+(x-Px)$ with $Px\in R$ and $x-Px\in N$, and $Pu=u$ for $u\in R$. Also $\lVert P\rVert\ge1$: pick $u\in R$, $u\neq0$ (possible as $P\neq0$); then $Pu=u$.
 
 *(i) ⇒ (ii).* For $x,y\in H$: $\langle Px,y\rangle=\langle Px,Py+(y-Py)\rangle=\langle Px,Py\rangle$ because $Px\in R\perp N\ni y-Py$. Similarly $\langle x,Py\rangle=\langle Px,Py\rangle$. So $P=P^*$.
 
@@ -230,6 +230,6 @@ Write $R=\operatorname{ran}P$ and $N=\ker P$. Since $P^2=P$, every $x$ decompose
 
 *(iii) ⇒ (i).* Let $u\in R$, $v\in N$ and $t\in\mathbb{R}$. Then $P(u+tv)=u$, so $\lVert u\rVert\le\lVert u+tv\rVert$, i.e.
 $$
-0\le2t\operatorname{Re}\langle u,v\rangle+t^2\lVert v\rVert^2\quad\text{for all }t\in\mathbb{R}.
+0\le2t\mathrm{Re}\,\langle u,v\rangle+t^2\lVert v\rVert^2\quad\text{for all }t\in\mathbb{R}.
 $$
-Dividing by $t$ and letting $t\to0^+$ and $t\to0^-$ gives $\operatorname{Re}\langle u,v\rangle=0$. Replacing $v$ by $iv\in N$ gives $\operatorname{Im}\langle u,v\rangle=0$. So $u\perp v$.
+Dividing by $t$ and letting $t\to0^+$ and $t\to0^-$ gives $\mathrm{Re}\,\langle u,v\rangle=0$. Replacing $v$ by $iv\in N$ gives $\mathrm{Im}\,\langle u,v\rangle=0$. So $u\perp v$.

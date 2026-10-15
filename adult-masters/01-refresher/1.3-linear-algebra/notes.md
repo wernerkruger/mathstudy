@@ -30,7 +30,7 @@ $$
 
 A list $v_1,\dots,v_m$ is *linearly independent* if $\sum a_iv_i=0$ implies all $a_i=0$. It *spans* $V$ if every vector is a linear combination of the list. A *basis* is a linearly independent spanning list. Equivalently, every $v\in V$ is uniquely $\sum a_iv_i$.
 
-**Linear dependence lemma.** If $v_1,\dots,v_m$ is dependent, then some $v_k$ lies in $\operatorname{span}(v_1,\dots,v_{k-1})$, and removing it does not change the span.
+**Linear dependence lemma.** If $v_1,\dots,v_m$ is dependent, then some $v_k$ lies in $\mathrm{span}(v_1,\dots,v_{k-1})$, and removing it does not change the span.
 
 **Steinitz exchange lemma.** In a f.d. space, the length of every linearly independent list is at most the length of every spanning list.
 
@@ -60,15 +60,15 @@ $T:V\to W$ is *linear* if $T(au+bv)=aTu+bTv$. The set $\mathcal{L}(V,W)$ of line
 
 **Key fact.** A linear map is determined by its values on a basis, and those values can be chosen freely. If $v_1..v_n$ is a basis of $V$ and $w_1..w_n\in W$ are arbitrary, there is a unique linear $T$ with $Tv_i=w_i$.
 
-The *null space* (kernel) is $\operatorname{null}T=\lbrace v: Tv=0\rbrace$, and the *range* (image) is $\operatorname{range}T$. Both are subspaces. $T$ is injective iff $\operatorname{null}T=\lbrace 0\rbrace$.
+The *null space* (kernel) is $\mathrm{null}\,T=\lbrace v: Tv=0\rbrace$, and the *range* (image) is $\mathrm{range}\,T$. Both are subspaces. $T$ is injective iff $\mathrm{null}\,T=\lbrace 0\rbrace$.
 
-**Rank–nullity (Fundamental Theorem of Linear Maps).** If $V$ is f.d. and $T\in\mathcal{L}(V,W)$, then $\operatorname{range}T$ is f.d. and
+**Rank–nullity (Fundamental Theorem of Linear Maps).** If $V$ is f.d. and $T\in\mathcal{L}(V,W)$, then $\mathrm{range}\,T$ is f.d. and
 
 $$
-\dim V=\dim\operatorname{null}T+\dim\operatorname{range}T.
+\dim V=\dim\mathrm{null}\,T+\dim\mathrm{range}\,T.
 $$
 
-*Proof.* Take a basis $u_1..u_k$ of $\operatorname{null}T$ and extend it to a basis $u, v_1..v_r$ of $V$. Then $Tv_1..Tv_r$ spans $\operatorname{range}T$, because the $Tu_i$ are $0$. They are also independent: if $\sum b_jTv_j=0$, then $\sum b_jv_j\in\operatorname{null}T$, so $\sum b_j v_j=\sum a_iu_i$, and independence of $u, v$ gives $b=0$. $\square$
+*Proof.* Take a basis $u_1..u_k$ of $\mathrm{null}\,T$ and extend it to a basis $u, v_1..v_r$ of $V$. Then $Tv_1..Tv_r$ spans $\mathrm{range}\,T$, because the $Tu_i$ are $0$. They are also independent: if $\sum b_jTv_j=0$, then $\sum b_jv_j\in\mathrm{null}\,T$, so $\sum b_j v_j=\sum a_iu_i$, and independence of $u, v$ gives $b=0$. $\square$
 
 **Corollaries.**
 - If $\dim V>\dim W$, no $T\in\mathcal{L}(V,W)$ is injective. If $\dim V<\dim W$, none is surjective.
@@ -99,7 +99,7 @@ Matrices related in this way are *similar*. Similar matrices represent the same 
 
 **Pitfall.** Mixing up $P$ and $P^{-1}$ is the most common computational error. Check your formula on one basis vector: $P$ takes $\mathcal{B}'$-coordinates to $\mathcal{B}$-coordinates.
 
-**Rank.** The rank of $T$ is $\dim\operatorname{range}T$, which is the column rank of any matrix representing $T$. Row rank equals column rank; see Section 6.
+**Rank.** The rank of $T$ is $\dim\mathrm{range}\,T$, which is the column rank of any matrix representing $T$. Row rank equals column rank; see Section 6.
 
 ---
 
@@ -117,7 +117,7 @@ $$
 \dim V/U=\dim V-\dim U.
 $$
 
-**First isomorphism theorem.** For $T\in\mathcal{L}(V,W)$, the map $\tilde T: V/\operatorname{null}T\to\operatorname{range}T$, $\tilde T(v+\operatorname{null}T)=Tv$, is a well-defined isomorphism.
+**First isomorphism theorem.** For $T\in\mathcal{L}(V,W)$, the map $\tilde T: V/\mathrm{null}\,T\to\mathrm{range}\,T$, $\tilde T(v+\mathrm{null}\,T)=Tv$, is a well-defined isomorphism.
 
 **Why quotients matter.** In f.d. linear algebra, $V/U$ is isomorphic to any complement of $U$, so quotients can look unnecessary. They become essential when there is no natural complement: quotient groups and rings (1.4), $L^p$ spaces as functions modulo "equal almost everywhere" (3.1), quotient Banach spaces (3.2), and homology as cycles modulo boundaries (3.4).
 
@@ -140,10 +140,10 @@ The *dual space* is $V'=\mathcal{L}(V,\mathbb{F})$. Its elements are *linear fun
 **Key identities** (f.d.):
 
 $$
-\operatorname{null}T'=(\operatorname{range}T)^0,\qquad \operatorname{range}T'=(\operatorname{null}T)^0,\qquad \dim\operatorname{range}T'=\dim\operatorname{range}T.
+\mathrm{null}\,T'=(\mathrm{range}\,T)^0,\qquad \mathrm{range}\,T'=(\mathrm{null}\,T)^0,\qquad \dim\mathrm{range}\,T'=\dim\mathrm{range}\,T.
 $$
 
-*Proof of the last.* $\dim\operatorname{range}T' = \dim W' - \dim\operatorname{null}T' = \dim W - \dim(\operatorname{range}T)^0 = \dim\operatorname{range}T$. $\square$
+*Proof of the last.* $\dim\mathrm{range}\,T' = \dim W' - \dim\mathrm{null}\,T' = \dim W - \dim(\mathrm{range}\,T)^0 = \dim\mathrm{range}\,T$. $\square$
 
 **Corollary (row rank = column rank).** The column rank of $A^t$ is the rank of $T'$, which equals the rank of $T$, which is the column rank of $A$.
 
@@ -160,7 +160,7 @@ $$
 **Leibniz formula.**
 
 $$
-\det A=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{i=1}^n A_{\sigma(i),i}.
+\det A=\sum_{\sigma\in S_n}\mathrm{sgn}(\sigma)\prod_{i=1}^n A_{\sigma(i),i}.
 $$
 
 **Properties.**
@@ -180,11 +180,11 @@ $$
 
 ## 8. Eigenvalues, the minimal polynomial and diagonalisation
 
-**Definitions.** A subspace $U$ is *$T$-invariant* if $T(U)\subseteq U$. A scalar $\lambda$ is an *eigenvalue* if $Tv=\lambda v$ for some $v\neq0$; such $v$ is an *eigenvector*. The *eigenspace* is $E(\lambda,T)=\operatorname{null}(T-\lambda I)$.
+**Definitions.** A subspace $U$ is *$T$-invariant* if $T(U)\subseteq U$. A scalar $\lambda$ is an *eigenvalue* if $Tv=\lambda v$ for some $v\neq0$; such $v$ is an *eigenvector*. The *eigenspace* is $E(\lambda,T)=\mathrm{null}(T-\lambda I)$.
 
 **Proposition.** Eigenvectors with distinct eigenvalues are linearly independent. Hence an operator on an $n$-dimensional space has at most $n$ distinct eigenvalues.
 
-*Proof.* Suppose not, and take the smallest $k$ such that $v_k\in\operatorname{span}(v_1..v_{k-1})$, by the dependence lemma. Write $v_k=\sum_{i<k}a_iv_i$. Apply $T-\lambda_kI$: $0=\sum_{i<k}a_i(\lambda_i-\lambda_k)v_i$. Since $v_1..v_{k-1}$ is independent and $\lambda_i\neq\lambda_k$, all $a_i=0$, so $v_k=0$. That is a contradiction. $\square$
+*Proof.* Suppose not, and take the smallest $k$ such that $v_k\in\mathrm{span}(v_1..v_{k-1})$, by the dependence lemma. Write $v_k=\sum_{i<k}a_iv_i$. Apply $T-\lambda_kI$: $0=\sum_{i<k}a_i(\lambda_i-\lambda_k)v_i$. Since $v_1..v_{k-1}$ is independent and $\lambda_i\neq\lambda_k$, all $a_i=0$, so $v_k=0$. That is a contradiction. $\square$
 
 **Existence of eigenvalues (Axler, no determinants).** Every operator on a f.d. *complex* vector space $V\neq\lbrace 0\rbrace$ has an eigenvalue.
 
@@ -209,7 +209,7 @@ Over $\mathbb{R}$, rotation by $90°$ in $\mathbb{R}^2$ has no eigenvalue. Every
 *Proof of (4)⇒(2), the important direction.* Induct on $\dim V$, or use Lagrange interpolation. Let $p_j(z)=\prod_{i\neq j}(z-\lambda_i)/(\lambda_j-\lambda_i)$. Then $\sum_jp_j=1$, because the left side has degree $<m$ and equals $1$ at the $m$ points $\lambda_1,\dots,\lambda_m$. So $v=\sum_jp_j(T)v$ for every $v$. Each $p_j(T)v$ lies in $E(\lambda_j,T)$, because $(T-\lambda_j I)p_j(T)$ is a scalar multiple of $m_T(T)=0$. So the eigenspaces span $V$, and the sum is direct by the independence proposition. $\square$
 
 **Useful consequences.**
-- If $p(T)=0$ for some $p$ with distinct roots, all in $\mathbb{F}$, then $T$ is diagonalisable. Examples: projections ($T^2=T$), involutions ($T^2=I$, when $\operatorname{char}\mathbb{F}\neq2$), and $T^k=I$ over $\mathbb{C}$.
+- If $p(T)=0$ for some $p$ with distinct roots, all in $\mathbb{F}$, then $T$ is diagonalisable. Examples: projections ($T^2=T$), involutions ($T^2=I$, when $\mathrm{char}\,\mathbb{F}\neq2$), and $T^k=I$ over $\mathbb{C}$.
 - The restriction of a diagonalisable operator to an invariant subspace is diagonalisable, because its minimal polynomial divides $m_T$.
 - Commuting diagonalisable operators are *simultaneously* diagonalisable.
 
@@ -221,7 +221,7 @@ Over $\mathbb{R}$, rotation by $90°$ in $\mathbb{R}^2$ has no eigenvalue. Every
 
 Now $\mathbb{F}=\mathbb{R}$ or $\mathbb{C}$. An *inner product* is a map $\langle\cdot,\cdot\rangle:V\times V\to\mathbb{F}$ that is linear in the first slot, conjugate-symmetric ($\langle u,v\rangle=\overline{\langle v,u\rangle}$), and positive definite. Set $\|v\|=\sqrt{\langle v,v\rangle}$.
 
-**Examples.** The dot product on $\mathbb{F}^n$; $\langle f,g\rangle=\int_a^bf\bar g$ on $C[a,b]$; $\langle A,B\rangle=\operatorname{tr}(AB^*)$ on matrices.
+**Examples.** The dot product on $\mathbb{F}^n$; $\langle f,g\rangle=\int_a^bf\bar g$ on $C[a,b]$; $\langle A,B\rangle=\mathrm{tr}(AB^*)$ on matrices.
 
 **Pythagoras.** If $u\perp v$, then $\|u+v\|^2=\|u\|^2+\|v\|^2$.
 
@@ -239,7 +239,7 @@ $$
 f_k=v_k-\sum_{j<k}\langle v_k,e_j\rangle e_j,\qquad e_k=f_k/\|f_k\|.
 $$
 
-Then $e_1..e_m$ is orthonormal and $\operatorname{span}(e_1..e_k)=\operatorname{span}(v_1..v_k)$ for each $k$. Hence every f.d. inner product space has an orthonormal basis. Combined with upper-triangular form, this gives **Schur's theorem**: over $\mathbb{C}$, every operator is upper triangular with respect to some *orthonormal* basis.
+Then $e_1..e_m$ is orthonormal and $\mathrm{span}(e_1..e_k)=\mathrm{span}(v_1..v_k)$ for each $k$. Hence every f.d. inner product space has an orthonormal basis. Combined with upper-triangular form, this gives **Schur's theorem**: over $\mathbb{C}$, every operator is upper triangular with respect to some *orthonormal* basis.
 
 **Orthogonal complement and projection.** $U^\perp=\lbrace v:\langle v,u\rangle=0\ \forall u\in U\rbrace$. For f.d. $U$, $V=U\oplus U^\perp$, and the orthogonal projection $P_U v=\sum\langle v,e_j\rangle e_j$ (for an orthonormal basis $e_j$ of $U$) is the **unique closest point** of $U$ to $v$:
 
@@ -267,7 +267,7 @@ $T\in\mathcal{L}(V)$ is *self-adjoint* if $T=T^*$, *normal* if $TT^*=T^*T$, and 
 
 **Real Spectral Theorem.** For $\mathbb{F}=\mathbb{R}$, $T$ is self-adjoint iff $V$ has an orthonormal basis of eigenvectors of $T$. In matrix terms, a real matrix $A$ is symmetric iff $A=QDQ^t$ with $Q$ orthogonal and $D$ diagonal.
 
-*Proof (⇒).* Induct on $\dim V$. Take an eigenvector $e_1$ of norm 1, which exists by the lemma. $U=\operatorname{span}(e_1)$ is invariant, so $U^\perp$ is invariant. $T|_{U^\perp}$ is self-adjoint, and induction gives an orthonormal eigenbasis of $U^\perp$. Add $e_1$ to it. (⇐) If $M(T)$ is diagonal and real in an orthonormal basis, it equals its own conjugate transpose. $\square$
+*Proof (⇒).* Induct on $\dim V$. Take an eigenvector $e_1$ of norm 1, which exists by the lemma. $U=\mathrm{span}(e_1)$ is invariant, so $U^\perp$ is invariant. $T|_{U^\perp}$ is self-adjoint, and induction gives an orthonormal eigenbasis of $U^\perp$. Add $e_1$ to it. (⇐) If $M(T)$ is diagonal and real in an orthonormal basis, it equals its own conjugate transpose. $\square$
 
 **Complex Spectral Theorem.** For $\mathbb{F}=\mathbb{C}$, $T$ is normal iff $V$ has an orthonormal basis of eigenvectors.
 
@@ -285,7 +285,7 @@ $T\in\mathcal{L}(V)$ is *self-adjoint* if $T=T^*$, *normal* if $TT^*=T^*T$, and 
 
 Not every operator is diagonalisable. Jordan form describes exactly how far it can fail.
 
-**Generalised eigenspaces.** $G(\lambda,T)=\operatorname{null}(T-\lambda I)^{\dim V}$. This is the set of $v$ with $(T-\lambda I)^kv=0$ for some $k$.
+**Generalised eigenspaces.** $G(\lambda,T)=\mathrm{null}(T-\lambda I)^{\dim V}$. This is the set of $v$ with $(T-\lambda I)^kv=0$ for some $k$.
 
 **Decomposition theorem.** If $\mathbb{F}=\mathbb{C}$, or more generally if $m_T$ splits, then
 
@@ -307,9 +307,9 @@ The multiset of blocks is unique; only their order can vary. Two complex matrice
 
 **Reading off the blocks.** For each eigenvalue $\lambda$:
 - the number of blocks $= \dim E(\lambda,T)$, the geometric multiplicity;
-- the sum of the block sizes $= $ the algebraic multiplicity;
+- the sum of the block sizes $=$ the algebraic multiplicity;
 - the size of the largest block $=$ the multiplicity of $\lambda$ as a root of $m_T$;
-- the number of blocks of size $\ge k$ equals $\dim\operatorname{null}(T-\lambda I)^k-\dim\operatorname{null}(T-\lambda I)^{k-1}$. This formula determines everything.
+- the number of blocks of size $\ge k$ equals $\dim\mathrm{null}(T-\lambda I)^k-\dim\mathrm{null}(T-\lambda I)^{k-1}$. This formula determines everything.
 
 **Uses.**
 - Powers: $J_k(\lambda)^n$ has $\binom{n}{j}\lambda^{n-j}$ on the $j$-th superdiagonal. This lets you compute $A^n$ and $e^{tA}$, and decide whether $A^n\to0$ (iff all $|\lambda|<1$).
@@ -322,7 +322,7 @@ The multiset of blocks is unique; only their order can vary. Two complex matrice
 
 ## 12. Trace
 
-$\operatorname{tr}A=\sum A_{ii}$ satisfies $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, so it is a similarity invariant. It equals the sum of the eigenvalues with algebraic multiplicity (over $\mathbb{C}$), and $\det$ equals their product. The coefficient of $z^{n-1}$ in $\chi_T$ is $-\operatorname{tr}T$.
+$\mathrm{tr}\,A=\sum A_{ii}$ satisfies $\mathrm{tr}(AB)=\mathrm{tr}(BA)$, so it is a similarity invariant. It equals the sum of the eigenvalues with algebraic multiplicity (over $\mathbb{C}$), and $\det$ equals their product. The coefficient of $z^{n-1}$ in $\chi_T$ is $-\mathrm{tr}\,T$.
 
 ---
 
@@ -334,7 +334,7 @@ $\operatorname{tr}A=\sum A_{ii}$ satisfies $\operatorname{tr}(AB)=\operatorname{
 4. Conjugate transpose = adjoint only in *orthonormal* bases.
 5. "Distinct eigenvalues ⇒ diagonalisable" is true. Its converse is false: the identity is diagonalisable with one eigenvalue.
 6. Over $\mathbb{R}$, an operator need not have eigenvalues. Over $\mathbb{C}$ it always does. Keep track of the field.
-7. Over a field of characteristic $p$, some identities fail. For example, $\operatorname{tr} I_p=0$, so $AB-BA=I$ becomes possible; see Problem 24.
+7. Over a field of characteristic $p$, some identities fail. For example, $\mathrm{tr}\, I_p=0$, so $AB-BA=I$ becomes possible; see Problem 24.
 
 ---
 
@@ -345,5 +345,5 @@ $\operatorname{tr}A=\sum A_{ii}$ satisfies $\operatorname{tr}(AB)=\operatorname{
 - **2.3 Abstract Algebra II:** field extensions are vector spaces over the base field. The degree $[L:K]$ is a dimension, and the tower law is a basis computation.
 - **3.2 Functional Analysis:** infinite-dimensional versions of dual spaces, adjoints, orthogonal projection and the spectral theorem.
 - **3.3 Graduate Algebra:** the Jordan and rational canonical forms both follow from the structure theorem for f.g. modules over a PID, applied to $V$ as an $\mathbb{F}[x]$-module via $x\cdot v=Tv$. That is the cleanest proof.
-- **3.4 Algebraic Topology:** homology groups are quotients $\ker\partial/\operatorname{im}\partial$. Over a field, rank–nullity gives the Euler characteristic formula.
+- **3.4 Algebraic Topology:** homology groups are quotients $\ker\partial/\mathrm{im}\,\partial$. Over a field, rank–nullity gives the Euler characteristic formula.
 - **3.5 Smooth Manifolds:** tangent spaces, dual (cotangent) spaces, alternating multilinear forms (differential forms), and determinants as top-degree forms.

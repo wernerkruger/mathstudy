@@ -139,17 +139,17 @@ $$
 
 **17.** (a) On $|x|=R$, the outward unit normal is $n=x/R$, so $F\cdot n=x\cdot x/R=R^2/R=R$ is constant. The flux is $R\cdot\text{Area}=R\cdot4\pi R^2=4\pi R^3$.
 
-(b) $\operatorname{div}F=1+1+1=3$. The flux is $\iiint_{|x|\le R}3\,dV=3\cdot\frac43\pi R^3=4\pi R^3$. The two answers agree.
+(b) $\mathrm{div}\,F=1+1+1=3$. The flux is $\iiint_{|x|\le R}3\,dV=3\cdot\frac43\pi R^3=4\pi R^3$. The two answers agree.
 
 **18.** *Line integral.* With the upward normal, the right-hand rule orients $\partial S$ (the unit circle in $z=0$) counter-clockwise when viewed from above: $r(t)=(\cos t,\sin t,0)$. Then $F(r(t))=(-\sin t,\cos t,0)$ and $F\cdot r'=\sin^2t+\cos^2t=1$. So $\oint_{\partial S}F\cdot dr=2\pi$.
 
-*Surface integral.* $\operatorname{curl}F=(0-0,\ 0-0,\ 1-(-1))=(0,0,2)$. On the unit sphere, $n=(x,y,z)$, so $\operatorname{curl}F\cdot n=2z=2\cos\varphi$. With $dS=\sin\varphi\,d\varphi\,d\theta$:
+*Surface integral.* $\mathrm{curl}\,F=(0-0,\ 0-0,\ 1-(-1))=(0,0,2)$. On the unit sphere, $n=(x,y,z)$, so $\mathrm{curl}\,F\cdot n=2z=2\cos\varphi$. With $dS=\sin\varphi\,d\varphi\,d\theta$:
 $$
 \iint_S2\cos\varphi\,dS=\int_0^{2\pi}\int_0^{\pi/2}2\cos\varphi\sin\varphi\,d\varphi\,d\theta=2\pi\cdot2\cdot\tfrac12=2\pi.
 $$
 Both sides equal $2\pi$. (Shortcut: the flux of $(0,0,2)$ through any surface with this boundary equals its flux through the flat unit disc, which is $2\cdot\pi$.)
 
-**19.** $\operatorname{div}F=3(x^2+y^2+z^2)=3\rho^2$. By the divergence theorem:
+**19.** $\mathrm{div}\,F=3(x^2+y^2+z^2)=3\rho^2$. By the divergence theorem:
 $$
 \iiint_{\rho\le1}3\rho^2\,dV=\int_0^{2\pi}\int_0^\pi\int_0^13\rho^4\sin\varphi\,d\rho\,d\varphi\,d\theta=3\cdot\tfrac15\cdot2\cdot2\pi=\frac{12\pi}{5}.
 $$
@@ -181,17 +181,17 @@ Also $f_y(0,0)=0$. So $\frac{\partial}{\partial x}f_y(0,0)=1$.
 
 The mixed partials are $-1\neq1$. This is consistent with (a), because the second partials of $f$ are not continuous at $0$.
 
-**21.** *At $I$.* By the Leibniz formula, $\det(I+H)=\sum_\sigma\operatorname{sgn}\sigma\prod_i(\delta_{\sigma(i)i}+H_{\sigma(i)i})$.
+**21.** *At $I$.* By the Leibniz formula, $\det(I+H)=\sum_\sigma\mathrm{sgn}\,\sigma\prod_i(\delta_{\sigma(i)i}+H_{\sigma(i)i})$.
 - The identity permutation contributes $\prod_i(1+H_{ii})=1+\sum_iH_{ii}+(\text{terms of degree}\ge2\text{ in the entries of }H)$.
 - Every other $\sigma$ moves at least two indices, so its product contains at least two off-diagonal entries of $H$. Its degree is at least 2.
 
-So $\det(I+H)=1+\operatorname{tr}H+R(H)$, where $R$ is a polynomial whose terms all have degree $\ge2$. Hence $|R(H)|\le C|H|^2$ for $|H|\le1$, and $|R(H)|/|H|\to0$. So $D\det(I)(H)=\operatorname{tr}H$.
+So $\det(I+H)=1+\mathrm{tr}\,H+R(H)$, where $R$ is a polynomial whose terms all have degree $\ge2$. Hence $|R(H)|\le C|H|^2$ for $|H|\le1$, and $|R(H)|/|H|\to0$. So $D\det(I)(H)=\mathrm{tr}\,H$.
 
-*At invertible $A$.* $\det(A+H)=\det A\cdot\det(I+A^{-1}H)=\det A\,\big(1+\operatorname{tr}(A^{-1}H)+R(A^{-1}H)\big)$. Since $|A^{-1}H|\le\|A^{-1}\|\,|H|$, the remainder is $O(|H|^2)$. So
+*At invertible $A$.* $\det(A+H)=\det A\cdot\det(I+A^{-1}H)=\det A\,\big(1+\mathrm{tr}(A^{-1}H)+R(A^{-1}H)\big)$. Since $|A^{-1}H|\le\|A^{-1}\|\,|H|$, the remainder is $O(|H|^2)$. So
 $$
-D\det(A)(H)=\det A\cdot\operatorname{tr}(A^{-1}H).
+D\det(A)(H)=\det A\cdot\mathrm{tr}(A^{-1}H).
 $$
-(Equivalently, $\operatorname{tr}(\operatorname{adj}(A)H)$, which extends to all $A$.)
+(Equivalently, $\mathrm{tr}(\mathrm{adj}(A)H)$, which extends to all $A$.)
 
 **22.** (a) $q(x)=\sum_{i,j}a_{ij}x_ix_j$, so
 $$
@@ -207,15 +207,15 @@ If $\mu$ is any real eigenvalue with unit eigenvector $v$, then $\mu=q(v)\le q(x
 
 **23.** (a) Let $r=|x|$, so $\partial_ir=x_i/r$. Then
 $$
-\partial_i\left(\frac{x_i}{r^3}\right)=\frac1{r^3}-\frac{3x_i^2}{r^5},\qquad\operatorname{div}F=\frac3{r^3}-\frac{3r^2}{r^5}=0\quad(x\neq0).
+\partial_i\left(\frac{x_i}{r^3}\right)=\frac1{r^3}-\frac{3x_i^2}{r^5},\qquad\mathrm{div}\,F=\frac3{r^3}-\frac{3r^2}{r^5}=0\quad(x\neq0).
 $$
 
 (b) On $|x|=R$, $n=x/R$, so $F\cdot n=\frac{x\cdot x}{R^3\cdot R}=\frac1{R^2}$. The flux is $\frac1{R^2}\cdot4\pi R^2=4\pi$, independent of $R$.
 
 (c) The divergence theorem on the ball $|x|\le R$ needs $F$ to be $C^1$ on the whole ball. $F$ is undefined at $0$, so the theorem does not apply, and there is no contradiction.
 
-Now let $S=\partial E$, where $E$ is a nice solid with $0$ in its interior. Choose $\varepsilon>0$ with $\overline{B_\varepsilon(0)}\subset\operatorname{int}E$. Let $E_\varepsilon=E\setminus B_\varepsilon(0)$. $F$ is $C^1$ on $E_\varepsilon$, whose boundary is $S$ (outward normal) together with the small sphere $|x|=\varepsilon$, whose outward normal for $E_\varepsilon$ points *towards* $0$. The divergence theorem on $E_\varepsilon$ gives
+Now let $S=\partial E$, where $E$ is a nice solid with $0$ in its interior. Choose $\varepsilon>0$ with $\overline{B_\varepsilon(0)}\subset\mathrm{int}\,E$. Let $E_\varepsilon=E\setminus B_\varepsilon(0)$. $F$ is $C^1$ on $E_\varepsilon$, whose boundary is $S$ (outward normal) together with the small sphere $|x|=\varepsilon$, whose outward normal for $E_\varepsilon$ points *towards* $0$. The divergence theorem on $E_\varepsilon$ gives
 $$
-0=\iiint_{E_\varepsilon}\operatorname{div}F\,dV=\iint_SF\cdot n\,dS-\iint_{|x|=\varepsilon}F\cdot\frac{x}{\varepsilon}\,dS=\iint_SF\cdot n\,dS-4\pi.
+0=\iiint_{E_\varepsilon}\mathrm{div}\,F\,dV=\iint_SF\cdot n\,dS-\iint_{|x|=\varepsilon}F\cdot\frac{x}{\varepsilon}\,dS=\iint_SF\cdot n\,dS-4\pi.
 $$
 So the flux through $S$ is $4\pi$. If instead $0\notin\overline E$, the flux is $0$. This is Gauss's law: up to constants, the flux counts the enclosed charge.

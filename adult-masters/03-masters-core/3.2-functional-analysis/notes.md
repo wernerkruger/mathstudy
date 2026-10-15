@@ -21,11 +21,11 @@ A *norm* satisfies $\lVert x\rVert=0\iff x=0$, $\lVert\lambda x\rVert=\lvert\lam
 
 **Finite dimensions.** All norms on a finite-dimensional space are equivalent (compare with the $\ell^1$ norm in a basis, and use compactness of its unit sphere). Consequences: finite-dimensional normed spaces are complete; finite-dimensional subspaces are closed; every linear map out of a finite-dimensional normed space is bounded.
 
-**Riesz's lemma.** If $M\subsetneq X$ is a closed proper subspace and $0<\theta<1$, there is $x$ with $\lVert x\rVert=1$ and $\operatorname{dist}(x,M)\ge\theta$.
+**Riesz's lemma.** If $M\subsetneq X$ is a closed proper subspace and $0<\theta<1$, there is $x$ with $\lVert x\rVert=1$ and $\mathrm{dist}(x,M)\ge\theta$.
 
-*Proof.* Take $x_0\notin M$, $d=\operatorname{dist}(x_0,M)>0$ (closedness), $m_0\in M$ with $\lVert x_0-m_0\rVert<d/\theta$. Put $x=(x_0-m_0)/\lVert x_0-m_0\rVert$. For $m\in M$, $\lVert x-m\rVert=\lVert x_0-(m_0+\lVert x_0-m_0\rVert m)\rVert/\lVert x_0-m_0\rVert\ge d/\lVert x_0-m_0\rVert>\theta$. $\square$
+*Proof.* Take $x_0\notin M$, $d=\mathrm{dist}(x_0,M)>0$ (closedness), $m_0\in M$ with $\lVert x_0-m_0\rVert<d/\theta$. Put $x=(x_0-m_0)/\lVert x_0-m_0\rVert$. For $m\in M$, $\lVert x-m\rVert=\lVert x_0-(m_0+\lVert x_0-m_0\rVert m)\rVert/\lVert x_0-m_0\rVert\ge d/\lVert x_0-m_0\rVert>\theta$. $\square$
 
-**Theorem.** The closed unit ball of $X$ is compact iff $\dim X<\infty$. (If infinite-dimensional, Riesz's lemma builds unit vectors $x_1,x_2,\dots$ with $\lVert x_n-x_m\rVert\ge\frac12$, using $M=\operatorname{span}\lbrace x_1,\dots,x_{n-1}\rbrace$.) This single fact is behind most differences between finite and infinite dimensions.
+**Theorem.** The closed unit ball of $X$ is compact iff $\dim X<\infty$. (If infinite-dimensional, Riesz's lemma builds unit vectors $x_1,x_2,\dots$ with $\lVert x_n-x_m\rVert\ge\frac12$, using $M=\mathrm{span}\,\lbrace x_1,\dots,x_{n-1}\rbrace$.) This single fact is behind most differences between finite and infinite dimensions.
 
 ---
 
@@ -49,7 +49,7 @@ $$
 $$
 A norm comes from an inner product iff it satisfies the parallelogram law (Jordan–von Neumann); the inner product is then recovered by **polarisation**, e.g. over $\mathbb{C}$, $\langle x,y\rangle=\frac14\sum_{k=0}^3i^k\lVert x+i^ky\rVert^2$ (inner product linear in the first slot). A complete inner product space is a *Hilbert space*. Examples: $\ell^2$, $L^2(\mu)$, Sobolev spaces $H^k$.
 
-**Projection theorem.** Let $C\subseteq H$ be non-empty, closed and convex. Each $x\in H$ has a unique closest point $P_Cx\in C$, characterised by $\operatorname{Re}\langle x-P_Cx,\,c-P_Cx\rangle\le0$ for all $c\in C$.
+**Projection theorem.** Let $C\subseteq H$ be non-empty, closed and convex. Each $x\in H$ has a unique closest point $P_Cx\in C$, characterised by $\mathrm{Re}\,\langle x-P_Cx,\,c-P_Cx\rangle\le0$ for all $c\in C$.
 
 *Proof.* Let $d=\inf_{c\in C}\lVert x-c\rVert$ and $c_n\in C$ with $\lVert x-c_n\rVert\to d$. By the parallelogram law applied to $x-c_n$ and $x-c_m$,
 $$
@@ -93,7 +93,7 @@ $$
 $$
 and the sup is at most the inf because $f(m)+f(m')=f(m+m')\le p(m+m')\le p(m-x_0)+p(m'+x_0)$. *Transfinite step:* apply Zorn's lemma to the poset of dominated extensions; a maximal one must be defined on all of $X$ by the one-dimensional step. $\square$
 
-**Complex form.** If $p$ is a seminorm and $\lvert f\rvert\le p$ on $M$, extend the real-linear functional $\operatorname{Re}f$ to a real-linear $G\le p$ on $X$, and set $F(x)=G(x)-iG(ix)$. Then $F$ is complex-linear, extends $f$, and $\lvert F\rvert\le p$.
+**Complex form.** If $p$ is a seminorm and $\lvert f\rvert\le p$ on $M$, extend the real-linear functional $\mathrm{Re}\,f$ to a real-linear $G\le p$ on $X$, and set $F(x)=G(x)-iG(ix)$. Then $F$ is complex-linear, extends $f$, and $\lvert F\rvert\le p$.
 
 **Normed-space corollaries.**
 1. Every $f\in M^*$ extends to $F\in X^*$ with $\lVert F\rVert=\lVert f\rVert$ (take $p=\lVert f\rVert\lVert\cdot\rVert$).
@@ -101,7 +101,7 @@ and the sup is at most the inf because $f(m)+f(m')=f(m+m')\le p(m+m')\le p(m-x_0
 3. If $M$ is a closed subspace and $x\notin M$, there is $f\in X^*$ with $f|_M=0$ and $f(x)\neq0$. Hence a subspace is dense iff the only functional vanishing on it is $0$.
 4. If $X^*$ is separable, so is $X$.
 
-**Geometric form (separation).** If $A,B\subseteq X$ are disjoint convex sets with $A$ open, there are $f\in X^*$ and $\gamma\in\mathbb{R}$ with $\operatorname{Re}f(a)<\gamma\le\operatorname{Re}f(b)$ for all $a\in A$, $b\in B$. If $A$ is closed and $B$ is compact (both convex, disjoint), they can be strictly separated. The proof applies the analytic form to the Minkowski functional of an open convex set.
+**Geometric form (separation).** If $A,B\subseteq X$ are disjoint convex sets with $A$ open, there are $f\in X^*$ and $\gamma\in\mathbb{R}$ with $\mathrm{Re}\,f(a)<\gamma\le\mathrm{Re}\,f(b)$ for all $a\in A$, $b\in B$. If $A$ is closed and $B$ is compact (both convex, disjoint), they can be strictly separated. The proof applies the analytic form to the Minkowski functional of an open convex set.
 
 ---
 
@@ -137,7 +137,7 @@ The canonical map $J:X\to X^{**}$, $J(x)(f)=f(x)$, is an isometry (Hahn–Banach
 - Closed subspaces of reflexive spaces are reflexive. $X$ is reflexive iff $X^*$ is.
 - If $X$ is separable and reflexive then $X^*$ is separable; so a separable space with non-separable dual (like $\ell^1$, with dual $\ell^\infty$) is not reflexive.
 
-**Dual of $L^p$.** For σ-finite $\mu$ and $1\le p<\infty$, $(L^p)^*\cong L^q$. Sketch for finite $\mu$: given $\varphi\in(L^p)^*$, $\nu(E)=\varphi(\chi_E)$ is a (complex) measure, absolutely continuous with respect to $\mu$; its Radon–Nikodym derivative $g$ represents $\varphi$ on simple functions; then show $g\in L^q$ by testing against truncations of $\lvert g\rvert^{q-1}\operatorname{sgn}\bar g$.
+**Dual of $L^p$.** For σ-finite $\mu$ and $1\le p<\infty$, $(L^p)^*\cong L^q$. Sketch for finite $\mu$: given $\varphi\in(L^p)^*$, $\nu(E)=\varphi(\chi_E)$ is a (complex) measure, absolutely continuous with respect to $\mu$; its Radon–Nikodym derivative $g$ represents $\varphi$ on simple functions; then show $g\in L^q$ by testing against truncations of $\lvert g\rvert^{q-1}\mathrm{sgn}\,\bar g$.
 
 **Adjoint (Banach-space version).** For $T\in B(X,Y)$, $T':Y^*\to X^*$, $T'f=f\circ T$, with $\lVert T'\rVert=\lVert T\rVert$.
 
@@ -170,7 +170,7 @@ Facts:
 
 **Hilbert adjoint.** For $T\in B(H_1,H_2)$, $T^*\in B(H_2,H_1)$ is defined by $\langle Tx,y\rangle=\langle x,T^*y\rangle$ (exists by Riesz). Properties: $T^{**}=T$, $\lVert T^*\rVert=\lVert T\rVert$, and the **C\*-identity** $\lVert T^*T\rVert=\lVert T\rVert^2$. Also
 $$
-\ker T^*=(\operatorname{ran}T)^\perp,\qquad\overline{\operatorname{ran}T}=(\ker T^*)^\perp .
+\ker T^*=(\mathrm{ran}\,T)^\perp,\qquad\overline{\mathrm{ran}\,T}=(\ker T^*)^\perp .
 $$
 $T$ is *self-adjoint* if $T=T^*$; *normal* if $TT^*=T^*T$; *unitary* if $T^*T=TT^*=I$; an *orthogonal projection* if $T=T^2=T^*$.
 
@@ -178,7 +178,7 @@ For self-adjoint $T$: $\langle Tx,x\rangle\in\mathbb{R}$ and
 $$
 \lVert T\rVert=\sup_{\lVert x\rVert=1}\lvert\langle Tx,x\rangle\rvert .
 $$
-(Proof of $\le$: with $M$ the right side, polarisation gives $4\operatorname{Re}\langle Tx,y\rangle=\langle T(x+y),x+y\rangle-\langle T(x-y),x-y\rangle\le M(\lVert x+y\rVert^2+\lVert x-y\rVert^2)=2M(\lVert x\rVert^2+\lVert y\rVert^2)$; take $\lVert x\rVert=1$, $y=Tx/\lVert Tx\rVert$.)
+(Proof of $\le$: with $M$ the right side, polarisation gives $4\mathrm{Re}\,\langle Tx,y\rangle=\langle T(x+y),x+y\rangle-\langle T(x-y),x-y\rangle\le M(\lVert x+y\rVert^2+\lVert x-y\rVert^2)=2M(\lVert x\rVert^2+\lVert y\rVert^2)$; take $\lVert x\rVert=1$, $y=Tx/\lVert Tx\rVert$.)
 
 **Spectrum.** For $T\in B(X)$, $X$ a complex Banach space, $\sigma(T)=\lbrace\lambda\in\mathbb{C}:T-\lambda I\text{ not invertible in }B(X)\rbrace$. (By the bounded inverse theorem, "invertible" just means bijective.)
 - $\sigma(T)$ is compact and contained in $\lbrace\lvert\lambda\rvert\le\lVert T\rVert\rbrace$ (Neumann series), and **non-empty** (otherwise $\lambda\mapsto f((T-\lambda)^{-1})$ is a bounded entire function tending to $0$, so zero for every $f\in B(X)^*$ — Liouville plus Hahn–Banach).
@@ -208,7 +208,7 @@ $T\in B(X,Y)$ is **compact** if $T(B_X)$ is relatively compact; equivalently (fo
 - **Hilbert–Schmidt integral operators:** if $k\in L^2([0,1]^2)$, then $(Kf)(x)=\int_0^1k(x,y)f(y)\,dy$ is compact on $L^2[0,1]$ with $\lVert K\rVert\le\lVert k\rVert_{L^2}$. (Expand $k$ in the orthonormal basis $e_i(x)\overline{e_j(y)}$ and truncate.) $K^*$ has kernel $\overline{k(y,x)}$; $K$ is self-adjoint iff $k(x,y)=\overline{k(y,x)}$.
 - **Volterra operator** $(Vf)(x)=\int_0^xf$: compact, with no eigenvalues and $\sigma(V)=\lbrace0\rbrace$ ($\lVert V^n\rVert\le1/n!$).
 
-**Riesz–Schauder theory.** If $K\in B(X)$ is compact and $\lambda\neq0$: $\ker(K-\lambda)$ is finite-dimensional, $\operatorname{ran}(K-\lambda)$ is closed, and every non-zero $\lambda\in\sigma(K)$ is an eigenvalue. The non-zero spectrum is at most countable, with $0$ the only possible accumulation point.
+**Riesz–Schauder theory.** If $K\in B(X)$ is compact and $\lambda\neq0$: $\ker(K-\lambda)$ is finite-dimensional, $\mathrm{ran}(K-\lambda)$ is closed, and every non-zero $\lambda\in\sigma(K)$ is an eigenvalue. The non-zero spectrum is at most countable, with $0$ the only possible accumulation point.
 
 ---
 
@@ -218,7 +218,7 @@ $T\in B(X,Y)$ is **compact** if $T(B_X)$ is relatively compact; equivalently (fo
 $$
 Tx=\sum_n\lambda_n\langle x,e_n\rangle e_n\qquad\text{for all }x\in H,
 $$
-and $H=\ker T\oplus\overline{\operatorname{span}}\lbrace e_n\rbrace$. Adding an orthonormal basis of $\ker T$ gives an orthonormal basis of $H$ consisting of eigenvectors.
+and $H=\ker T\oplus\overline{\mathrm{span}}\lbrace e_n\rbrace$. Adding an orthonormal basis of $\ker T$ gives an orthonormal basis of $H$ consisting of eigenvectors.
 
 *Proof.*
 1. **Key lemma:** $\lVert T\rVert$ or $-\lVert T\rVert$ is an eigenvalue. Assume $T\neq0$. By §9, pick unit $x_n$ with $\langle Tx_n,x_n\rangle\to\lambda$ where $\lvert\lambda\rvert=\lVert T\rVert$. Then
@@ -228,7 +228,7 @@ $$
 By compactness, a subsequence $Tx_{n_k}\to y$. Then $\lambda x_{n_k}\to y$, so $\lVert y\rVert=\lvert\lambda\rvert\neq0$ and, by continuity, $Ty=\lim T(\lambda x_{n_k})=\lambda y$.
 2. **Induction:** let $e_1$ be a unit eigenvector for $\lambda_1=\pm\lVert T\rVert$. $H_1=\lbrace e_1\rbrace^\perp$ is $T$-invariant (self-adjointness), and $T|_{H_1}$ is compact self-adjoint. Repeat, getting $\lvert\lambda_1\rvert\ge\lvert\lambda_2\rvert\ge\cdots$. Stop if $T|_{H_n}=0$.
 3. **$\lambda_n\to0$:** otherwise $\lvert\lambda_n\rvert\ge\varepsilon$ and $\lVert Te_n-Te_m\rVert^2=\lambda_n^2+\lambda_m^2\ge2\varepsilon^2$, so $(Te_n)$ has no convergent subsequence, contradicting compactness.
-4. **Expansion:** let $M=\overline{\operatorname{span}}\lbrace e_n\rbrace$. $T$ restricted to $M^\perp$ has norm at most $\lvert\lambda_n\rvert$ for every $n$ (since $M^\perp\subseteq H_n$), so it is $0$: $M^\perp\subseteq\ker T$. The expansion follows by writing $x=P_Mx+(x-P_Mx)$. $\square$
+4. **Expansion:** let $M=\overline{\mathrm{span}}\lbrace e_n\rbrace$. $T$ restricted to $M^\perp$ has norm at most $\lvert\lambda_n\rvert$ for every $n$ (since $M^\perp\subseteq H_n$), so it is $0$: $M^\perp\subseteq\ker T$. The expansion follows by writing $x=P_Mx+(x-P_Mx)$. $\square$
 
 **Variational characterisation.** $\lambda_1^+=\max_{\lVert x\rVert=1}\langle Tx,x\rangle$, and the Courant–Fischer min-max formula gives the others. This is the infinite-dimensional Rayleigh quotient.
 
@@ -244,7 +244,7 @@ By compactness, a subsequence $Tx_{n_k}\to y$. Then $\lambda x_{n_k}\to y$, so $
 
 **Theorem.** Let $K$ be compact on a Hilbert space $H$ (the statement also holds on Banach spaces with $K'$ in place of $K^*$) and $\lambda\in\mathbb{C}\setminus\lbrace0\rbrace$. Then:
 1. $\ker(K-\lambda)$ and $\ker(K^*-\bar\lambda)$ are finite-dimensional and have the same dimension;
-2. $\operatorname{ran}(K-\lambda)$ is closed and equals $\ker(K^*-\bar\lambda)^\perp$;
+2. $\mathrm{ran}(K-\lambda)$ is closed and equals $\ker(K^*-\bar\lambda)^\perp$;
 3. **Alternative:** either $(K-\lambda)u=f$ has a unique solution for every $f\in H$, or the homogeneous equation $(K-\lambda)u=0$ has a non-zero solution. In the second case, $(K-\lambda)u=f$ is solvable iff $f\perp\ker(K^*-\bar\lambda)$.
 
 Equivalently: $I-K$ is injective iff surjective, and it is a Fredholm operator of index $0$.

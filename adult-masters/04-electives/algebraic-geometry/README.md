@@ -44,7 +44,7 @@ Algebraic geometry studies solution sets of polynomial equations using commutati
 | 8 | Plane curves: Bézout's theorem (statement and examples); Shafarevich Ch. III §1 (divisors on curves, light) | 4 problems | Count intersections with multiplicity. |
 | 9 | Vakil Ch. 1 (category theory) skim; Ch. 2 (sheaves: presheaves, stalks, sheafification) | Vakil Ch. 2: 5 exercises | Sheaf of continuous/smooth functions; skyscraper sheaves. |
 | 10 | Vakil Ch. 2 cont. (sheaves of abelian groups, exactness via stalks) | 5 exercises | Exactness is a stalk-local condition. |
-| 11 | Vakil Ch. 3 (the spectrum of a ring: points, Zariski topology, functions) | 5 exercises | Draw $\operatorname{Spec}\mathbb{Z}[x]$. |
+| 11 | Vakil Ch. 3 (the spectrum of a ring: points, Zariski topology, functions) | 5 exercises | Draw $\mathrm{Spec}\,\mathbb{Z}[x]$. |
 | 12 | Vakil Ch. 4 (structure sheaf; schemes; first examples) | 5 exercises | Gluing affine schemes; the line with a doubled origin. |
 | 13 | Vakil Ch. 5 (properties: reduced, integral, irreducible, Noetherian) | 4 exercises | Varieties as schemes. |
 | 14 | Vakil Ch. 4.5 / Ch. 6 (Proj; morphisms of schemes) | 4 exercises | $\mathbb{P}^n_A$ via Proj. |
@@ -66,7 +66,7 @@ Chapter numbers for Vakil refer to recent versions of the notes; they shift slig
 - [ ] Blowups; resolution of plane curve singularities by blowing up (examples)
 - [ ] Bézout's theorem (statement)
 - [ ] Presheaves, sheaves, stalks, sheafification; exactness via stalks
-- [ ] $\operatorname{Spec}A$: Zariski topology, distinguished opens, structure sheaf $\mathcal{O}(D(f))=A_f$
+- [ ] $\mathrm{Spec}\,A$: Zariski topology, distinguished opens, structure sheaf $\mathcal{O}(D(f))=A_f$
 - [ ] Schemes; gluing; $\mathbb{P}^n_A$ via gluing and via Proj
 - [ ] Reduced, integral, irreducible, (locally) Noetherian schemes
 - [ ] Morphisms of affine schemes ↔ ring homomorphisms (contravariant equivalence)
@@ -76,6 +76,6 @@ Chapter numbers for Vakil refer to recent versions of the notes; they shift slig
 1. State and prove the weak Nullstellensatz (via Zariski's lemma) and deduce the strong form.
 2. Compute the singular points of a given plane curve and its tangent cones; blow up a node.
 3. Show that $\mathbb{P}^n$ is complete (or that a morphism from a projective variety has closed image), with notes allowed.
-4. Define a sheaf, sheafification and $\operatorname{Spec}A$; compute $\mathcal{O}(D(f))=A_f$.
-5. Describe the points of $\operatorname{Spec}\mathbb{Z}[x]$ and $\operatorname{Spec}\mathbb{C}[x,y]$.
+4. Define a sheaf, sheafification and $\mathrm{Spec}\,A$; compute $\mathcal{O}(D(f))=A_f$.
+5. Describe the points of $\mathrm{Spec}\,\mathbb{Z}[x]$ and $\mathrm{Spec}\,\mathbb{C}[x,y]$.
 6. Solve 4 of 6 qualifying-style problems in 3 hours.

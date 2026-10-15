@@ -106,7 +106,7 @@ There are **25**. If $n < 100$ is composite, $n = ab$ with $1 < a \le b$, then $
 
 ### 9.
 
-We need $\operatorname{lcm}(1, 2, \dots, 10)$. Take the highest power of each prime that appears: $2^3$ (from 8), $3^2$ (from 9), $5$, $7$. So the answer is $8\cdot 9\cdot 5\cdot 7 = 2520$.
+We need $\mathrm{lcm}(1, 2, \dots, 10)$. Take the highest power of each prime that appears: $2^3$ (from 8), $3^2$ (from 9), $5$, $7$. So the answer is $8\cdot 9\cdot 5\cdot 7 = 2520$.
 
 ---
 
@@ -114,7 +114,7 @@ We need $\operatorname{lcm}(1, 2, \dots, 10)$. Take the highest power of each pr
 
 ### 10.
 
-They leave together after a number of minutes that is a common multiple of 12 and 18. $12 = 2^2 \cdot 3$ and $18 = 2\cdot 3^2$, so $\operatorname{lcm}(12, 18) = 2^2\cdot 3^2 = 36$. They next leave together at **08:36**.
+They leave together after a number of minutes that is a common multiple of 12 and 18. $12 = 2^2 \cdot 3$ and $18 = 2\cdot 3^2$, so $\mathrm{lcm}(12, 18) = 2^2\cdot 3^2 = 36$. They next leave together at **08:36**.
 
 Between 08:00 and 12:00 (240 minutes) the common times are $0, 36, 72, \dots$ minutes after 08:00, as long as the number is at most 240. $6\cdot 36 = 216 \le 240 < 252 = 7\cdot 36$, so the multiples $0, 36, \dots, 216$ count: **7 times** (08:00, 08:36, 09:12, 09:48, 10:24, 11:00, 11:36).
 
@@ -161,15 +161,15 @@ So $4 \mid N$ exactly when $4 \mid t$. $\square$
 
 ### 16.
 
-(a) $36 = 2^2\cdot 3^2$, $60 = 2^2\cdot 3\cdot 5$. $\gcd = 2^2\cdot 3 = 12$, $\operatorname{lcm} = 2^2\cdot 3^2\cdot 5 = 180$. $12\cdot 180 = 2160 = 36\cdot 60$. ✓
+(a) $36 = 2^2\cdot 3^2$, $60 = 2^2\cdot 3\cdot 5$. $\gcd = 2^2\cdot 3 = 12$, $\mathrm{lcm} = 2^2\cdot 3^2\cdot 5 = 180$. $12\cdot 180 = 2160 = 36\cdot 60$. ✓
 
-(b) Write $a$ and $b$ using the same primes $p_1, \dots, p_k$ (with exponent 0 where a prime is missing): $a = p_1^{e_1}\cdots p_k^{e_k}$, $b = p_1^{f_1}\cdots p_k^{f_k}$. The gcd has exponent $\min(e_i, f_i)$ for each prime and the lcm has $\max(e_i, f_i)$. For any two numbers, $\min + \max$ is just the sum of the two: $\min(e, f) + \max(e, f) = e + f$. So in $\gcd\cdot\operatorname{lcm}$ each prime $p_i$ has exponent $e_i + f_i$, the same as in $ab$. $\square$
+(b) Write $a$ and $b$ using the same primes $p_1, \dots, p_k$ (with exponent 0 where a prime is missing): $a = p_1^{e_1}\cdots p_k^{e_k}$, $b = p_1^{f_1}\cdots p_k^{f_k}$. The gcd has exponent $\min(e_i, f_i)$ for each prime and the lcm has $\max(e_i, f_i)$. For any two numbers, $\min + \max$ is just the sum of the two: $\min(e, f) + \max(e, f) = e + f$. So in $\gcd\cdot\mathrm{lcm}$ each prime $p_i$ has exponent $e_i + f_i$, the same as in $ab$. $\square$
 
-(c) By (b), the other number is $\dfrac{6\cdot 180}{36} = 30$. Check: $\gcd(36, 30) = 6$ and $\operatorname{lcm}(36, 30) = 180$. ✓
+(c) By (b), the other number is $\dfrac{6\cdot 180}{36} = 30$. Check: $\gcd(36, 30) = 6$ and $\mathrm{lcm}(36, 30) = 180$. ✓
 
 ### 17.
 
-If $n$ leaves remainder 1 on division by 2, 3, 4, 5 and 6, then $n - 1$ is divisible by all of them, so $n - 1$ is a multiple of $\operatorname{lcm}(2,3,4,5,6) = 60$. So $n$ is one of $1, 61, 121, 181, 241, 301, \dots$. Test for divisibility by 7: $1, 61, 121, 181, 241$ are not ($61 = 56 + 5$, $121 = 119 + 2$, $181 = 175 + 6$, $241 = 238 + 3$), but $301 = 7\cdot 43$. The answer is **301**.
+If $n$ leaves remainder 1 on division by 2, 3, 4, 5 and 6, then $n - 1$ is divisible by all of them, so $n - 1$ is a multiple of $\mathrm{lcm}(2,3,4,5,6) = 60$. So $n$ is one of $1, 61, 121, 181, 241, 301, \dots$. Test for divisibility by 7: $1, 61, 121, 181, 241$ are not ($61 = 56 + 5$, $121 = 119 + 2$, $181 = 175 + 6$, $241 = 238 + 3$), but $301 = 7\cdot 43$. The answer is **301**.
 
 ---
 
@@ -182,7 +182,7 @@ $n^3 - n = n(n^2 - 1) = (n-1)\,n\,(n+1)$, a product of three consecutive integer
 - Among any two consecutive integers one is even, so the product is divisible by 2.
 - Among any three consecutive integers one is divisible by 3 (the remainders on division by 3 of three consecutive numbers are 0, 1, 2 in some order). So the product is divisible by 3.
 
-A number divisible by both 2 and 3 is divisible by $\operatorname{lcm}(2, 3) = 6$. So $6 \mid n^3 - n$ for every integer $n$. $\square$
+A number divisible by both 2 and 3 is divisible by $\mathrm{lcm}(2, 3) = 6$. So $6 \mid n^3 - n$ for every integer $n$. $\square$
 
 ### 19.
 

@@ -178,7 +178,7 @@ $(x+11)(x-1)=0$, and a width must be positive, so the path is $1$ m wide.
 
 (a) After $n$ increases the price is $10+0.5n$ euros and $300-10n$ tickets are sold. Revenue = price times number: $R=(10+0.5n)(300-10n)$.
 
-(b) $R = 3000-100n+150n-5n^2 = -5n^2+50n+3000$. $n_{\text{top}} = -\frac{50}{2\cdot(-5)} = 5$. Price $10+2.50 = $ €12.50, tickets $300-50 = 250$, revenue $12.50\cdot250 = $ €3125.
+(b) $R = 3000-100n+150n-5n^2 = -5n^2+50n+3000$. $n_{\text{top}} = -\frac{50}{2\cdot(-5)} = 5$. Price $10+2.50 =$ €12.50, tickets $300-50 = 250$, revenue $12.50\cdot250 =$ €3125.
 
 **20.**
 

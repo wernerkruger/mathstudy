@@ -73,7 +73,7 @@ Either one will carry you through 2.4 as well. That makes the purchase worthwhil
 - [ ] Conservative fields: path independence ⇔ closed loops give 0 ⇔ $F=\nabla\varphi$; curl-free ⇒ conservative **on simply connected domains**
 - [ ] Green's theorem; area formula
 - [ ] Parametrised surfaces; $dS=\lvert r_u\times r_v\rvert\,du\,dv$; flux integrals
-- [ ] div, curl, and the identities $\operatorname{curl}\nabla=0$, $\operatorname{div}\operatorname{curl}=0$
+- [ ] div, curl, and the identities $\mathrm{curl}\,\nabla=0$, $\mathrm{div}\,\mathrm{curl}=0$
 - [ ] Stokes' theorem; divergence (Gauss) theorem
 
 ## Exit criteria

@@ -50,7 +50,7 @@ $$
 $$
 f(z) = \frac1z\sum_{n\ge 0} z^{-n-1} = \sum_{n\ge0} z^{-n-2} = \frac{1}{z^2} + \frac1{z^3} + \cdots.
 $$
-The residue at $0$ is read from the expansion valid in a punctured disc around $0$, i.e. (a): $\operatorname{Res}(f,0) = -1$. (The coefficient of $z^{-1}$ in (b) is $0$; this is not the residue at $0$. It equals the sum of the residues at $0$ and $1$, namely $-1 + 1$.)
+The residue at $0$ is read from the expansion valid in a punctured disc around $0$, i.e. (a): $\mathrm{Res}(f,0) = -1$. (The coefficient of $z^{-1}$ in (b) is $0$; this is not the residue at $0$. It equals the sum of the residues at $0$ and $1$, namely $-1 + 1$.)
 
 ### 6.
 
@@ -60,7 +60,7 @@ $$
 $$
 So for $z \in \mathbb H$, $|z - i| < |z+i|$ and $|\varphi(z)| < 1$; also $z + i \neq 0$, so $\varphi$ is holomorphic on $\mathbb H$. Solving $w = \frac{z-i}{z+i}$ gives $z = \psi(w) = i\frac{1+w}{1-w}$, holomorphic for $w \ne 1$. For $w \in \mathbb D$,
 $$
-\operatorname{Im}\psi(w) = \operatorname{Re}\frac{1+w}{1-w} = \operatorname{Re}\frac{(1+w)(1-\bar w)}{|1-w|^2} = \frac{1 - |w|^2}{|1-w|^2} > 0,
+\mathrm{Im}\,\psi(w) = \mathrm{Re}\,\frac{1+w}{1-w} = \mathrm{Re}\,\frac{(1+w)(1-\bar w)}{|1-w|^2} = \frac{1 - |w|^2}{|1-w|^2} > 0,
 $$
 (the cross terms $w - \bar w$ are purely imaginary). So $\psi$ maps $\mathbb D$ into $\mathbb H$, and $\varphi\circ\psi$, $\psi\circ\varphi$ are the identity where defined. Hence $\varphi : \mathbb H \to \mathbb D$ is a holomorphic bijection with holomorphic inverse $\psi$.
 
@@ -76,11 +76,11 @@ For $k > n$ the right side tends to $0$ as $R \to \infty$, so $a_k = 0$. Hence $
 
 ### 8.
 
-$g = e^{f}$ is entire and $|g| = e^{\operatorname{Re} f} \le e^M$. By Liouville $g$ is constant, so $0 = g' = f'e^f$. Since $e^f$ never vanishes, $f' \equiv 0$, and $f$ is constant (on the connected set $\mathbb C$).
+$g = e^{f}$ is entire and $|g| = e^{\mathrm{Re}\, f} \le e^M$. By Liouville $g$ is constant, so $0 = g' = f'e^f$. Since $e^f$ never vanishes, $f' \equiv 0$, and $f$ is constant (on the connected set $\mathbb C$).
 
 ### 9.
 
-Let $f(z) = 1/(1+z^4)$. Its poles are the fourth roots of $-1$: $e^{i\pi/4}, e^{3i\pi/4}, e^{5i\pi/4}, e^{7i\pi/4}$, all simple. In $\mathbb H$ lie $\alpha = e^{i\pi/4}$ and $\beta = e^{3i\pi/4}$. At a simple zero $c$ of $1+z^4$, $\operatorname{Res}(f,c) = \dfrac{1}{4c^3} = \dfrac{c}{4c^4} = -\dfrac{c}{4}$. So the sum of residues in $\mathbb H$ is
+Let $f(z) = 1/(1+z^4)$. Its poles are the fourth roots of $-1$: $e^{i\pi/4}, e^{3i\pi/4}, e^{5i\pi/4}, e^{7i\pi/4}$, all simple. In $\mathbb H$ lie $\alpha = e^{i\pi/4}$ and $\beta = e^{3i\pi/4}$. At a simple zero $c$ of $1+z^4$, $\mathrm{Res}(f,c) = \dfrac{1}{4c^3} = \dfrac{c}{4c^4} = -\dfrac{c}{4}$. So the sum of residues in $\mathbb H$ is
 $$
 -\frac{\alpha+\beta}{4} = -\frac14\left(\frac{\sqrt2}{2} + i\frac{\sqrt2}{2} - \frac{\sqrt2}2 + i\frac{\sqrt2}{2}\right) = -\frac{i\sqrt2}{4}.
 $$
@@ -145,7 +145,7 @@ So all $5$ zeros lie in $1 < |z| < 2$.
 
 ### 15.
 
-Let $f(z) = z e^{\lambda - z}$ and $g(z) = -1$. On $|z| = 1$, $|f(z)| = e^{\lambda - \operatorname{Re}z} \ge e^{\lambda - 1} > 1 = |g(z)|$. By Rouché, $f - 1$ has as many zeros in $\mathbb D$ as $f$, and $f$ has exactly one (a simple zero at $0$, as $e^{\lambda - z}\ne0$). So $ze^{\lambda-z} = 1$ has exactly one solution in $\mathbb D$.
+Let $f(z) = z e^{\lambda - z}$ and $g(z) = -1$. On $|z| = 1$, $|f(z)| = e^{\lambda - \mathrm{Re}\,z} \ge e^{\lambda - 1} > 1 = |g(z)|$. By Rouché, $f - 1$ has as many zeros in $\mathbb D$ as $f$, and $f$ has exactly one (a simple zero at $0$, as $e^{\lambda - z}\ne0$). So $ze^{\lambda-z} = 1$ has exactly one solution in $\mathbb D$.
 
 Now $h(x) = xe^{\lambda - x} - 1$ is continuous on $[0,1]$ with $h(0) = -1 < 0$ and $h(1) = e^{\lambda-1} - 1 > 0$. By the intermediate value theorem there is a root in $(0,1)$, which lies in $\mathbb D$. By uniqueness, this is the solution.
 
@@ -173,7 +173,7 @@ $$
 \qquad
 \frac{zf'(z)}{f(z)} = \frac{m_j z}{z - b_j} + \frac{zg'(z)}{g(z)}.
 $$
-The second term is holomorphic near $b_j$, and $\frac{m_j z}{z-b_j} = m_j + \frac{m_j b_j}{z - b_j}$, so $\operatorname{Res}\left(\frac{zf'}{f}, b_j\right) = m_jb_j$. The function $zf'/f$ is holomorphic elsewhere on a neighbourhood of $\overline{\mathbb D}$ minus the $b_j$. By the residue theorem,
+The second term is holomorphic near $b_j$, and $\frac{m_j z}{z-b_j} = m_j + \frac{m_j b_j}{z - b_j}$, so $\mathrm{Res}\,\left(\frac{zf'}{f}, b_j\right) = m_jb_j$. The function $zf'/f$ is holomorphic elsewhere on a neighbourhood of $\overline{\mathbb D}$ minus the $b_j$. By the residue theorem,
 $$
 \frac1{2\pi i}\int_{|z|=1}\frac{zf'(z)}{f(z)}dz = \sum_j m_jb_j = a_1 + \dots + a_k.
 $$
@@ -229,11 +229,11 @@ By symmetry ($a \leftrightarrow -a$), $\varphi_a\circ\varphi_{-a} = \mathrm{id}$
 
 *$f$ is holomorphic.* $f$ is continuous on $\Omega$, as a locally uniform limit of continuous functions. Let $D$ be an open disc with $\overline D \subseteq \Omega$ and $T \subseteq D$ a closed triangle. By Goursat, $\int_{\partial T} f_n = 0$. Since $\partial T$ is compact, $f_n \to f$ uniformly on it, so
 $$
-\Big|\int_{\partial T}f\Big| = \Big|\int_{\partial T}(f - f_n)\Big| \le \operatorname{length}(\partial T)\sup_{\partial T}|f - f_n| \to 0.
+\Big|\int_{\partial T}f\Big| = \Big|\int_{\partial T}(f - f_n)\Big| \le \mathrm{length}(\partial T)\sup_{\partial T}|f - f_n| \to 0.
 $$
 By Morera's theorem, $f$ is holomorphic on $D$; such discs cover $\Omega$.
 
-*Derivatives converge.* Let $K \subseteq \Omega$ be compact. Choose $r > 0$ such that $K_r = \lbrace z : \operatorname{dist}(z,K) \le r\rbrace \subseteq \Omega$ (possible because $\operatorname{dist}(K, \mathbb{C}\setminus\Omega) > 0$ when $\Omega \neq \mathbb C$; take $r$ less than half of it, or $r = 1$ if $\Omega = \mathbb C$). $K_r$ is closed and bounded, hence compact. For $z \in K$, the circle $|\zeta - z| = r$ lies in $K_r$, and by the Cauchy integral formula for the derivative,
+*Derivatives converge.* Let $K \subseteq \Omega$ be compact. Choose $r > 0$ such that $K_r = \lbrace z : \mathrm{dist}(z,K) \le r\rbrace \subseteq \Omega$ (possible because $\mathrm{dist}(K, \mathbb{C}\setminus\Omega) > 0$ when $\Omega \neq \mathbb C$; take $r$ less than half of it, or $r = 1$ if $\Omega = \mathbb C$). $K_r$ is closed and bounded, hence compact. For $z \in K$, the circle $|\zeta - z| = r$ lies in $K_r$, and by the Cauchy integral formula for the derivative,
 $$
 |f_n'(z) - f'(z)| = \left|\frac1{2\pi i}\int_{|\zeta - z| = r}\frac{f_n(\zeta) - f(\zeta)}{(\zeta - z)^2}d\zeta\right| \le \frac{1}{2\pi}\cdot 2\pi r\cdot\frac{\sup_{K_r}|f_n - f|}{r^2} = \frac{\sup_{K_r}|f_n - f|}{r}.
 $$

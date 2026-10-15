@@ -67,8 +67,8 @@ About 4 hours a week: roughly 1.5 h reading and working through the examples, 2 
 - [ ] I can compute probabilities for drawing without replacement with combinations (hypergeometric).
 - [ ] I can compute $P(A \mid B)$ from a two-way table and with Bayes' rule, and explain the medical-test paradox.
 - [ ] I can show whether two events are independent, and explain why disjoint is not the same as independent.
-- [ ] I can compute $E(X)$, $\operatorname{Var}(X)$ and $\sigma(X)$ from a probability distribution, by hand and on the GR.
-- [ ] I can prove $E(X + Y) = E(X) + E(Y)$ and, for independent $X$ and $Y$, $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$.
+- [ ] I can compute $E(X)$, $\mathrm{Var}(X)$ and $\sigma(X)$ from a probability distribution, by hand and on the GR.
+- [ ] I can prove $E(X + Y) = E(X) + E(Y)$ and, for independent $X$ and $Y$, $\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$.
 - [ ] I can apply the square-root law to sums and means.
 - [ ] I can state the four conditions of the binomial distribution and prove its formula, $E(X) = np$ and $\sigma(X) = \sqrt{np(1-p)}$.
 - [ ] I can use binompdf and binomcdf correctly for "exactly", "at most", "at least" and "between".
@@ -85,4 +85,4 @@ Move on to stage E when:
 1. Every item on the checklist is ticked, honestly.
 2. You have solved at least 22 of the 28 problems on your own, including all exam-level problems 12–21, with answers matching [solutions.md](solutions.md) to 3 decimals.
 3. You have done the probability questions of two past VWO Wiskunde A central exams under time pressure, marked them with the *correctievoorschrift*, and scored at least 75% of the points.
-4. You can give, without notes, the proofs of $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$ for independent variables, of the binomial formula, and of the regression line formula.
+4. You can give, without notes, the proofs of $\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ for independent variables, of the binomial formula, and of the regression line formula.

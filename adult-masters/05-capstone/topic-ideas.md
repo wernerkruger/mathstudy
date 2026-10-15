@@ -11,7 +11,7 @@ Every compact connected surface is homeomorphic to a sphere, a connected sum of 
 *References:* W. S. Massey, *A Basic Course in Algebraic Topology*, Ch. 1; G. K. Francis and J. R. Weeks, "Conway's ZIP Proof", *American Mathematical Monthly* 106 (1999).
 
 **2. The Lefschetz fixed point theorem** ★★
-For a map $f$ of a finite simplicial complex, a nonzero Lefschetz number $\sum(-1)^k\operatorname{tr}(f_*|H_k)$ forces a fixed point. Applications: Brouwer, fixed points on $\mathbb{RP}^{2k}$, vector fields and Euler characteristic.
+For a map $f$ of a finite simplicial complex, a nonzero Lefschetz number $\sum(-1)^k\mathrm{tr}(f_*|H_k)$ forces a fixed point. Applications: Brouwer, fixed points on $\mathbb{RP}^{2k}$, vector fields and Euler characteristic.
 *References:* A. Hatcher, *Algebraic Topology*, §2.C; G. E. Bredon, *Topology and Geometry*, Ch. IV.
 
 **3. Poincaré duality for closed manifolds** ★★★

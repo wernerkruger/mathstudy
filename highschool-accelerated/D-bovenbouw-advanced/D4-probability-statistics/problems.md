@@ -130,9 +130,9 @@ c. *Bereken* $\sigma(X)$.
 ## Challenge
 
 **22.** *Bewijs* (prove) for any random variable $X$ with finitely many values:
-a. $\operatorname{Var}(X) = E(X^2) - \big(E(X)\big)^2$.
-b. $\operatorname{Var}(aX + b) = a^2 \operatorname{Var}(X)$.
-c. $\operatorname{Var}(X) \ge 0$, with equality only if $X$ takes a single value with probability 1. Deduce that $E(X^2) \ge E(X)^2$.
+a. $\mathrm{Var}(X) = E(X^2) - \big(E(X)\big)^2$.
+b. $\mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)$.
+c. $\mathrm{Var}(X) \ge 0$, with equality only if $X$ takes a single value with probability 1. Deduce that $E(X^2) \ge E(X)^2$.
 
 **23. Least squares in detail.** For the regression line $y = ax + b$ with $a = S_{xy}/S_{xx}$ and $b = \bar y - a\bar x$:
 a. Show that the residuals add up to 0.

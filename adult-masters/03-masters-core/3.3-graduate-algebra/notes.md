@@ -6,17 +6,17 @@ These notes condense the module. Rings are commutative with $1$ unless stated ot
 
 ## 1. Categories, functors and universal properties (light)
 
-A **category** $\mathcal{C}$ has objects, sets of morphisms $\operatorname{Hom}(X,Y)$, an associative composition and identities. Examples: $\mathsf{Set}$, $\mathsf{Grp}$, $\mathsf{Ab}$, $A\text{-}\mathsf{Mod}$, $\mathsf{Ring}$, $\mathsf{Top}$, and a poset (one morphism $x\to y$ iff $x\le y$).
+A **category** $\mathcal{C}$ has objects, sets of morphisms $\mathrm{Hom}(X,Y)$, an associative composition and identities. Examples: $\mathsf{Set}$, $\mathsf{Grp}$, $\mathsf{Ab}$, $A\text{-}\mathsf{Mod}$, $\mathsf{Ring}$, $\mathsf{Top}$, and a poset (one morphism $x\to y$ iff $x\le y$).
 
-A (covariant) **functor** $F:\mathcal{C}\to\mathcal{D}$ sends objects to objects and morphisms to morphisms, preserving composition and identities; a contravariant functor reverses arrows. Examples: forgetful functors; $\operatorname{Hom}(M,-)$ (covariant) and $\operatorname{Hom}(-,N)$ (contravariant) from $A\text{-}\mathsf{Mod}$ to $A\text{-}\mathsf{Mod}$; $\operatorname{Spec}:\mathsf{Ring}\to\mathsf{Top}$ (contravariant); homology $H_n:\mathsf{Top}\to\mathsf{Ab}$ (in [3.4](../3.4-algebraic-topology/)).
+A (covariant) **functor** $F:\mathcal{C}\to\mathcal{D}$ sends objects to objects and morphisms to morphisms, preserving composition and identities; a contravariant functor reverses arrows. Examples: forgetful functors; $\mathrm{Hom}(M,-)$ (covariant) and $\mathrm{Hom}(-,N)$ (contravariant) from $A\text{-}\mathsf{Mod}$ to $A\text{-}\mathsf{Mod}$; $\mathrm{Spec}:\mathsf{Ring}\to\mathsf{Top}$ (contravariant); homology $H_n:\mathsf{Top}\to\mathsf{Ab}$ (in [3.4](../3.4-algebraic-topology/)).
 
 A **natural transformation** $\eta:F\Rightarrow G$ is a family $\eta_X:F(X)\to G(X)$ with $G(f)\circ\eta_X=\eta_Y\circ F(f)$ for every $f:X\to Y$. Example: the map $V\to V^{**}$ into the double dual is natural; an isomorphism $V\cong V^*$ is not (it depends on a basis).
 
 **Universal properties.** An object defined by a universal property is unique up to unique isomorphism. *Product* $X\times Y$: an object with maps $p_X,p_Y$ such that every pair $f:Z\to X$, $g:Z\to Y$ factors uniquely through it. *Coproduct*: the dual notion. In $\mathsf{Set}$ these are the cartesian product and disjoint union; in $A\text{-}\mathsf{Mod}$, finite products and coproducts coincide (the direct sum $M\oplus N$), but for infinite families $\prod M_i\ne\bigoplus M_i$; in $\mathsf{Grp}$ the coproduct is the free product; in commutative rings it is $A\otimes_\mathbb{Z}B$.
 
-**Adjunctions.** $F:\mathcal{C}\to\mathcal{D}$ is left adjoint to $G:\mathcal{D}\to\mathcal{C}$ if $\operatorname{Hom}_\mathcal{D}(FX,Y)\cong\operatorname{Hom}_\mathcal{C}(X,GY)$ naturally in $X$ and $Y$. Examples: free module ⊣ forgetful; $-\otimes_AM$ ⊣ $\operatorname{Hom}_A(M,-)$. *Left adjoints preserve colimits (cokernels, direct sums) and are right exact; right adjoints preserve limits (kernels, products) and are left exact.* This one principle explains the exactness properties in §3.
+**Adjunctions.** $F:\mathcal{C}\to\mathcal{D}$ is left adjoint to $G:\mathcal{D}\to\mathcal{C}$ if $\mathrm{Hom}_\mathcal{D}(FX,Y)\cong\mathrm{Hom}_\mathcal{C}(X,GY)$ naturally in $X$ and $Y$. Examples: free module ⊣ forgetful; $-\otimes_AM$ ⊣ $\mathrm{Hom}_A(M,-)$. *Left adjoints preserve colimits (cokernels, direct sums) and are right exact; right adjoints preserve limits (kernels, products) and are left exact.* This one principle explains the exactness properties in §3.
 
-**Yoneda lemma (statement).** $X\cong Y$ iff $\operatorname{Hom}(-,X)\cong\operatorname{Hom}(-,Y)$ naturally. "An object is determined by how others map into it."
+**Yoneda lemma (statement).** $X\cong Y$ iff $\mathrm{Hom}(-,X)\cong\mathrm{Hom}(-,Y)$ naturally. "An object is determined by how others map into it."
 
 ---
 
@@ -24,7 +24,7 @@ A **natural transformation** $\eta:F\Rightarrow G$ is a family $\eta_X:F(X)\to G
 
 Modules, submodules, quotients and the isomorphism theorems work exactly as for abelian groups. $M$ is **free** if it has a basis; every module is a quotient of a free module. **Finitely generated** means a quotient of $A^n$.
 
-A sequence $\cdots\to M_{i-1}\xrightarrow{f_i}M_i\xrightarrow{f_{i+1}}M_{i+1}\to\cdots$ is **exact** at $M_i$ if $\operatorname{im}f_i=\ker f_{i+1}$. A **short exact sequence** $0\to M'\xrightarrow{f}M\xrightarrow{g}M''\to0$ means $f$ injective, $g$ surjective, $\operatorname{im}f=\ker g$. So $M''\cong M/f(M')$.
+A sequence $\cdots\to M_{i-1}\xrightarrow{f_i}M_i\xrightarrow{f_{i+1}}M_{i+1}\to\cdots$ is **exact** at $M_i$ if $\mathrm{im}\,f_i=\ker f_{i+1}$. A **short exact sequence** $0\to M'\xrightarrow{f}M\xrightarrow{g}M''\to0$ means $f$ injective, $g$ surjective, $\mathrm{im}\,f=\ker g$. So $M''\cong M/f(M')$.
 
 **Splitting lemma.** For a short exact sequence as above, the following are equivalent: (a) there is $r:M\to M'$ with $rf=\mathrm{id}$; (b) there is $s:M''\to M$ with $gs=\mathrm{id}$; (c) there is an isomorphism $M\cong M'\oplus M''$ compatible with $f$ and $g$. Non-example: $0\to\mathbb{Z}\xrightarrow{2}\mathbb{Z}\to\mathbb{Z}/2\to0$ does not split ($\mathbb{Z}$ has no element of order $2$). Over a field every short exact sequence splits.
 
@@ -32,7 +32,7 @@ A sequence $\cdots\to M_{i-1}\xrightarrow{f_i}M_i\xrightarrow{f_{i+1}}M_{i+1}\to
 
 **Snake lemma.** A morphism of short exact sequences $(M'\to M\to M'')\to(N'\to N\to N'')$ with vertical maps $\alpha,\beta,\gamma$ gives an exact sequence
 $$
-0\to\ker\alpha\to\ker\beta\to\ker\gamma\xrightarrow{\ \delta\ }\operatorname{coker}\alpha\to\operatorname{coker}\beta\to\operatorname{coker}\gamma\to0 .
+0\to\ker\alpha\to\ker\beta\to\ker\gamma\xrightarrow{\ \delta\ }\mathrm{coker}\,\alpha\to\mathrm{coker}\,\beta\to\mathrm{coker}\,\gamma\to0 .
 $$
 The *connecting homomorphism* $\delta$ is the prototype of the long exact sequences of homology in 3.4. Prove it once by diagram chasing; afterwards use it freely.
 
@@ -52,26 +52,26 @@ The *connecting homomorphism* $\delta$ is the prototype of the long exact sequen
 
 **Extension of scalars.** For a ring map $A\to B$, $B\otimes_AM$ is a $B$-module. Example: complexification $\mathbb{C}\otimes_\mathbb{R}V$. For algebras, $B\otimes_AC$ is a ring with $(b\otimes c)(b'\otimes c')=bb'\otimes cc'$; $A[x]\otimes_AA[y]\cong A[x,y]$, and $k[x]/(f)\otimes_kL\cong L[x]/(f)$.
 
-**Hom–tensor adjunction.** $\operatorname{Hom}_A(M\otimes_AN,P)\cong\operatorname{Hom}_A(N,\operatorname{Hom}_A(M,P))$, $\varphi\mapsto(n\mapsto(m\mapsto\varphi(m\otimes n)))$.
+**Hom–tensor adjunction.** $\mathrm{Hom}_A(M\otimes_AN,P)\cong\mathrm{Hom}_A(N,\mathrm{Hom}_A(M,P))$, $\varphi\mapsto(n\mapsto(m\mapsto\varphi(m\otimes n)))$.
 
 **Exactness.**
-- $\operatorname{Hom}_A(M,-)$ is **left exact**: if $0\to N'\to N\to N''$ is exact then so is $0\to\operatorname{Hom}(M,N')\to\operatorname{Hom}(M,N)\to\operatorname{Hom}(M,N'')$. Similarly $\operatorname{Hom}(-,N)$ turns $M'\to M\to M''\to0$ into $0\to\operatorname{Hom}(M'',N)\to\operatorname{Hom}(M,N)\to\operatorname{Hom}(M',N)$.
-- $M\otimes_A-$ is **right exact**: $N'\to N\to N''\to0$ exact implies $M\otimes N'\to M\otimes N\to M\otimes N''\to0$ exact. *Proof:* a sequence $X'\to X\to X''\to0$ is exact iff $0\to\operatorname{Hom}(X'',P)\to\operatorname{Hom}(X,P)\to\operatorname{Hom}(X',P)$ is exact for every $P$. Apply this with $X=M\otimes N$ and use the adjunction plus left exactness of $\operatorname{Hom}(-,\operatorname{Hom}(M,P))$.
-- Neither is exact in general: $\mathbb{Z}\xrightarrow{2}\mathbb{Z}$ is injective, but after $\mathbb{Z}/2\otimes-$ it becomes the zero map $\mathbb{Z}/2\to\mathbb{Z}/2$. And $\mathbb{Z}\to\mathbb{Z}/2$ is onto, but $\operatorname{Hom}(\mathbb{Z}/2,\mathbb{Z})=0\to\operatorname{Hom}(\mathbb{Z}/2,\mathbb{Z}/2)$ is not.
+- $\mathrm{Hom}_A(M,-)$ is **left exact**: if $0\to N'\to N\to N''$ is exact then so is $0\to\mathrm{Hom}(M,N')\to\mathrm{Hom}(M,N)\to\mathrm{Hom}(M,N'')$. Similarly $\mathrm{Hom}(-,N)$ turns $M'\to M\to M''\to0$ into $0\to\mathrm{Hom}(M'',N)\to\mathrm{Hom}(M,N)\to\mathrm{Hom}(M',N)$.
+- $M\otimes_A-$ is **right exact**: $N'\to N\to N''\to0$ exact implies $M\otimes N'\to M\otimes N\to M\otimes N''\to0$ exact. *Proof:* a sequence $X'\to X\to X''\to0$ is exact iff $0\to\mathrm{Hom}(X'',P)\to\mathrm{Hom}(X,P)\to\mathrm{Hom}(X',P)$ is exact for every $P$. Apply this with $X=M\otimes N$ and use the adjunction plus left exactness of $\mathrm{Hom}(-,\mathrm{Hom}(M,P))$.
+- Neither is exact in general: $\mathbb{Z}\xrightarrow{2}\mathbb{Z}$ is injective, but after $\mathbb{Z}/2\otimes-$ it becomes the zero map $\mathbb{Z}/2\to\mathbb{Z}/2$. And $\mathbb{Z}\to\mathbb{Z}/2$ is onto, but $\mathrm{Hom}(\mathbb{Z}/2,\mathbb{Z})=0\to\mathrm{Hom}(\mathbb{Z}/2,\mathbb{Z}/2)$ is not.
 
-The failure of exactness is measured by the derived functors $\operatorname{Tor}$ and $\operatorname{Ext}$ (e.g. $\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$, $\operatorname{Ext}^1_\mathbb{Z}(\mathbb{Z}/n,\mathbb{Z})\cong\mathbb{Z}/n$). They appear in the universal coefficient theorems of 3.4.
+The failure of exactness is measured by the derived functors $\mathrm{Tor}$ and $\mathrm{Ext}$ (e.g. $\mathrm{Tor}_1^\mathbb{Z}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)$, $\mathrm{Ext}^1_\mathbb{Z}(\mathbb{Z}/n,\mathbb{Z})\cong\mathbb{Z}/n$). They appear in the universal coefficient theorems of 3.4.
 
 ---
 
 ## 4. Projective, injective and flat modules
 
-**Projective:** $P$ is projective if $\operatorname{Hom}(P,-)$ is exact; equivalently every surjection $M\to P$ splits; equivalently every map $P\to M''$ lifts through any surjection $M\to M''$; equivalently $P$ is a direct summand of a free module. Free modules are projective. Over a PID (and over local rings, for finitely generated modules) projective = free. Not in general: in $\mathbb{Z}/6\cong\mathbb{Z}/2\times\mathbb{Z}/3$, the summand $\mathbb{Z}/2$ is projective but not free.
+**Projective:** $P$ is projective if $\mathrm{Hom}(P,-)$ is exact; equivalently every surjection $M\to P$ splits; equivalently every map $P\to M''$ lifts through any surjection $M\to M''$; equivalently $P$ is a direct summand of a free module. Free modules are projective. Over a PID (and over local rings, for finitely generated modules) projective = free. Not in general: in $\mathbb{Z}/6\cong\mathbb{Z}/2\times\mathbb{Z}/3$, the summand $\mathbb{Z}/2$ is projective but not free.
 
-**Injective:** $I$ is injective if $\operatorname{Hom}(-,I)$ is exact; equivalently, maps into $I$ extend along injections. **Baer's criterion:** it suffices to extend maps from ideals $\mathfrak{a}\to I$ to $A\to I$. Over a PID, injective = divisible ($nx=y$ solvable for all $y$ and $n\ne0$). So $\mathbb{Q}$ and $\mathbb{Q}/\mathbb{Z}$ are injective $\mathbb{Z}$-modules, while $\mathbb{Z}$ is not. Every module embeds in an injective module.
+**Injective:** $I$ is injective if $\mathrm{Hom}(-,I)$ is exact; equivalently, maps into $I$ extend along injections. **Baer's criterion:** it suffices to extend maps from ideals $\mathfrak{a}\to I$ to $A\to I$. Over a PID, injective = divisible ($nx=y$ solvable for all $y$ and $n\ne0$). So $\mathbb{Q}$ and $\mathbb{Q}/\mathbb{Z}$ are injective $\mathbb{Z}$-modules, while $\mathbb{Z}$ is not. Every module embeds in an injective module.
 
 **Flat:** $F$ is flat if $F\otimes_A-$ is exact (preserves injections). Free ⇒ projective ⇒ flat. $\mathbb{Q}$ is a flat $\mathbb{Z}$-module that is not projective. Localisations $S^{-1}A$ are flat over $A$. Over a PID, flat = torsion-free. Flatness is local: $M$ is flat iff $M_\mathfrak{p}$ is flat over $A_\mathfrak{p}$ for all primes $\mathfrak{p}$.
 
-**Why this matters.** Projective and injective modules are used to build resolutions, which compute $\operatorname{Ext}$ and $\operatorname{Tor}$; flat base change is the algebraic notion of "a family varying nicely" in algebraic geometry.
+**Why this matters.** Projective and injective modules are used to build resolutions, which compute $\mathrm{Ext}$ and $\mathrm{Tor}$; flat base change is the algebraic notion of "a family varying nicely" in algebraic geometry.
 
 ---
 
@@ -79,7 +79,7 @@ The failure of exactness is measured by the derived functors $\operatorname{Tor}
 
 **Existence of maximal ideals.** Every proper ideal is contained in a maximal ideal (Zorn). So $A\ne0$ has a maximal ideal, and a non-unit lies in some maximal ideal.
 
-**Nilradical.** $\operatorname{nil}(A)=\lbrace a:a^n=0\text{ for some }n\rbrace=\bigcap_{\mathfrak{p}\text{ prime}}\mathfrak{p}$.
+**Nilradical.** $\mathrm{nil}(A)=\lbrace a:a^n=0\text{ for some }n\rbrace=\bigcap_{\mathfrak{p}\text{ prime}}\mathfrak{p}$.
 *Proof of "⊇":* if $f$ is not nilpotent, $S=\lbrace1,f,f^2,\dots\rbrace$ avoids $0$, so $S^{-1}A\ne0$ has a maximal ideal; its preimage in $A$ is a prime not containing $f$. More generally $\sqrt I=\bigcap_{\mathfrak{p}\supseteq I}\mathfrak{p}$.
 
 **Jacobson radical.** $J(A)=\bigcap_{\mathfrak{m}\text{ maximal}}\mathfrak{m}=\lbrace a:1-ab\text{ is a unit for all }b\rbrace$.
@@ -111,21 +111,21 @@ For a multiplicative set $S\ni1$, $S^{-1}A=\lbrace a/s\rbrace$ with $a/s=b/t$ if
 
 ## 7. The prime spectrum
 
-$\operatorname{Spec}A$ is the set of prime ideals with the **Zariski topology**, whose closed sets are $V(I)=\lbrace\mathfrak{p}\supseteq I\rbrace$. Basic open sets $D(f)=\operatorname{Spec}A\setminus V(f)$ form a base, and $D(f)\cong\operatorname{Spec}A_f$.
+$\mathrm{Spec}\,A$ is the set of prime ideals with the **Zariski topology**, whose closed sets are $V(I)=\lbrace\mathfrak{p}\supseteq I\rbrace$. Basic open sets $D(f)=\mathrm{Spec}\,A\setminus V(f)$ form a base, and $D(f)\cong\mathrm{Spec}\,A_f$.
 
 **Facts.**
 - $V(I)\subseteq V(J)$ iff $\sqrt I\supseteq\sqrt J$; $V(I)=\emptyset$ iff $I=A$.
 - The closure of $\lbrace\mathfrak{p}\rbrace$ is $V(\mathfrak{p})$; closed points are maximal ideals.
-- $\operatorname{Spec}A$ is quasi-compact (open covers have finite subcovers), though rarely Hausdorff.
-- A ring map $\varphi:A\to B$ induces a continuous map $\operatorname{Spec}B\to\operatorname{Spec}A$, $\mathfrak{q}\mapsto\varphi^{-1}(\mathfrak{q})$. $\operatorname{Spec}(A/I)\cong V(I)$ (closed embedding) and $\operatorname{Spec}(S^{-1}A)$ is the subspace of primes missing $S$.
-- $\operatorname{Spec}A$ is irreducible iff $\operatorname{nil}(A)$ is prime.
+- $\mathrm{Spec}\,A$ is quasi-compact (open covers have finite subcovers), though rarely Hausdorff.
+- A ring map $\varphi:A\to B$ induces a continuous map $\mathrm{Spec}\,B\to\mathrm{Spec}\,A$, $\mathfrak{q}\mapsto\varphi^{-1}(\mathfrak{q})$. $\mathrm{Spec}(A/I)\cong V(I)$ (closed embedding) and $\mathrm{Spec}(S^{-1}A)$ is the subspace of primes missing $S$.
+- $\mathrm{Spec}\,A$ is irreducible iff $\mathrm{nil}(A)$ is prime.
 
 **Examples.**
-- $\operatorname{Spec}\mathbb{Z}=\lbrace(0)\rbrace\cup\lbrace(p)\rbrace$. Closed sets: the whole space and finite sets of non-zero primes. $(0)$ is a dense "generic point".
-- $\operatorname{Spec}\mathbb{C}[x]=\lbrace(0)\rbrace\cup\lbrace(x-a):a\in\mathbb{C}\rbrace$: the complex line plus a generic point.
-- $\operatorname{Spec}\mathbb{R}[x]$: $(0)$, $(x-a)$ for $a\in\mathbb{R}$, and $(x^2+bx+c)$ irreducible, i.e. conjugate pairs of non-real points.
-- $\operatorname{Spec}\mathbb{C}[x,y]$: $(0)$, irreducible curves $(f)$, and points $(x-a,y-b)$ (by the Nullstellensatz).
-- $\operatorname{Spec}\mathbb{Z}[x]$: Mumford's "arithmetic surface": $(0)$, $(p)$, $(f)$ for irreducible primitive $f$, and maximal ideals $(p,f)$ with $f$ irreducible mod $p$.
+- $\mathrm{Spec}\,\mathbb{Z}=\lbrace(0)\rbrace\cup\lbrace(p)\rbrace$. Closed sets: the whole space and finite sets of non-zero primes. $(0)$ is a dense "generic point".
+- $\mathrm{Spec}\,\mathbb{C}[x]=\lbrace(0)\rbrace\cup\lbrace(x-a):a\in\mathbb{C}\rbrace$: the complex line plus a generic point.
+- $\mathrm{Spec}\,\mathbb{R}[x]$: $(0)$, $(x-a)$ for $a\in\mathbb{R}$, and $(x^2+bx+c)$ irreducible, i.e. conjugate pairs of non-real points.
+- $\mathrm{Spec}\,\mathbb{C}[x,y]$: $(0)$, irreducible curves $(f)$, and points $(x-a,y-b)$ (by the Nullstellensatz).
+- $\mathrm{Spec}\,\mathbb{Z}[x]$: Mumford's "arithmetic surface": $(0)$, $(p)$, $(f)$ for irreducible primitive $f$, and maximal ideals $(p,f)$ with $f$ irreducible mod $p$.
 
 ---
 
@@ -204,7 +204,7 @@ A **discrete valuation ring** (DVR) is a local PID that is not a field; equivale
 
 A **Dedekind domain** is a Noetherian, integrally closed domain of dimension $\le1$. Equivalently: a Noetherian domain whose localisations at non-zero primes are DVRs. Examples: PIDs; rings of integers $\mathcal{O}_K$ of number fields (they are Noetherian as finitely generated $\mathbb{Z}$-modules, integrally closed by definition, and of dimension $1$ by going up over $\mathbb{Z}$); coordinate rings of smooth affine curves.
 
-**Main theorem.** In a Dedekind domain every non-zero ideal factors uniquely as a product of prime ideals. The fractional ideals form a group; modulo principal fractional ideals this is the **ideal class group** $\operatorname{Cl}(A)$, trivial iff $A$ is a PID iff $A$ is a UFD. For rings of integers, $\operatorname{Cl}$ is finite (Minkowski).
+**Main theorem.** In a Dedekind domain every non-zero ideal factors uniquely as a product of prime ideals. The fractional ideals form a group; modulo principal fractional ideals this is the **ideal class group** $\mathrm{Cl}(A)$, trivial iff $A$ is a PID iff $A$ is a UFD. For rings of integers, $\mathrm{Cl}$ is finite (Minkowski).
 
 **Rings of integers of quadratic fields.** For squarefree $d\ne0,1$, the integral closure of $\mathbb{Z}$ in $\mathbb{Q}(\sqrt d)$ is $\mathbb{Z}[\sqrt d]$ if $d\equiv2,3\pmod4$ and $\mathbb{Z}[\frac{1+\sqrt d}2]$ if $d\equiv1\pmod4$.
 
@@ -212,7 +212,7 @@ A **Dedekind domain** is a Noetherian, integrally closed domain of dimension $\l
 $$
 (2)=\mathfrak{p}^2,\quad(3)=\mathfrak{q}\mathfrak{q}',\quad(1+\sqrt{-5})=\mathfrak{p}\mathfrak{q},\quad(1-\sqrt{-5})=\mathfrak{p}\mathfrak{q}',
 $$
-with $\mathfrak{p}=(2,1+\sqrt{-5})$, $\mathfrak{q}=(3,1+\sqrt{-5})$, $\mathfrak{q}'=(3,1-\sqrt{-5})$. Both factorisations of $6$ are the same ideal factorisation $\mathfrak{p}^2\mathfrak{q}\mathfrak{q}'$, grouped differently. $\mathfrak{p}$ is not principal; $\operatorname{Cl}\cong\mathbb{Z}/2$.
+with $\mathfrak{p}=(2,1+\sqrt{-5})$, $\mathfrak{q}=(3,1+\sqrt{-5})$, $\mathfrak{q}'=(3,1-\sqrt{-5})$. Both factorisations of $6$ are the same ideal factorisation $\mathfrak{p}^2\mathfrak{q}\mathfrak{q}'$, grouped differently. $\mathfrak{p}$ is not principal; $\mathrm{Cl}\,\cong\mathbb{Z}/2$.
 
 **How primes split.** For $K=\mathbb{Q}(\sqrt d)$ and an odd prime $p\nmid d$, $p$ splits if $d$ is a non-zero square mod $p$ and is inert otherwise; primes dividing the discriminant ramify. This is where quadratic reciprocity lives.
 
@@ -222,7 +222,7 @@ with $\mathfrak{p}=(2,1+\sqrt{-5})$, $\mathfrak{q}=(3,1+\sqrt{-5})$, $\mathfrak{
 
 Throughout, $G$ is a finite group and representations are on finite-dimensional complex vector spaces.
 
-A **representation** is a homomorphism $\rho:G\to GL(V)$; equivalently a $\mathbb{C}[G]$-module. A **subrepresentation** is a $G$-invariant subspace; $V$ is **irreducible** if it has no subrepresentations other than $0$ and $V$. Morphisms are **$G$-maps** (intertwiners). Constructions: direct sums, tensor products ($g(v\otimes w)=gv\otimes gw$), duals, $\operatorname{Hom}(V,W)$ with $(g\varphi)(v)=g\varphi(g^{-1}v)$. The **regular representation** is $\mathbb{C}[G]$ acting on itself.
+A **representation** is a homomorphism $\rho:G\to GL(V)$; equivalently a $\mathbb{C}[G]$-module. A **subrepresentation** is a $G$-invariant subspace; $V$ is **irreducible** if it has no subrepresentations other than $0$ and $V$. Morphisms are **$G$-maps** (intertwiners). Constructions: direct sums, tensor products ($g(v\otimes w)=gv\otimes gw$), duals, $\mathrm{Hom}(V,W)$ with $(g\varphi)(v)=g\varphi(g^{-1}v)$. The **regular representation** is $\mathbb{C}[G]$ acting on itself.
 
 **Maschke's theorem.** Every subrepresentation $W\subseteq V$ has a $G$-invariant complement. Hence every representation is a direct sum of irreducibles.
 
@@ -236,19 +236,19 @@ The proof needs $\lvert G\rvert$ invertible in the field; in characteristic $p\m
 
 **Schur's lemma.** If $V,W$ are irreducible and $\varphi:V\to W$ is a $G$-map, then $\varphi$ is $0$ or an isomorphism (kernel and image are subrepresentations). Over $\mathbb{C}$, every $G$-map $V\to V$ is a scalar (it has an eigenvalue $\lambda$, and $\varphi-\lambda$ is a non-injective $G$-map). Consequences: irreducible representations of abelian groups are $1$-dimensional; the centre acts by scalars on an irreducible representation.
 
-**Characters.** $\chi_V(g)=\operatorname{tr}\rho(g)$. Properties: $\chi_V(1)=\dim V$; $\chi_V$ is a class function; $\chi_{V\oplus W}=\chi_V+\chi_W$; $\chi_{V\otimes W}=\chi_V\chi_W$; $\chi_{V^*}=\overline{\chi_V}$, and $\chi_V(g^{-1})=\overline{\chi_V(g)}$ because $\rho(g)$ has finite order, so its eigenvalues are roots of unity. The regular character is $\lvert G\rvert$ at $1$ and $0$ elsewhere.
+**Characters.** $\chi_V(g)=\mathrm{tr}\,\rho(g)$. Properties: $\chi_V(1)=\dim V$; $\chi_V$ is a class function; $\chi_{V\oplus W}=\chi_V+\chi_W$; $\chi_{V\otimes W}=\chi_V\chi_W$; $\chi_{V^*}=\overline{\chi_V}$, and $\chi_V(g^{-1})=\overline{\chi_V(g)}$ because $\rho(g)$ has finite order, so its eigenvalues are roots of unity. The regular character is $\lvert G\rvert$ at $1$ and $0$ elsewhere.
 
 On class functions define
 $$
 \langle\alpha,\beta\rangle=\frac1{\lvert G\rvert}\sum_{g\in G}\alpha(g)\overline{\beta(g)} .
 $$
 
-**Key computation.** For any representation $U$, the averaging map $e=\frac1{\lvert G\rvert}\sum_g\rho_U(g)$ is a projection onto the invariants $U^G$, so $\dim U^G=\operatorname{tr}e=\frac1{\lvert G\rvert}\sum_g\chi_U(g)$. Apply this to $U=\operatorname{Hom}(V,W)$, whose character is $\overline{\chi_V}\chi_W$ and whose invariants are the $G$-maps:
+**Key computation.** For any representation $U$, the averaging map $e=\frac1{\lvert G\rvert}\sum_g\rho_U(g)$ is a projection onto the invariants $U^G$, so $\dim U^G=\mathrm{tr}\,e=\frac1{\lvert G\rvert}\sum_g\chi_U(g)$. Apply this to $U=\mathrm{Hom}(V,W)$, whose character is $\overline{\chi_V}\chi_W$ and whose invariants are the $G$-maps:
 $$
-\dim\operatorname{Hom}_G(V,W)=\langle\chi_W,\chi_V\rangle .
+\dim\mathrm{Hom}_G(V,W)=\langle\chi_W,\chi_V\rangle .
 $$
 
-**First orthogonality relation.** The irreducible characters are orthonormal: $\langle\chi_i,\chi_j\rangle=\delta_{ij}$ (by Schur, $\dim\operatorname{Hom}_G(V_i,V_j)=\delta_{ij}$).
+**First orthogonality relation.** The irreducible characters are orthonormal: $\langle\chi_i,\chi_j\rangle=\delta_{ij}$ (by Schur, $\dim\mathrm{Hom}_G(V_i,V_j)=\delta_{ij}$).
 
 *Consequences.*
 - A representation is determined up to isomorphism by its character. The multiplicity of $V_i$ in $V$ is $\langle\chi_V,\chi_i\rangle$.
@@ -260,11 +260,11 @@ $$
 
 **Further facts (statements).** $\dim V_i$ divides $\lvert G\rvert$ (via algebraic integers). **Artin–Wedderburn:** $\mathbb{C}[G]\cong\prod_iM_{d_i}(\mathbb{C})$. **Burnside's theorem:** groups of order $p^aq^b$ are solvable (proved with character theory). The one-dimensional representations are the homomorphisms $G\to\mathbb{C}^\times$, which factor through $G/[G,G]$; there are $[G:[G,G]]$ of them.
 
-**Induction.** For $H\le G$ and a representation $W$ of $H$, $\operatorname{Ind}_H^GW=\mathbb{C}[G]\otimes_{\mathbb{C}[H]}W$, of dimension $[G:H]\dim W$, with character
+**Induction.** For $H\le G$ and a representation $W$ of $H$, $\mathrm{Ind}_H^GW=\mathbb{C}[G]\otimes_{\mathbb{C}[H]}W$, of dimension $[G:H]\dim W$, with character
 $$
-\chi_{\operatorname{Ind}W}(g)=\frac1{\lvert H\rvert}\sum_{x\in G,\ x^{-1}gx\in H}\chi_W(x^{-1}gx).
+\chi_{\mathrm{Ind}\,W}(g)=\frac1{\lvert H\rvert}\sum_{x\in G,\ x^{-1}gx\in H}\chi_W(x^{-1}gx).
 $$
-**Frobenius reciprocity:** $\operatorname{Hom}_G(\operatorname{Ind}_H^GW,V)\cong\operatorname{Hom}_H(W,\operatorname{Res}_H^GV)$, i.e. $\langle\operatorname{Ind}\chi_W,\chi_V\rangle_G=\langle\chi_W,\operatorname{Res}\chi_V\rangle_H$. (This is the Hom–tensor adjunction of §3 again.)
+**Frobenius reciprocity:** $\mathrm{Hom}_G(\mathrm{Ind}_H^GW,V)\cong\mathrm{Hom}_H(W,\mathrm{Res}_H^GV)$, i.e. $\langle\mathrm{Ind}\,\chi_W,\chi_V\rangle_G=\langle\chi_W,\mathrm{Res}\,\chi_V\rangle_H$. (This is the Hom–tensor adjunction of §3 again.)
 
 **Character tables.**
 
@@ -305,8 +305,8 @@ $A_4$ (classes: identity; 3 double transpositions; 4 elements conjugate to $(123
 
 ## 14. Connections forward
 
-- **[3.4 Algebraic topology](../3.4-algebraic-topology/):** chain complexes are sequences of modules; the snake lemma gives long exact sequences in homology; $\operatorname{Tor}$ and $\operatorname{Ext}$ appear in the universal coefficient and Künneth theorems; homology is a functor and the Eilenberg–Steenrod axioms are categorical.
-- **Algebraic geometry:** $\operatorname{Spec}$, localisation and the Nullstellensatz are the foundations of schemes; Noether normalisation gives dimension theory; flatness describes families; Dedekind domains are the algebra of smooth curves.
+- **[3.4 Algebraic topology](../3.4-algebraic-topology/):** chain complexes are sequences of modules; the snake lemma gives long exact sequences in homology; $\mathrm{Tor}$ and $\mathrm{Ext}$ appear in the universal coefficient and Künneth theorems; homology is a functor and the Eilenberg–Steenrod axioms are categorical.
+- **Algebraic geometry:** $\mathrm{Spec}$, localisation and the Nullstellensatz are the foundations of schemes; Noether normalisation gives dimension theory; flatness describes families; Dedekind domains are the algebra of smooth curves.
 - **Algebraic number theory:** rings of integers, splitting of primes, class groups, and the finiteness of the class number; local fields via completion of DVRs.
 - **[3.5 Smooth manifolds](../3.5-smooth-manifolds/) and Lie theory:** tensor products and exterior powers of vector spaces become tensor fields and differential forms; representation theory of compact Lie groups (Peter–Weyl) extends §12, with averaging over $G$ replaced by integration against Haar measure (compare [3.1](../3.1-measure-integration/)).
 - **[3.2 Functional analysis](../3.2-functional-analysis/):** Schur's lemma and orthogonality reappear for unitary representations on Hilbert spaces; the group algebra $\mathbb{C}[G]$ becomes $L^1(G)$ and the C\*-algebra of $G$.

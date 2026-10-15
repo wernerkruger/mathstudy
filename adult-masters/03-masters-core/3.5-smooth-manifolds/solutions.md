@@ -149,7 +149,7 @@ $$
 \int_{S^2}\omega=\int_0^{2\pi}\!\!\int_0^\pi\sin\varphi\,d\varphi\,d\theta=2\pi\cdot2=4\pi.
 $$
 
-*By Stokes.* $\int_{S^2}\omega=\int_{\overline{B}^3}d\omega=3\operatorname{vol}(B^3)=3\cdot\tfrac43\pi=4\pi$. $\square$
+*By Stokes.* $\int_{S^2}\omega=\int_{\overline{B}^3}d\omega=3\mathrm{vol}(B^3)=3\cdot\tfrac43\pi=4\pi$. $\square$
 
 ### 12. $H^1_{dR}(S^1)\cong\mathbb{R}$
 
@@ -173,7 +173,7 @@ Suppose $F:M\to\mathbb{R}^k$ is a smooth submersion. Submersions are open maps (
 
 ### 15. Existence of Riemannian metrics
 
-Cover $M$ by charts $(U_\alpha,\varphi_\alpha)$ and let $g_\alpha=\varphi_\alpha^*\bar g$, the pullback of the Euclidean metric $\bar g=\sum(dx^i)^2$: a Riemannian metric on $U_\alpha$ (positive definite since $d\varphi_\alpha$ is injective). Let $\lbrace\psi_\alpha\rbrace$ be a smooth partition of unity subordinate to $\lbrace U_\alpha\rbrace$. Then $\psi_\alpha g_\alpha$, extended by zero outside $\operatorname{supp}\psi_\alpha$, is a smooth symmetric 2-tensor field on $M$, and
+Cover $M$ by charts $(U_\alpha,\varphi_\alpha)$ and let $g_\alpha=\varphi_\alpha^*\bar g$, the pullback of the Euclidean metric $\bar g=\sum(dx^i)^2$: a Riemannian metric on $U_\alpha$ (positive definite since $d\varphi_\alpha$ is injective). Let $\lbrace\psi_\alpha\rbrace$ be a smooth partition of unity subordinate to $\lbrace U_\alpha\rbrace$. Then $\psi_\alpha g_\alpha$, extended by zero outside $\mathrm{supp}\,\psi_\alpha$, is a smooth symmetric 2-tensor field on $M$, and
 $$
 g=\sum_\alpha\psi_\alpha g_\alpha
 $$
@@ -185,10 +185,10 @@ is a locally finite sum, hence smooth and symmetric. For $p\in M$ and $0\ne v\in
 
 (a) $p:\mathbb{R}^2\to T^2$, $p(s,u)=(e^{2\pi is},e^{2\pi iu})$, is a local diffeomorphism and $p(x+m)=p(x)$ for $m\in\mathbb{Z}^2$. Since translations preserve $\partial_s,\partial_u$, the vector fields $E_1=dp(\partial_s)$, $E_2=dp(\partial_u)$ are well defined on $T^2$, smooth, and linearly independent at every point. (Alternatively: $T^2$ is a Lie group, and every Lie group is parallelizable by left-invariant fields.)
 
-(b) Use $\langle p,q\rangle=\operatorname{Re}(p\bar q)$, the Euclidean inner product on $\mathbb{H}=\mathbb{R}^4$, and $|pq|=|p||q|$. For a unit quaternion $p$ and $u\in\lbrace i,j,k\rbrace$:
+(b) Use $\langle p,q\rangle=\mathrm{Re}(p\bar q)$, the Euclidean inner product on $\mathbb{H}=\mathbb{R}^4$, and $|pq|=|p||q|$. For a unit quaternion $p$ and $u\in\lbrace i,j,k\rbrace$:
 - $|up|=1$;
-- $\langle up,p\rangle=\operatorname{Re}(up\bar p)=\operatorname{Re}(u)=0$, so $up\in p^\perp=T_pS^3$;
-- $\langle ip,jp\rangle=\operatorname{Re}(ip\bar p\bar j)=\operatorname{Re}(i\cdot(-j))=\operatorname{Re}(-k)=0$; similarly $\langle ip,kp\rangle=\operatorname{Re}(-ik)=\operatorname{Re}(j)=0$ and $\langle jp,kp\rangle=\operatorname{Re}(-jk)=\operatorname{Re}(-i)=0$.
+- $\langle up,p\rangle=\mathrm{Re}(up\bar p)=\mathrm{Re}(u)=0$, so $up\in p^\perp=T_pS^3$;
+- $\langle ip,jp\rangle=\mathrm{Re}(ip\bar p\bar j)=\mathrm{Re}(i\cdot(-j))=\mathrm{Re}(-k)=0$; similarly $\langle ip,kp\rangle=\mathrm{Re}(-ik)=\mathrm{Re}(j)=0$ and $\langle jp,kp\rangle=\mathrm{Re}(-jk)=\mathrm{Re}(-i)=0$.
 
 The maps $p\mapsto up$ are restrictions of linear maps, hence smooth. So $(ip,jp,kp)$ is a global orthonormal frame on $S^3$.
 
@@ -206,7 +206,7 @@ Let $U=S^n\setminus\lbrace N\rbrace$, $V=S^n\setminus\lbrace S\rbrace$. Both are
 $$
 0\to H^0(S^1)\to H^0(U)\oplus H^0(V)\xrightarrow{\ \beta\ }H^0(U\cap V)\xrightarrow{\ \delta\ }H^1(S^1)\to H^1(U)\oplus H^1(V)=0.
 $$
-$H^0(S^1)=\mathbb{R}$ (connected). Dimensions: $\mathbb{R}\to\mathbb{R}^2\to\mathbb{R}^2\to H^1(S^1)\to0$. Exactness gives $\dim\operatorname{im}\beta=2-1=1$, so $\dim H^1(S^1)=2-1=1$. And $H^k(S^1)=0$ for $k\ge2$ by dimension.
+$H^0(S^1)=\mathbb{R}$ (connected). Dimensions: $\mathbb{R}\to\mathbb{R}^2\to\mathbb{R}^2\to H^1(S^1)\to0$. Exactness gives $\dim\mathrm{im}\,\beta=2-1=1$, so $\dim H^1(S^1)=2-1=1$. And $H^k(S^1)=0$ for $k\ge2$ by dimension.
 
 *$n\ge2$.* All of $S^n,U,V,U\cap V$ are connected.
 - Degree 0–1: $0\to\mathbb{R}\to\mathbb{R}^2\xrightarrow{\beta}\mathbb{R}\xrightarrow{\delta}H^1(S^n)\to0$. $\beta(a,b)=a-b$ is surjective, so $\delta=0$ and $H^1(S^n)=0$.
@@ -266,17 +266,17 @@ so $c$ is an integral curve of $Y$ with $c(0)=\theta_t(q)$. By uniqueness of int
 
 ($\Leftarrow$) If the flows commute, differentiate $\theta_t(\psi_s(q))=\psi_s(\theta_t(q))$ in $s$ at $s=0$: $d\theta_t(Y_q)=Y_{\theta_t(q)}$ for all $t,q$. Then $V(t)=d(\theta_{-t})(Y_{\theta_t(p)})=Y_p$ is constant, so $[X,Y]_p=\mathcal{L}_XY(p)=V'(0)=0$. $\square$
 
-### 22. $SL(n,\mathbb{R})$ and $\det\exp=\exp\operatorname{tr}$
+### 22. $SL(n,\mathbb{R})$ and $\det\exp=\exp\mathrm{tr}$
 
-(a) $\det(A+tB)=\det(A)\det(I+tA^{-1}B)$. For any matrix $C$, $\det(I+tC)=1+t\operatorname{tr}C+O(t^2)$ (expand the determinant: the only terms of order $\le1$ in $t$ come from the product of diagonal entries). So
+(a) $\det(A+tB)=\det(A)\det(I+tA^{-1}B)$. For any matrix $C$, $\det(I+tC)=1+t\mathrm{tr}\,C+O(t^2)$ (expand the determinant: the only terms of order $\le1$ in $t$ come from the product of diagonal entries). So
 $$
-d(\det)_A(B)=\frac{d}{dt}\Big|_0\det(A+tB)=\det(A)\operatorname{tr}(A^{-1}B).
+d(\det)_A(B)=\frac{d}{dt}\Big|_0\det(A+tB)=\det(A)\mathrm{tr}(A^{-1}B).
 $$
 
-(b) For $A\in SL(n)$ and $c\in\mathbb{R}$, $d(\det)_A(cA/n)=\operatorname{tr}(cI/n)=c$. So $d(\det)_A$ is onto $\mathbb{R}$ and $1$ is a regular value of $\det:GL(n)\to\mathbb{R}\setminus0$. Therefore $SL(n)=\det^{-1}(1)$ is an embedded submanifold of dimension $n^2-1$, and $T_ISL(n)=\ker d(\det)_I=\lbrace B:\operatorname{tr}B=0\rbrace$.
+(b) For $A\in SL(n)$ and $c\in\mathbb{R}$, $d(\det)_A(cA/n)=\mathrm{tr}(cI/n)=c$. So $d(\det)_A$ is onto $\mathbb{R}$ and $1$ is a regular value of $\det:GL(n)\to\mathbb{R}\setminus0$. Therefore $SL(n)=\det^{-1}(1)$ is an embedded submanifold of dimension $n^2-1$, and $T_ISL(n)=\ker d(\det)_I=\lbrace B:\mathrm{tr}\,B=0\rbrace$.
 
 (c) Let $g(t)=\det(e^{tB})$. Since $\frac{d}{dt}e^{tB}=Be^{tB}$, the chain rule and (a) give
 $$
-g'(t)=\det(e^{tB})\operatorname{tr}\big(e^{-tB}Be^{tB}\big)=g(t)\operatorname{tr}B,
+g'(t)=\det(e^{tB})\mathrm{tr}\,\big(e^{-tB}Be^{tB}\big)=g(t)\mathrm{tr}\,B,
 $$
-using $\operatorname{tr}(P^{-1}BP)=\operatorname{tr}B$. With $g(0)=1$, $g(t)=e^{t\operatorname{tr}B}$; at $t=1$, $\det e^B=e^{\operatorname{tr}B}$. In particular $\operatorname{tr}B=0$ implies $\det e^B=1$, so $\exp$ maps $\mathfrak{sl}(n,\mathbb{R})$ into $SL(n,\mathbb{R})$. $\square$
+using $\mathrm{tr}(P^{-1}BP)=\mathrm{tr}\,B$. With $g(0)=1$, $g(t)=e^{t\mathrm{tr}\,B}$; at $t=1$, $\det e^B=e^{\mathrm{tr}\,B}$. In particular $\mathrm{tr}\,B=0$ implies $\det e^B=1$, so $\exp$ maps $\mathfrak{sl}(n,\mathbb{R})$ into $SL(n,\mathbb{R})$. $\square$

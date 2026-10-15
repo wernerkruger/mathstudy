@@ -20,7 +20,7 @@ All results were checked with SymPy.
 **5.** (a) Circle with centre $2i$ (the point $(0, 2)$) and radius 3.
 (b) Points equidistant from $1$ and $-i$: the perpendicular bisector of the segment from $(1, 0)$ to $(0, -1)$. With $z = x + iy$: $(x - 1)^2 + y^2 = x^2 + (y + 1)^2 \iff -2x = 2y \iff y = -x$.
 (c) The open half-line from $0$ through $1 + i$ (the origin itself excluded, since $\arg 0$ is undefined).
-(d) Points at least as close to $1$ as to $-1$: the closed half-plane $\operatorname{Re} z \ge 0$.
+(d) Points at least as close to $1$ as to $-1$: the closed half-plane $\mathrm{Re}\, z \ge 0$.
 
 **6.** $1 + i = \sqrt2e^{i\pi/4}$, so $(1 + i)^{10} = 2^5e^{10i\pi/4} = 32e^{5i\pi/2} = 32e^{i\pi/2} = 32i$.
 
@@ -110,7 +110,7 @@ $$S = e^{i\theta}\frac{e^{in\theta} - 1}{e^{i\theta} - 1} = e^{i\theta}\frac{e^{
 
 The real part is $\dfrac{\sin\frac{n\theta}2\cos\frac{(n + 1)\theta}2}{\sin\frac\theta2}$, and the real part of $S$ is the cosine sum. (Numerical check $n = 5$, $\theta = 0.7$: both sides $-1.4487$.) The imaginary part gives the sine sum for free.
 
-**24.** If $(z + 1)^5 = z^5$, take moduli: $\lvert z + 1\rvert^5 = \lvert z\rvert^5$, so $\lvert z - (-1)\rvert = \lvert z - 0\rvert$: $z$ is equidistant from $-1$ and $0$, so it is on the perpendicular bisector $\operatorname{Re}z = -\frac12$.
+**24.** If $(z + 1)^5 = z^5$, take moduli: $\lvert z + 1\rvert^5 = \lvert z\rvert^5$, so $\lvert z - (-1)\rvert = \lvert z - 0\rvert$: $z$ is equidistant from $-1$ and $0$, so it is on the perpendicular bisector $\mathrm{Re}\,z = -\frac12$.
 Exact solutions: $z = 0$ is not a solution, so we may write $\left(\frac{z + 1}z\right)^5 = 1$, i.e. $1 + \frac1z = \omega^k$ with $\omega = e^{2\pi i/5}$, $k = 1, 2, 3, 4$ ($k = 0$ would need $\frac1z = 0$). So $z = \dfrac{1}{\omega^k - 1}$. With $\omega^k - 1 = e^{i\theta/2}\cdot 2i\sin\frac\theta2$, $\theta = \frac{2k\pi}5$:
 
 $$z = \frac{e^{-i\theta/2}}{2i\sin\frac\theta2} = \frac{-i\cos\frac\theta2 - \sin\frac\theta2}{2\sin\frac\theta2} = -\frac12 - \frac i2\cot\frac{k\pi}{5}, \quad k = 1, 2, 3, 4.$$

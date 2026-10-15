@@ -12,7 +12,7 @@ Try every problem properly before reading its solution.
 
 (a) Common denominator 12: $\dfrac{8}{12} + \dfrac{3}{12} = \dfrac{11}{12}$.
 
-(b) $\operatorname{lcm}(6, 8) = 24$: $\dfrac{20}{24} - \dfrac{9}{24} = \dfrac{11}{24}$.
+(b) $\mathrm{lcm}(6, 8) = 24$: $\dfrac{20}{24} - \dfrac{9}{24} = \dfrac{11}{24}$.
 
 (c) $\dfrac73 - \dfrac74 = \dfrac{28}{12} - \dfrac{21}{12} = \dfrac{7}{12}$.
 
@@ -60,7 +60,7 @@ Divide by 4, then multiply by 7: **525 g**.
 
 (a) $0.15\cdot 80 = 12$.
 
-(b) After 20% off you pay 80%: original $\cdot\, 0.8 = 64$, so the original is $64 \div 0.8 = $ **€80**.
+(b) After 20% off you pay 80%: original $\cdot\, 0.8 = 64$, so the original is $64 \div 0.8 =$ **€80**.
 
 (c) $58 \div 50 = 1.16$: an increase of **16%**.
 
@@ -113,13 +113,13 @@ Divide by 4, then multiply by 7: **525 g**.
 
 ### 12.
 
-Price incl. BTW $=$ price excl. BTW $\times\, 1.21$. So excl. BTW: $847 \div 1.21 = $ **€700**. BTW: $847 - 700 = $ **€147** (which is 21% of 700 ✓).
+Price incl. BTW $=$ price excl. BTW $\times\, 1.21$. So excl. BTW: $847 \div 1.21 =$ **€700**. BTW: $847 - 700 =$ **€147** (which is 21% of 700 ✓).
 
 ### 13.
 
-(a) $6.4\cdot 25\,000 = 160\,000$ cm $= 1600$ m $= $ **1.6 km**.
+(a) $6.4\cdot 25\,000 = 160\,000$ cm $= 1600$ m $=$ **1.6 km**.
 
-(b) Areas scale by $25\,000^2$. Easier: 1 cm on the map is $250$ m $= 0.25$ km, so 1 cm² on the map is $0.25^2 = 0.0625$ km². Then 3 cm² is $3\cdot 0.0625 = $ **0.1875 km²** (that is $187\,500$ m²).
+(b) Areas scale by $25\,000^2$. Easier: 1 cm on the map is $250$ m $= 0.25$ km, so 1 cm² on the map is $0.25^2 = 0.0625$ km². Then 3 cm² is $3\cdot 0.0625 =$ **0.1875 km²** (that is $187\,500$ m²).
 
 ### 14.
 
@@ -222,7 +222,7 @@ Proof that $1.024^{10} < 1.3$ (which is far more than we need):
 
 ### 24.
 
-Growth factors: $\left(1 + \tfrac{p}{100}\right)\left(1 - \tfrac{p}{100}\right) = 0.96$. Write $q = \tfrac{p}{100}$. Then $(1 + q)(1 - q) = 1 - q^2$ (expand the brackets: $1 - q + q - q^2$). So $1 - q^2 = 0.96$, $q^2 = 0.04$, $q = 0.2$ (as $q > 0$). So $p = $ **20**.
+Growth factors: $\left(1 + \tfrac{p}{100}\right)\left(1 - \tfrac{p}{100}\right) = 0.96$. Write $q = \tfrac{p}{100}$. Then $(1 + q)(1 - q) = 1 - q^2$ (expand the brackets: $1 - q + q - q^2$). So $1 - q^2 = 0.96$, $q^2 = 0.04$, $q = 0.2$ (as $q > 0$). So $p =$ **20**.
 
 Check: $1.2\cdot 0.8 = 0.96$. ✓ (This is the same as problem 9.)
 

@@ -82,7 +82,7 @@ Abbreviations: **Ax** = Axler MIRA; **Br** = Brezis; **Kr** = Kreyszig; **Mc** =
 - [ ] Weak and weak* topologies; weakly convergent sequences are bounded
 - [ ] Banach–Alaoglu theorem; sequential version for separable $X$
 - [ ] Mazur's theorem: closed convex sets are weakly closed
-- [ ] Adjoint operator; $\ker T^*=(\operatorname{ran}T)^\perp$
+- [ ] Adjoint operator; $\ker T^*=(\mathrm{ran}\,T)^\perp$
 - [ ] Spectrum: non-empty and compact; spectral radius formula; point/continuous/residual spectrum; shift operators
 - [ ] Compact operators: closed ideal; norm limits of finite-rank operators (in Hilbert space); Hilbert–Schmidt operators
 - [ ] Spectrum of a compact operator: eigenvalues of finite multiplicity accumulating only at $0$

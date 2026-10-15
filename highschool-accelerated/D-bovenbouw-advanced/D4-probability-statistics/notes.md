@@ -4,7 +4,7 @@
 
 These notes cover what the Dutch upper school calls *kansrekening en statistiek* (probability and statistics). Probability with expected value and standard deviation will be in the central exam (*centraal examen*, CE) of wiskunde techniek; statistics (testing, correlation, regression) is school-exam (*schoolexamen*, SE) material and part of Wiskunde D. You already met counting and simple probability in stage B ([B-onderbouw-compact](../../B-onderbouw-compact/)). Here we make it rigorous and build the tools a scientist actually uses.
 
-Notation. $P(A)$ is the probability of event $A$. $\bar A$ is the complement ("not $A$"). $P(A \mid B)$ is the probability of $A$ given $B$. $E(X)$ is the expected value of $X$, $\sigma(X)$ its standard deviation, and $\operatorname{Var}(X) = \sigma(X)^2$ its variance. GR means *grafische rekenmachine* (graphing calculator). Calculator commands are written in a neutral way (binompdf, binomcdf, normalcdf, invNorm); on a TI-84 they live under DISTR, on a Casio under STAT → DIST.
+Notation. $P(A)$ is the probability of event $A$. $\bar A$ is the complement ("not $A$"). $P(A \mid B)$ is the probability of $A$ given $B$. $E(X)$ is the expected value of $X$, $\sigma(X)$ its standard deviation, and $\mathrm{Var}(X) = \sigma(X)^2$ its variance. GR means *grafische rekenmachine* (graphing calculator). Calculator commands are written in a neutral way (binompdf, binomcdf, normalcdf, invNorm); on a TI-84 they live under DISTR, on a Casio under STAT → DIST.
 
 ---
 
@@ -156,14 +156,14 @@ Why this definition? Repeat the experiment $N$ times. Value $x$ turns up about $
 The standard deviation measures the typical distance from the mean:
 
 $$
-\operatorname{Var}(X) = E\big((X - \mu)^2\big) = \sum_x (x - \mu)^2 P(X = x), \qquad \sigma(X) = \sqrt{\operatorname{Var}(X)},
+\mathrm{Var}(X) = E\big((X - \mu)^2\big) = \sum_x (x - \mu)^2 P(X = x), \qquad \sigma(X) = \sqrt{\mathrm{Var}(X)},
 $$
 
 with $\mu = E(X)$. We square the distances so that positive and negative deviations do not cancel, and take the square root at the end so that $\sigma$ has the same unit as $X$ (euros, not square euros).
 
-A useful shortcut (proved in problem 22) is $\operatorname{Var}(X) = E(X^2) - \big(E(X)\big)^2$.
+A useful shortcut (proved in problem 22) is $\mathrm{Var}(X) = E(X^2) - \big(E(X)\big)^2$.
 
-**Worked example 3.** For one die, $E(X^2) = \frac{1+4+9+16+25+36}{6} = \frac{91}{6}$, so $\operatorname{Var}(X) = \frac{91}{6} - 3.5^2 = \frac{35}{12} \approx 2.917$ and $\sigma(X) \approx 1.708$.
+**Worked example 3.** For one die, $E(X^2) = \frac{1+4+9+16+25+36}{6} = \frac{91}{6}$, so $\mathrm{Var}(X) = \frac{91}{6} - 3.5^2 = \frac{35}{12} \approx 2.917$ and $\sigma(X) \approx 1.708$.
 
 On the GR: put the values in list L1 and the probabilities in L2, then run "1-Var Stats L1, L2". The output $\bar x$ is $E(X)$ and $\sigma_x$ is $\sigma(X)$.
 
@@ -191,7 +191,7 @@ This simple fact is surprisingly powerful (see problem 25: the expected number o
 
 ### 5.2 Variance of a sum of independent variables
 
-**Theorem.** If $X$ and $Y$ are independent, then $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$.
+**Theorem.** If $X$ and $Y$ are independent, then $\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$.
 
 *Proof.* Write $\mu_X, \mu_Y$ for the means. Then
 
@@ -199,13 +199,13 @@ $$
 (X + Y - \mu_X - \mu_Y)^2 = (X - \mu_X)^2 + (Y - \mu_Y)^2 + 2(X - \mu_X)(Y - \mu_Y).
 $$
 
-Take expected values. The first two terms give $\operatorname{Var}(X) + \operatorname{Var}(Y)$. For the last term, independence means $P(X = x, Y = y) = P(X = x)P(Y = y)$, so
+Take expected values. The first two terms give $\mathrm{Var}(X) + \mathrm{Var}(Y)$. For the last term, independence means $P(X = x, Y = y) = P(X = x)P(Y = y)$, so
 
 $$
 E\big((X - \mu_X)(Y - \mu_Y)\big) = \sum_{x,y} (x - \mu_X)(y - \mu_Y)P(X=x)P(Y=y) = \Big(\sum_x (x-\mu_X)P(X=x)\Big)\Big(\sum_y (y-\mu_Y)P(Y=y)\Big) = 0 \cdot 0. \quad \square
 $$
 
-It is the **variances** that add, not the standard deviations: $\sigma(X + Y) = \sqrt{\sigma(X)^2 + \sigma(Y)^2}$. This is Pythagoras for independent spreads. Note also $\operatorname{Var}(X - Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$: subtracting an independent random quantity adds uncertainty too.
+It is the **variances** that add, not the standard deviations: $\sigma(X + Y) = \sqrt{\sigma(X)^2 + \sigma(Y)^2}$. This is Pythagoras for independent spreads. Note also $\mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$: subtracting an independent random quantity adds uncertainty too.
 
 ### 5.3 The square-root law (*wortel-n-wet*)
 
@@ -215,7 +215,7 @@ $$
 E(S) = n\mu, \quad \sigma(S) = \sigma\sqrt{n}, \qquad E(\bar X) = \mu, \quad \sigma(\bar X) = \frac{\sigma}{\sqrt{n}}.
 $$
 
-*Derivation.* $E(S) = n\mu$ by 5.1. By 5.2, $\operatorname{Var}(S) = n\sigma^2$, so $\sigma(S) = \sigma\sqrt n$. Dividing by $n$ divides the mean by $n$ and the standard deviation by $n$ (section 4.4): $\sigma(\bar X) = \sigma\sqrt n / n = \sigma/\sqrt n$. $\square$
+*Derivation.* $E(S) = n\mu$ by 5.1. By 5.2, $\mathrm{Var}(S) = n\sigma^2$, so $\sigma(S) = \sigma\sqrt n$. Dividing by $n$ divides the mean by $n$ and the standard deviation by $n$ (section 4.4): $\sigma(\bar X) = \sigma\sqrt n / n = \sigma/\sqrt n$. $\square$
 
 The sum's spread grows, but only like $\sqrt n$, more slowly than its mean $n\mu$. The mean's spread shrinks like $1/\sqrt n$. This is why averaging measurements works, and why you need **four times** as many measurements to halve the uncertainty.
 
@@ -254,7 +254,7 @@ $$
 E(X) = np, \qquad \sigma(X) = \sqrt{np(1-p)}.
 $$
 
-*Proof with indicators.* Let $I_j = 1$ if repetition $j$ is a success and $0$ otherwise. Then $X = I_1 + \dots + I_n$. Each $I_j$ has $E(I_j) = 1 \cdot p + 0 \cdot (1-p) = p$ and $E(I_j^2) = p$, so $\operatorname{Var}(I_j) = p - p^2 = p(1-p)$. The $I_j$ are independent, so by section 5, $E(X) = np$ and $\operatorname{Var}(X) = np(1-p)$. $\square$
+*Proof with indicators.* Let $I_j = 1$ if repetition $j$ is a success and $0$ otherwise. Then $X = I_1 + \dots + I_n$. Each $I_j$ has $E(I_j) = 1 \cdot p + 0 \cdot (1-p) = p$ and $E(I_j^2) = p$, so $\mathrm{Var}(I_j) = p - p^2 = p(1-p)$. The $I_j$ are independent, so by section 5, $E(X) = np$ and $\mathrm{Var}(X) = np(1-p)$. $\square$
 
 ### 6.4 On the GR
 
@@ -450,7 +450,7 @@ A strong correlation says that two variables move together, not that one causes 
 | Conditional | $P(A \mid B) = P(A \cap B)/P(B)$ |
 | Independence | $P(A \cap B) = P(A)P(B)$ |
 | Expected value | $E(X) = \sum x\,P(X=x)$ |
-| Variance | $\operatorname{Var}(X) = E(X^2) - E(X)^2$ |
+| Variance | $\mathrm{Var}(X) = E(X^2) - E(X)^2$ |
 | Linear transform | $E(aX+b) = aE(X)+b$, $\sigma(aX+b) = \lvert a \rvert \sigma(X)$ |
 | Square-root law | $\sigma(S) = \sigma\sqrt n$, $\sigma(\bar X) = \sigma/\sqrt n$ |
 | Binomial | $P(X=k) = \binom nk p^k(1-p)^{n-k}$, $E = np$, $\sigma = \sqrt{np(1-p)}$ |

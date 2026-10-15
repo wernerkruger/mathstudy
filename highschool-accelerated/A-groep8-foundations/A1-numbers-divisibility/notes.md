@@ -137,7 +137,7 @@ The same proof works for any number of digits. In fact it proves more: **$n$ and
 
 $6 = 2 \cdot 3$, and a number divisible by both 2 and 3 is divisible by 6. (Why? This needs that 2 and 3 have no common factor; you'll see why in §5.) So: **even, and digit sum divisible by 3.**
 
-> **Common mistake.** It is *not* true that "divisible by 4 and by 6" means "divisible by 24". The number 12 is divisible by 4 and by 6, but not by 24. The trick only works when the two divisors have no common factor (like 3 and 8). The correct statement uses the lcm: divisible by 4 and 6 means divisible by $\operatorname{lcm}(4, 6) = 12$.
+> **Common mistake.** It is *not* true that "divisible by 4 and by 6" means "divisible by 24". The number 12 is divisible by 4 and by 6, but not by 24. The trick only works when the two divisors have no common factor (like 3 and 8). The correct statement uses the lcm: divisible by 4 and 6 means divisible by $\mathrm{lcm}(4, 6) = 12$.
 
 ### Rule for 11: the alternating sum
 
@@ -206,7 +206,7 @@ $$
 
 ## 5. gcd and lcm
 
-The **greatest common divisor** (*grootste gemene deler*, ggd) of $a$ and $b$, written $\gcd(a, b)$, is the largest number dividing both. The **least common multiple** (*kleinste gemene veelvoud*, kgv), $\operatorname{lcm}(a, b)$, is the smallest positive number that both divide.
+The **greatest common divisor** (*grootste gemene deler*, ggd) of $a$ and $b$, written $\gcd(a, b)$, is the largest number dividing both. The **least common multiple** (*kleinste gemene veelvoud*, kgv), $\mathrm{lcm}(a, b)$, is the smallest positive number that both divide.
 
 **From prime factorisations.** Write both numbers with the same primes (use exponent 0 where needed):
 
@@ -220,17 +220,17 @@ $$
 Check: $12 \cdot 840 = 10\,080 = 84 \cdot 120$. That's no coincidence. For each prime, the smaller exponent plus the larger exponent is the sum of the two exponents. So
 
 $$
-\gcd(a,b)\cdot \operatorname{lcm}(a,b) = a\cdot b.
+\gcd(a,b)\cdot \mathrm{lcm}(a,b) = a\cdot b.
 $$
 
-Two numbers with $\gcd(a, b) = 1$ are called **coprime** (*relatief priem*, *onderling ondeelbaar*). For coprime numbers, $\operatorname{lcm}(a, b) = ab$. That's why "divisible by 2 and by 3" means "divisible by 6", but "divisible by 4 and by 6" only means "divisible by 12".
+Two numbers with $\gcd(a, b) = 1$ are called **coprime** (*relatief priem*, *onderling ondeelbaar*). For coprime numbers, $\mathrm{lcm}(a, b) = ab$. That's why "divisible by 2 and by 3" means "divisible by 6", but "divisible by 4 and by 6" only means "divisible by 12".
 
 ### Which one does a word problem need?
 
 - **Splitting things into equal largest pieces**, tiling with the biggest square: **gcd**.
 - **Events that repeat**, finding when things happen together again: **lcm**.
 
-**Worked example.** One lighthouse flashes every 12 seconds, another every 18 seconds. They flash together at midnight. When do they next flash together? We need a number of seconds that is a multiple of both 12 and 18: the smallest is $\operatorname{lcm}(12, 18) = 36$. So at 36 seconds past midnight.
+**Worked example.** One lighthouse flashes every 12 seconds, another every 18 seconds. They flash together at midnight. When do they next flash together? We need a number of seconds that is a multiple of both 12 and 18: the smallest is $\mathrm{lcm}(12, 18) = 36$. So at 36 seconds past midnight.
 
 ---
 

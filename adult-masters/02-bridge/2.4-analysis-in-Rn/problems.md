@@ -11,7 +11,7 @@ Attempt each problem for at least 30 minutes before reading [solutions.md](solut
 **3.** Show that $f(x) = \sum_{n\ge1}\frac{\sin(nx)}{n^2}$ converges uniformly on $\mathbb R$ to a continuous function. Does the term-by-term differentiated series converge at $x = 0$? What does this say about applying the term-by-term differentiation theorem?
 
 **4.** (a) Compute the Jacobian matrix of $f(x,y) = (x^2y,\ \sin(xy),\ e^{x+y})$.
-(b) Show that $\det: M_n(\mathbb R)\to\mathbb R$ is differentiable at $I$ with $D(\det)(I)H = \operatorname{tr}H$.
+(b) Show that $\det: M_n(\mathbb R)\to\mathbb R$ is differentiable at $I$ with $D(\det)(I)H = \mathrm{tr}\,H$.
 
 **5.** Let $f(x,y) = \dfrac{xy}{x^2+y^2}$ for $(x,y)\ne(0,0)$ and $f(0,0) = 0$. Show that both partial derivatives of $f$ exist at $(0,0)$, but $f$ is not differentiable there.
 

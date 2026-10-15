@@ -114,7 +114,7 @@ $T$ is unique; its matrix is the Jacobian $\left(\partial f_i/\partial x_j(a)\ri
 
 - $D(A\mapsto A^2)(A)H = AH + HA$.
 - $D(A\mapsto A^{-1})(A)H = -A^{-1}HA^{-1}$ on the open set $GL_n(\mathbb R)$.
-- $D(\det)(I)H = \operatorname{tr}H$, and $D(\det)(A)H = \det(A)\operatorname{tr}(A^{-1}H)$ for invertible $A$.
+- $D(\det)(I)H = \mathrm{tr}\,H$, and $D(\det)(A)H = \det(A)\mathrm{tr}(A^{-1}H)$ for invertible $A$.
 - A bilinear map $B$ has $DB(x,y)(h,k) = B(h,y) + B(x,k)$ (product rule).
 
 **Higher derivatives.** $D^2f(a)$ is a bilinear map, with matrix the Hessian. If $f$ is $C^2$, it is symmetric ($\partial_i\partial_jf = \partial_j\partial_if$). Without continuity of second partials this can fail: $f(x,y) = \frac{xy(x^2 - y^2)}{x^2+y^2}$, $f(0) = 0$, has $\partial_x\partial_yf(0)\ne\partial_y\partial_xf(0)$. **Taylor's theorem:** $f(a+h) = f(a) + Df(a)h + \frac12D^2f(a)(h,h) + o(|h|^2)$ for $C^2$ $f$. At a critical point, positive definite Hessian ⇒ strict local minimum.
@@ -195,7 +195,7 @@ $$
 $$
 *Proof sketch.*
 1. *Linear maps:* a linear map $T$ multiplies volumes of rectangles (and hence of Jordan measurable sets) by $|\det T|$. Check it for elementary matrices (row swaps, scaling a coordinate, shears; shears preserve volume by Fubini/Cavalieri) and use multiplicativity of $\det$.
-2. *Locally, $g$ is nearly linear:* on a small cube $Q$ around $x$, $g(Q)$ is squeezed between $Dg(x)\big((1\pm\varepsilon)Q\big)$ shifted to $g(x)$, so $\operatorname{vol}g(Q)\approx|\det Dg(x)|\operatorname{vol}Q$.
+2. *Locally, $g$ is nearly linear:* on a small cube $Q$ around $x$, $g(Q)$ is squeezed between $Dg(x)\big((1\pm\varepsilon)Q\big)$ shifted to $g(x)$, so $\mathrm{vol}\,g(Q)\approx|\det Dg(x)|\mathrm{vol}\,Q$.
 3. *Sum over a fine grid* (or, as in Rudin and Spivak, factor $g$ locally into maps that change one coordinate at a time, use a partition of unity, and induct on $n$ using Fubini and 1-variable substitution).
 
 **Standard changes.**
@@ -219,7 +219,7 @@ with smooth coefficients. Pointwise, it is an alternating $k$-linear function of
 - $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^k\alpha\wedge d\beta$;
 - $d\circ d = 0$ (equality of mixed partials).
 
-In $\mathbb R^3$, under the dictionary 0-forms ↔ functions, 1-forms ↔ vector fields, 2-forms ↔ vector fields, 3-forms ↔ functions, $d$ becomes grad, curl, div, and $d^2 = 0$ becomes $\operatorname{curl}\operatorname{grad} = 0$, $\operatorname{div}\operatorname{curl} = 0$.
+In $\mathbb R^3$, under the dictionary 0-forms ↔ functions, 1-forms ↔ vector fields, 2-forms ↔ vector fields, 3-forms ↔ functions, $d$ becomes grad, curl, div, and $d^2 = 0$ becomes $\mathrm{curl}\,\mathrm{grad} = 0$, $\mathrm{div}\,\mathrm{curl} = 0$.
 
 **Pullback.** For a smooth $\phi:V\to U$, $\phi^*$ substitutes: $\phi^*(a\,dx_{i_1}\wedge\cdots) = (a\circ\phi)\,d\phi_{i_1}\wedge\cdots$. It respects wedge products and commutes with $d$: $\phi^*d\omega = d\phi^*\omega$. For $n$-forms, $\phi^*(f\,dy_1\wedge\cdots\wedge dy_n) = (f\circ\phi)\det(D\phi)\,dx_1\wedge\cdots\wedge dx_n$: the change of variables formula without absolute values, which is why integrals of forms depend on orientation.
 

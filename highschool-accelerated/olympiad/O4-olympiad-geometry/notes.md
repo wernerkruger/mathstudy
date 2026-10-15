@@ -101,7 +101,7 @@ So $\measuredangle FME = \measuredangle FMD + \measuredangle DME = \measuredangl
 
 **Key facts.**
 
-- **Power of a point.** If a line through $P$ meets a circle at $A$ and $B$, then $PA \cdot PB$ is the same for every such line. For $P$ outside it equals $PT^2$, where $PT$ is a tangent segment; in general it equals $\operatorname{pow}(P) = PO^2 - r^2$ (positive outside, negative inside, with signed lengths).
+- **Power of a point.** If a line through $P$ meets a circle at $A$ and $B$, then $PA \cdot PB$ is the same for every such line. For $P$ outside it equals $PT^2$, where $PT$ is a tangent segment; in general it equals $\mathrm{pow}(P) = PO^2 - r^2$ (positive outside, negative inside, with signed lengths).
 - **Converse.** If lines $AB$ and $CD$ meet at $P$ and $PA \cdot PB = PC \cdot PD$ (with $P$ inside both segments or outside both), then $A, B, C, D$ are concyclic.
 - **Radical axis (machtlijn).** For two circles with different centres, the points with equal power form a line perpendicular to the line of centres. If the circles meet at $X$ and $Y$, it is the line $XY$.
 - **Radical centre (machtpunt).** For three circles with non-collinear centres, the three radical axes pass through one point.

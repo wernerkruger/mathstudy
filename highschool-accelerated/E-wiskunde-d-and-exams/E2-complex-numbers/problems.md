@@ -67,7 +67,7 @@ Give exact answers unless asked otherwise. Arguments in radians.
 (b) Describe $f$ geometrically.
 (c) Find $f(f(f(f(0))))$ by thinking geometrically, then check by computation.
 
-**20.** Use $e^x\cos x = \operatorname{Re}\left(e^{(1 + i)x}\right)$ to find $\displaystyle\int e^x\cos x\,dx$. Check by differentiating.
+**20.** Use $e^x\cos x = \mathrm{Re}\,\left(e^{(1 + i)x}\right)$ to find $\displaystyle\int e^x\cos x\,dx$. Check by differentiating.
 
 ## Challenge
 
@@ -88,7 +88,7 @@ $$\cos\theta + \cos2\theta + \dots + \cos n\theta = \frac{\sin\frac{n\theta}2\,\
 
 (Hint: it is the real part of a geometric sum, and use $e^{ix} - 1 = e^{ix/2}\cdot 2i\sin\frac x2$.)
 
-**24.** Prove that all solutions of $(z + 1)^5 = z^5$ lie on the line $\operatorname{Re} z = -\frac12$. Then find them exactly.
+**24.** Prove that all solutions of $(z + 1)^5 = z^5$ lie on the line $\mathrm{Re}\, z = -\frac12$. Then find them exactly.
 
 **25.** (a) Explain why "$i^i$" can be given the real value $e^{-\pi/2}$.
 (b) Why does $i^i$ have infinitely many possible values? Are they all real?

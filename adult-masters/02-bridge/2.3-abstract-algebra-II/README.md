@@ -86,7 +86,7 @@ DF = Dummit & Foote; M = Milne *Fields and Galois Theory*; A = Artin *Algebra* (
 - [ ] Normal, separable, Galois extensions; equivalent characterisations
 - [ ] Artin's theorem; fundamental theorem of Galois theory
 - [ ] Primitive element theorem
-- [ ] Cyclotomic polynomials; $\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q) \cong (\mathbb Z/n)^\times$
+- [ ] Cyclotomic polynomials; $\mathrm{Gal}(\mathbb Q(\zeta_n)/\mathbb Q) \cong (\mathbb Z/n)^\times$
 - [ ] Solvable groups; radical extensions; solvable by radicals ⇔ solvable Galois group (char 0)
 - [ ] An irreducible quintic over $\mathbb Q$ with exactly 3 real roots has Galois group $S_5$
 

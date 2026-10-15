@@ -225,7 +225,7 @@ Let $V$ be a vector space over a field $F$. Let $\mathcal{L}$ be the set of line
 
 *Chains have upper bounds:* let $\mathcal{C} \subseteq \mathcal{L}$ be a chain. If $\mathcal{C} = \varnothing$, then $\varnothing$ is an upper bound. Otherwise let $U = \bigcup\mathcal{C}$. Clearly $L \subseteq U$ for every $L \in \mathcal{C}$. To see $U \in \mathcal{L}$: suppose $\sum_{j=1}^k a_j u_j = 0$ with distinct $u_j \in U$. Each $u_j$ lies in some $L_j \in \mathcal{C}$. Since $\mathcal{C}$ is totally ordered, the finite set $\lbrace L_1, \dots, L_k\rbrace$ has a largest member $L^\ast$, and all $u_j \in L^\ast$. Since $L^\ast$ is independent, all $a_j = 0$. So $U$ is independent.
 
-*Conclusion:* by Zorn's lemma, $\mathcal{L}$ has a maximal element $B$. If $\operatorname{span} B \ne V$, pick $v \notin \operatorname{span} B$. Then $B \cup \lbrace v\rbrace$ is independent: in a relation $a v + \sum a_j b_j = 0$, $a \ne 0$ would put $v$ in $\operatorname{span} B$, so $a = 0$, and then all $a_j = 0$. This contradicts maximality. Hence $B$ spans $V$ and is a basis.
+*Conclusion:* by Zorn's lemma, $\mathcal{L}$ has a maximal element $B$. If $\mathrm{span}\, B \ne V$, pick $v \notin \mathrm{span}\, B$. Then $B \cup \lbrace v\rbrace$ is independent: in a relation $a v + \sum a_j b_j = 0$, $a \ne 0$ would put $v$ in $\mathrm{span}\, B$, so $a = 0$, and then all $a_j = 0$. This contradicts maximality. Hence $B$ spans $V$ and is a basis.
 
 ### 21.
 

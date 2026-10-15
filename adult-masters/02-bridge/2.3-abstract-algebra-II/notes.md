@@ -8,7 +8,7 @@ Conventions: rings are commutative with $1$ unless stated otherwise; ring homomo
 
 ### A1. Ideals and quotients (revision)
 
-An *ideal* $I \subseteq R$ is an additive subgroup with $rI \subseteq I$ for all $r \in R$. The quotient $R/I$ is a ring, and the isomorphism theorems hold as for groups: if $\varphi: R \to S$ is a homomorphism, $R/\ker\varphi \cong \operatorname{im}\varphi$.
+An *ideal* $I \subseteq R$ is an additive subgroup with $rI \subseteq I$ for all $r \in R$. The quotient $R/I$ is a ring, and the isomorphism theorems hold as for groups: if $\varphi: R \to S$ is a homomorphism, $R/\ker\varphi \cong \mathrm{im}\,\varphi$.
 
 - $P$ is *prime* if $P \ne R$ and $ab \in P \Rightarrow a\in P$ or $b \in P$. Equivalently, $R/P$ is an integral domain.
 - $M$ is *maximal* if $M\ne R$ and no ideal lies strictly between $M$ and $R$. Equivalently, $R/M$ is a field. Maximal ⇒ prime.
@@ -64,7 +64,7 @@ Submodules, quotients, homomorphisms, kernels, and the isomorphism theorems work
 
 A module is *free* if it has a *basis* (a linearly independent spanning set); then $M \cong R^{(I)}$. For commutative $R$, all bases of a free module have the same cardinality (the *rank*). Over a non-field, many modules are not free: $\mathbb Z/2$ is not a free $\mathbb Z$-module, and neither is $\mathbb Q$.
 
-$m \in M$ is a *torsion* element if $rm = 0$ for some non-zero $r \in R$. Over a domain, the torsion elements form a submodule $\operatorname{Tor}(M)$.
+$m \in M$ is a *torsion* element if $rm = 0$ for some non-zero $r \in R$. Over a domain, the torsion elements form a submodule $\mathrm{Tor}(M)$.
 
 **Pitfalls (compared with vector spaces).** A linearly independent set need not extend to a basis ($\lbrace 2\rbrace$ in $\mathbb Z$); a spanning set need not contain a basis ($\lbrace 2,3\rbrace$ spans $\mathbb Z$); a submodule need not have a complement ($2\mathbb Z \subseteq \mathbb Z$); a submodule of a finitely generated module need not be finitely generated (over non-Noetherian rings).
 
@@ -78,7 +78,7 @@ $m \in M$ is a *torsion* element if $rm = 0$ for some non-zero $r \in R$. Over a
 
 **Smith normal form.** Let $R$ be a PID (for computation, think Euclidean) and $A$ an $m\times n$ matrix over $R$. There are invertible matrices $P \in GL_m(R)$, $Q\in GL_n(R)$ with
 $$
-PAQ = \operatorname{diag}(d_1, d_2, \dots, d_r, 0, \dots, 0), \qquad d_1 \mid d_2 \mid \cdots \mid d_r, \quad d_i \ne 0.
+PAQ = \mathrm{diag}(d_1, d_2, \dots, d_r, 0, \dots, 0), \qquad d_1 \mid d_2 \mid \cdots \mid d_r, \quad d_i \ne 0.
 $$
 The $d_i$ are unique up to units: $d_1\cdots d_k$ is the gcd of the $k\times k$ minors of $A$.
 
@@ -104,7 +104,7 @@ With $R = \mathbb Z$: every finitely generated abelian group is $\mathbb Z^r \op
 
 *Example.* Order $72 = 2^3\cdot 3^2$: $p(3)p(2) = 3\cdot2 = 6$ groups.
 
-*Example.* If $G = \mathbb Z^3/A\mathbb Z^3$ and $A$ has Smith normal form $\operatorname{diag}(2,6,12)$, then $G \cong \mathbb Z/2\oplus\mathbb Z/6\oplus\mathbb Z/12$, of order $|\det A| = 144$.
+*Example.* If $G = \mathbb Z^3/A\mathbb Z^3$ and $A$ has Smith normal form $\mathrm{diag}(2,6,12)$, then $G \cong \mathbb Z/2\oplus\mathbb Z/6\oplus\mathbb Z/12$, of order $|\det A| = 144$.
 
 ### B5. Application 2: canonical forms
 
@@ -173,7 +173,7 @@ An algebraic extension $K/F$ is *separable* if the minimal polynomial of every e
 
 ### C4. Finite fields
 
-Let $F$ be a finite field. Its prime subfield is $\mathbb F_p$ for $p = \operatorname{char}F$, so $|F| = p^n$ where $n = [F:\mathbb F_p]$.
+Let $F$ be a finite field. Its prime subfield is $\mathbb F_p$ for $p = \mathrm{char}\,F$, so $|F| = p^n$ where $n = [F:\mathbb F_p]$.
 
 **Theorem.**
 1. For each prime power $q = p^n$ there is a field $\mathbb F_q$ with $q$ elements: the splitting field of $x^q - x$ over $\mathbb F_p$, which consists exactly of the roots of $x^q - x$ (they form a field because $(a+b)^p = a^p + b^p$, and they are distinct because $(x^q-x)' = -1$).
@@ -189,20 +189,20 @@ Let $F$ be a finite field. Its prime subfield is $\mathbb F_p$ for $p = \operato
 
 ### D1. Galois extensions
 
-For an extension $K/F$, $\operatorname{Aut}(K/F)$ is the group of field automorphisms of $K$ fixing $F$ pointwise. For a group $H$ of automorphisms of $K$, $K^H$ is the fixed field.
+For an extension $K/F$, $\mathrm{Aut}(K/F)$ is the group of field automorphisms of $K$ fixing $F$ pointwise. For a group $H$ of automorphisms of $K$, $K^H$ is the fixed field.
 
-**Basic bound.** If $K/F$ is finite, $|\operatorname{Aut}(K/F)|\le[K:F]$.
+**Basic bound.** If $K/F$ is finite, $|\mathrm{Aut}(K/F)|\le[K:F]$.
 
-**Definition/Theorem.** For a finite extension $K/F$ the following are equivalent; if they hold, $K/F$ is *Galois* and $\operatorname{Gal}(K/F) := \operatorname{Aut}(K/F)$:
+**Definition/Theorem.** For a finite extension $K/F$ the following are equivalent; if they hold, $K/F$ is *Galois* and $\mathrm{Gal}(K/F) := \mathrm{Aut}(K/F)$:
 
-1. $|\operatorname{Aut}(K/F)| = [K:F]$;
-2. $F = K^{\operatorname{Aut}(K/F)}$;
+1. $|\mathrm{Aut}(K/F)| = [K:F]$;
+2. $F = K^{\mathrm{Aut}(K/F)}$;
 3. $K$ is the splitting field of a separable polynomial over $F$;
 4. $K/F$ is **normal** (every irreducible polynomial in $F[x]$ with a root in $K$ splits in $K$) and separable.
 
 **Artin's theorem.** If $G$ is a finite group of automorphisms of a field $K$, then $[K:K^G] = |G|$ and $K/K^G$ is Galois with group $G$.
 
-*Proof idea.* For $\alpha\in K$, the polynomial $\prod_{\beta\in G\alpha}(x - \beta)$ is fixed by $G$, so has coefficients in $K^G$; it is separable of degree $\le |G|$. So every element of $K$ has degree $\le |G|$ over $K^G$, and $K/K^G$ is separable; by the primitive element theorem, $[K:K^G]\le|G|$. Combined with $|G|\le|\operatorname{Aut}(K/K^G)|\le[K:K^G]$, equality holds.
+*Proof idea.* For $\alpha\in K$, the polynomial $\prod_{\beta\in G\alpha}(x - \beta)$ is fixed by $G$, so has coefficients in $K^G$; it is separable of degree $\le |G|$. So every element of $K$ has degree $\le |G|$ over $K^G$, and $K/K^G$ is separable; by the primitive element theorem, $[K:K^G]\le|G|$. Combined with $|G|\le|\mathrm{Aut}(K/K^G)|\le[K:K^G]$, equality holds.
 
 **Examples.**
 - $\mathbb Q(\sqrt2)/\mathbb Q$: Galois, group $\mathbb Z/2$.
@@ -213,16 +213,16 @@ For an extension $K/F$, $\operatorname{Aut}(K/F)$ is the group of field automorp
 
 **Fundamental theorem of Galois theory.** Let $K/F$ be finite Galois with group $G$. Then
 $$
-H \longmapsto K^H, \qquad E \longmapsto \operatorname{Gal}(K/E)
+H \longmapsto K^H, \qquad E \longmapsto \mathrm{Gal}(K/E)
 $$
 are mutually inverse inclusion-reversing bijections between subgroups $H\le G$ and intermediate fields $F\subseteq E\subseteq K$. Moreover:
 
 1. $[K:K^H] = |H|$ and $[K^H:F] = [G:H]$.
-2. $K/E$ is always Galois. $E/F$ is Galois iff $\operatorname{Gal}(K/E)$ is normal in $G$, and then $\operatorname{Gal}(E/F)\cong G/\operatorname{Gal}(K/E)$ (by restriction).
+2. $K/E$ is always Galois. $E/F$ is Galois iff $\mathrm{Gal}(K/E)$ is normal in $G$, and then $\mathrm{Gal}(E/F)\cong G/\mathrm{Gal}(K/E)$ (by restriction).
 3. For $\sigma\in G$, $\sigma(K^H) = K^{\sigma H\sigma^{-1}}$: conjugate subgroups ↔ conjugate fields.
 4. Joins and meets correspond: $K^{H_1\cap H_2} = K^{H_1}K^{H_2}$ (compositum), $K^{\langle H_1,H_2\rangle} = K^{H_1}\cap K^{H_2}$.
 
-*Proof sketch.* $K/E$ is Galois because $K$ is the splitting field over $E$ of the same separable polynomial. So $E = K^{\operatorname{Gal}(K/E)}$. Artin gives $\operatorname{Gal}(K/K^H) = H$ (since $|\operatorname{Gal}(K/K^H)| = [K:K^H] = |H|$ and it contains $H$). So the maps are inverse. For (2): $\sigma(E) = E$ for all $\sigma$ iff $\operatorname{Gal}(K/E)$ is normal (by 3); then restriction $G\to\operatorname{Aut}(E/F)$ has kernel $\operatorname{Gal}(K/E)$, and counting gives the isomorphism.
+*Proof sketch.* $K/E$ is Galois because $K$ is the splitting field over $E$ of the same separable polynomial. So $E = K^{\mathrm{Gal}(K/E)}$. Artin gives $\mathrm{Gal}(K/K^H) = H$ (since $|\mathrm{Gal}(K/K^H)| = [K:K^H] = |H|$ and it contains $H$). So the maps are inverse. For (2): $\sigma(E) = E$ for all $\sigma$ iff $\mathrm{Gal}(K/E)$ is normal (by 3); then restriction $G\to\mathrm{Aut}(E/F)$ has kernel $\mathrm{Gal}(K/E)$, and counting gives the isomorphism.
 
 **Worked example: $x^3 - 2$ over $\mathbb Q$.** $K = \mathbb Q(\alpha,\omega)$ with $\alpha = \sqrt[3]2$, $\omega = e^{2\pi i/3}$, $[K:\mathbb Q] = 6$. $G$ acts faithfully on the three roots $\alpha,\alpha\omega,\alpha\omega^2$, so $G\le S_3$; with order 6, $G \cong S_3$. Subgroups and fixed fields:
 
@@ -237,11 +237,11 @@ are mutually inverse inclusion-reversing bijections between subgroups $H\le G$ a
 
 **Worked example: cyclotomic fields.** $\Phi_n(x) = \prod_{\gcd(k,n)=1}(x - \zeta_n^k)$ has integer coefficients and is irreducible over $\mathbb Q$ (for $n=p$ prime: Eisenstein after $x\mapsto x+1$; general $n$: DF 13.6). $\mathbb Q(\zeta_n)$ is the splitting field of $x^n - 1$, and $\sigma_a: \zeta_n\mapsto\zeta_n^a$ gives
 $$
-\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)\cong(\mathbb Z/n)^\times,
+\mathrm{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)\cong(\mathbb Z/n)^\times,
 $$
 an abelian group. Every subfield is Galois over $\mathbb Q$. (Kronecker–Weber, statement: every abelian extension of $\mathbb Q$ lies in some $\mathbb Q(\zeta_n)$.)
 
-**Galois groups of polynomials.** $\operatorname{Gal}(f)$ acts faithfully on the $n$ roots, so embeds in $S_n$; it is transitive iff $f$ is irreducible (for separable $f$). With the discriminant $\Delta = \prod_{i<j}(\alpha_i - \alpha_j)^2 \in F$: $\operatorname{Gal}(f)\le A_n$ iff $\sqrt\Delta\in F$ (char $\ne 2$). For an irreducible cubic: $\operatorname{Gal} = A_3$ if $\Delta$ is a square, else $S_3$. For $x^3 + px + q$, $\Delta = -4p^3 - 27q^2$.
+**Galois groups of polynomials.** $\mathrm{Gal}(f)$ acts faithfully on the $n$ roots, so embeds in $S_n$; it is transitive iff $f$ is irreducible (for separable $f$). With the discriminant $\Delta = \prod_{i<j}(\alpha_i - \alpha_j)^2 \in F$: $\mathrm{Gal}(f)\le A_n$ iff $\sqrt\Delta\in F$ (char $\ne 2$). For an irreducible cubic: $\mathrm{Gal} = A_3$ if $\Delta$ is a square, else $S_3$. For $x^3 + px + q$, $\Delta = -4p^3 - 27q^2$.
 
 ### D3. Solvability by radicals
 
@@ -254,11 +254,11 @@ A finite extension $K/F$ is *radical* if there is a tower $F = K_0\subseteq K_1\
 2. $F(\zeta_n)/F$ is Galois with abelian group (a subgroup of $(\mathbb Z/n)^\times$).
 3. Conversely (Kummer, with Hilbert 90): if $F$ contains a primitive $n$-th root of unity and $K/F$ is cyclic of degree $n$, then $K = F(\sqrt[n]a)$.
 
-**Theorem (Galois).** In characteristic 0, $f\in F[x]$ is solvable by radicals iff $\operatorname{Gal}(f)$ is solvable.
+**Theorem (Galois).** In characteristic 0, $f\in F[x]$ is solvable by radicals iff $\mathrm{Gal}(f)$ is solvable.
 
-*Proof of "⇒" (sketch).* Enlarge the radical tower: adjoin a primitive $N$-th root of unity first ($N$ = product of the $n_i$), and take the Galois closure (still radical). Each step is then abelian (by 1 and 2), so the Galois group of the top field over $F$ is solvable. $\operatorname{Gal}(f)$ is a quotient of it, hence solvable.
+*Proof of "⇒" (sketch).* Enlarge the radical tower: adjoin a primitive $N$-th root of unity first ($N$ = product of the $n_i$), and take the Galois closure (still radical). Each step is then abelian (by 1 and 2), so the Galois group of the top field over $F$ is solvable. $\mathrm{Gal}(f)$ is a quotient of it, hence solvable.
 
-**Insolubility of the quintic.** Let $f\in\mathbb Q[x]$ be irreducible of prime degree $p$ with exactly $p-2$ real roots. Then $\operatorname{Gal}(f)\cong S_p$.
+**Insolubility of the quintic.** Let $f\in\mathbb Q[x]$ be irreducible of prime degree $p$ with exactly $p-2$ real roots. Then $\mathrm{Gal}(f)\cong S_p$.
 
 *Proof.* $p$ divides $|G|$ (since $\mathbb Q(\alpha)$ has degree $p$ and lies in the splitting field), so by Cauchy $G$ contains an element of order $p$, which in $S_p$ is a $p$-cycle. Complex conjugation restricts to an element of $G$ swapping the two non-real roots and fixing the others: a transposition. A $p$-cycle and a transposition generate $S_p$ ($p$ prime). $\square$
 
@@ -271,7 +271,7 @@ A finite extension $K/F$ is *radical* if there is a tower $F = K_0\subseteq K_1\
 1. "Irreducible" and "prime" coincide in UFDs but not in general ($2$ in $\mathbb Z[\sqrt{-5}]$ is irreducible, not prime).
 2. A polynomial can be irreducible over $\mathbb Q$ but have a reducible reduction mod every $p$ ($x^4+1$). Reduction mod $p$ only proves irreducibility, never reducibility.
 3. $[F(\alpha,\beta):F]$ is at most $[F(\alpha):F]\,[F(\beta):F]$ but need not equal it: $\alpha = \sqrt[3]2$, $\beta = \omega\sqrt[3]2$ give $\mathbb Q(\alpha,\beta) = \mathbb Q(\sqrt[3]2,\omega)$ of degree 6, not 9. (Equality does hold when the two degrees are coprime.)
-4. $\operatorname{Aut}(K/F)$ is always defined, but the Galois correspondence needs $K/F$ Galois.
+4. $\mathrm{Aut}(K/F)$ is always defined, but the Galois correspondence needs $K/F$ Galois.
 5. Normality is not transitive: $\mathbb Q\subseteq\mathbb Q(\sqrt2)\subseteq\mathbb Q(\sqrt[4]2)$, each step degree 2 (hence normal), but $\mathbb Q(\sqrt[4]2)/\mathbb Q$ is not normal.
 6. Invariant factors must divide each other; elementary divisors are prime powers. Do not mix the two lists.
 7. Jordan form needs the characteristic polynomial to split; rational canonical form does not.

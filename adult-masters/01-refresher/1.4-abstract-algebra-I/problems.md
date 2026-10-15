@@ -73,7 +73,7 @@ Solutions are in [solutions.md](solutions.md). Rings are commutative with $1$ un
 
 ## Challenge
 
-**23.** Let $|G|=2m$ with $m$ odd. Using the left regular representation $G\to\operatorname{Sym}(G)$ and the sign homomorphism, prove that $G$ has a normal subgroup of index 2. Deduce that no group of order $2m$, with $m>1$ odd, is simple.
+**23.** Let $|G|=2m$ with $m$ odd. Using the left regular representation $G\to\mathrm{Sym}(G)$ and the sign homomorphism, prove that $G$ has a normal subgroup of index 2. Deduce that no group of order $2m$, with $m>1$ odd, is simple.
 
 **24.** Prove that $A_5$ is simple. First determine its conjugacy classes and their sizes, and explain carefully which $S_5$-classes split in $A_5$.
 

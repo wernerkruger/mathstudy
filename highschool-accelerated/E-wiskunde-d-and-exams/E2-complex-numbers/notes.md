@@ -42,11 +42,11 @@ One can check (tedious but straightforward) that addition and multiplication are
 
 ## 3. Arithmetic
 
-For $z = a + bi$ with $a, b \in \mathbb{R}$: the **real part** $\operatorname{Re} z = a$, the **imaginary part** $\operatorname{Im} z = b$ (a real number, without the $i$!), and the **conjugate** $\bar z = a - bi$.
+For $z = a + bi$ with $a, b \in \mathbb{R}$: the **real part** $\mathrm{Re}\, z = a$, the **imaginary part** $\mathrm{Im}\, z = b$ (a real number, without the $i$!), and the **conjugate** $\bar z = a - bi$.
 
 **Rules for the conjugate.** For all $z, w$:
 
-$$\overline{z + w} = \bar z + \bar w, \qquad \overline{zw} = \bar z\,\bar w, \qquad z + \bar z = 2\operatorname{Re} z, \qquad z\bar z = a^2 + b^2.$$
+$$\overline{z + w} = \bar z + \bar w, \qquad \overline{zw} = \bar z\,\bar w, \qquad z + \bar z = 2\mathrm{Re}\, z, \qquad z\bar z = a^2 + b^2.$$
 
 *Proof of the second:* with $z = a + bi$, $w = c + di$: $zw = (ac - bd) + (ad + bc)i$, so $\overline{zw} = (ac - bd) - (ad + bc)i$, and $\bar z\bar w = (a - bi)(c - di) = (ac - bd) + (-ad - bc)i$. Equal. $\blacksquare$
 
@@ -75,9 +75,9 @@ Draw $z = a + bi$ as the point $(a, b)$, or the vector from $0$ to $(a, b)$. The
 1. $\lvert zw\rvert = \lvert z\rvert\,\lvert w\rvert$. *Proof:* $\lvert zw\rvert^2 = zw\overline{zw} = z\bar z\,w\bar w = \lvert z\rvert^2\lvert w\rvert^2$. $\blacksquare$
 2. **Triangle inequality** $\lvert z + w\rvert \le \lvert z\rvert + \lvert w\rvert$. *Proof:*
 
-$$\lvert z + w\rvert^2 = (z + w)(\bar z + \bar w) = \lvert z\rvert^2 + \lvert w\rvert^2 + z\bar w + \bar z w = \lvert z\rvert^2 + \lvert w\rvert^2 + 2\operatorname{Re}(z\bar w).$$
+$$\lvert z + w\rvert^2 = (z + w)(\bar z + \bar w) = \lvert z\rvert^2 + \lvert w\rvert^2 + z\bar w + \bar z w = \lvert z\rvert^2 + \lvert w\rvert^2 + 2\mathrm{Re}(z\bar w).$$
 
-Since $\operatorname{Re}(u) \le \lvert u\rvert$ for every $u$, and $\lvert z\bar w\rvert = \lvert z\rvert\lvert w\rvert$, this is at most $(\lvert z\rvert + \lvert w\rvert)^2$. $\blacksquare$
+Since $\mathrm{Re}(u) \le \lvert u\rvert$ for every $u$, and $\lvert z\bar w\rvert = \lvert z\rvert\lvert w\rvert$, this is at most $(\lvert z\rvert + \lvert w\rvert)^2$. $\blacksquare$
 
 **Sets in the plane.** Many conditions on $z$ describe familiar figures:
 
@@ -167,7 +167,7 @@ $$\cos\varphi = \frac{e^{i\varphi} + e^{-i\varphi}}{2}, \qquad \sin\varphi = \fr
 
 These turn trigonometry into algebra. Example: $\cos^2\varphi = \frac14(e^{2i\varphi} + 2 + e^{-2i\varphi}) = \frac12 + \frac12\cos 2\varphi$.
 
-- **Integrals.** $\int e^x\cos x\,dx = \operatorname{Re}\int e^{(1 + i)x}\,dx = \operatorname{Re}\dfrac{e^{(1+i)x}}{1 + i} + C = \tfrac12e^x(\cos x + \sin x) + C$ (problem 20). No integration by parts twice.
+- **Integrals.** $\int e^x\cos x\,dx = \mathrm{Re}\,\int e^{(1 + i)x}\,dx = \mathrm{Re}\,\dfrac{e^{(1+i)x}}{1 + i} + C = \tfrac12e^x(\cos x + \sin x) + C$ (problem 20). No integration by parts twice.
 
 ---
 
@@ -203,7 +203,7 @@ $$1 + \omega + \dots + \omega^{n-1} = \frac{\omega^n - 1}{\omega - 1} = 0,$$
 
 $$P(\bar z_0) = \sum a_k\bar z_0^{\,k} = \sum\overline{a_kz_0^k} = \overline{P(z_0)} = \bar0 = 0. \qquad\blacksquare$$
 
-So non-real roots of real polynomials come in conjugate pairs, and $(z - z_0)(z - \bar z_0) = z^2 - 2\operatorname{Re}(z_0)z + \lvert z_0\rvert^2$ is a real quadratic. Consequence: **every real polynomial factors into real linear and real quadratic factors**, and a real polynomial of odd degree has a real root.
+So non-real roots of real polynomials come in conjugate pairs, and $(z - z_0)(z - \bar z_0) = z^2 - 2\mathrm{Re}(z_0)z + \lvert z_0\rvert^2$ is a real quadratic. Consequence: **every real polynomial factors into real linear and real quadratic factors**, and a real polynomial of odd degree has a real root.
 
 **Example.** $P(z) = z^3 - 3z^2 + 7z - 5$. Try $z = 1$: $1 - 3 + 7 - 5 = 0$. Divide: $P(z) = (z - 1)(z^2 - 2z + 5)$, so the roots are $1$ and $1 \pm 2i$.
 
@@ -245,7 +245,7 @@ To get all three roots directly from Cardano: if $u$ is one cube root of $u^3$, 
 ## 11. Common mistakes
 
 1. **Wrong quadrant for the argument.** $\arg(-1 - i) \ne \frac\pi4$. Draw the point first.
-2. **$\operatorname{Im}(a + bi) = bi$.** No: it is $b$, a real number.
+2. **$\mathrm{Im}(a + bi) = bi$.** No: it is $b$, a real number.
 3. **Dividing without the conjugate**, or multiplying only the numerator by it.
 4. **Forgetting roots.** $z^n = w$ has $n$ solutions; listing one is not "solving".
 5. **Using $\sqrt{zw} = \sqrt z\sqrt w$** for complex (or negative) numbers.

@@ -197,11 +197,11 @@ Check with $n = 1$: this gives $\tfrac12\begin{pmatrix}4&2\\2&4\end{pmatrix} = A
 
 ### C2
 
-(a) If $T : V \to W$ is linear and $V$ is finite-dimensional, then $\dim V = \dim \ker T + \dim \operatorname{im} T$.
+(a) If $T : V \to W$ is linear and $V$ is finite-dimensional, then $\dim V = \dim \ker T + \dim \mathrm{im}\, T$.
 
-(b) $\dim \operatorname{im} T = 3$, so $\dim \ker T = 5 - 3 = 2$.
+(b) $\dim \mathrm{im}\, T = 3$, so $\dim \ker T = 5 - 3 = 2$.
 
-(c) Let $n = \dim V$. $T$ is injective $\iff \ker T = \lbrace 0 \rbrace \iff \dim \ker T = 0 \iff \dim \operatorname{im} T = n$ (by rank–nullity) $\iff \operatorname{im} T = V$ (a subspace of full dimension is the whole space) $\iff T$ is surjective.
+(c) Let $n = \dim V$. $T$ is injective $\iff \ker T = \lbrace 0 \rbrace \iff \dim \ker T = 0 \iff \dim \mathrm{im}\, T = n$ (by rank–nullity) $\iff \mathrm{im}\, T = V$ (a subspace of full dimension is the whole space) $\iff T$ is surjective.
 
 **Marking.** 1 for (a), 1 for (b), 2 for (c).
 
@@ -286,7 +286,7 @@ The generators are the residues coprime to $12$: $1, 5, 7, 11$, which is $\varph
 
 (a) $\ker\varphi$ is a subgroup: $\varphi(e) = e$; if $\varphi(a) = \varphi(b) = e$ then $\varphi(ab^{-1}) = e$. It is normal: for $k \in \ker\varphi$ and $g \in G$, $\varphi(gkg^{-1}) = \varphi(g)\,e\,\varphi(g)^{-1} = e$.
 
-(b) **First Isomorphism Theorem.** $\ker \varphi \trianglelefteq G$, and $G/\ker\varphi \cong \operatorname{im}\varphi$ via $g\ker\varphi \mapsto \varphi(g)$.
+(b) **First Isomorphism Theorem.** $\ker \varphi \trianglelefteq G$, and $G/\ker\varphi \cong \mathrm{im}\,\varphi$ via $g\ker\varphi \mapsto \varphi(g)$.
 
 (c) $\varphi : \mathbb{R}^\times \to \mathbb{R}_{>0}$, $\varphi(x) = |x|$, is a homomorphism ($|xy| = |x||y|$). It is surjective ($\varphi(r) = r$ for $r > 0$), and its kernel is $\lbrace \pm 1 \rbrace$. Apply (b).
 
@@ -328,8 +328,8 @@ Lesson: the existence of partial derivatives does not imply differentiability, o
 
 $f_x = 3x^2 - 3$ and $f_y = 2y$, so the critical points are $(1,0)$ and $(-1,0)$. The Hessian is $\begin{pmatrix} 6x & 0 \\ 0 & 2 \end{pmatrix}$.
 
-- At $(1,0)$: $\operatorname{diag}(6,2)$ is positive definite, so this is a **local minimum**, with $f = -2$.
-- At $(-1,0)$: $\operatorname{diag}(-6, 2)$ is indefinite, so this is a **saddle point**.
+- At $(1,0)$: $\mathrm{diag}(6,2)$ is positive definite, so this is a **local minimum**, with $f = -2$.
+- At $(-1,0)$: $\mathrm{diag}(-6, 2)$ is indefinite, so this is a **saddle point**.
 
 **Marking.** 2 for the critical points, 1 per classification.
 

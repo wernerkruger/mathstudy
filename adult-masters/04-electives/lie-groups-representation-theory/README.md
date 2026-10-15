@@ -38,7 +38,7 @@ Lie groups are groups that are also smooth manifolds; their infinitesimal versio
 | 1 | Fulton–Harris Lectures 1–2 (finite group representations, characters) | — | F–H 1.x, 2.x: 4 problems | Maschke, Schur, orthogonality of characters. |
 | 2 | Fulton–Harris Lecture 3 ($S_3$, $S_4$, $A_4$ examples) | — | 4 problems | Build a character table yourself. |
 | 3 | Hall Ch. 1 (matrix Lie groups: $GL$, $SL$, $O$, $SO$, $U$, $SU$, $Sp$; compactness, connectedness) | Schuller L13 | Hall Ch. 1: 4 problems | Relate to [3.5](../../03-masters-core/3.5-smooth-manifolds/): these are embedded submanifolds. |
-| 4 | Hall Ch. 2 (matrix exponential, logarithm) | — | Hall Ch. 2: 4 problems | $\det e^X=e^{\operatorname{tr}X}$; Lie product formula. |
+| 4 | Hall Ch. 2 (matrix exponential, logarithm) | — | Hall Ch. 2: 4 problems | $\det e^X=e^{\mathrm{tr}\,X}$; Lie product formula. |
 | 5 | Hall Ch. 3 (Lie algebras; the Lie algebra of a matrix Lie group; adjoint map) | Schuller L18 | Hall Ch. 3: 4 problems | Compute $\mathfrak{su}(2)$, $\mathfrak{so}(3)$; they are isomorphic. |
 | 6 | Hall Ch. 3 cont. (homomorphisms, closed subgroup theorem statement); $SU(2)\to SO(3)$ double cover | — | 4 problems | $\pi_1(SO(3))=\mathbb{Z}/2$ from the cover. |
 | 7 | Hall Ch. 4 (basic representation theory; $\mathfrak{sl}(2,\mathbb{C})$ and $SU(2)$ irreps) | Schuller L15, L17 | Hall Ch. 4: 5 problems | Classify irreps of $\mathfrak{sl}_2$ by highest weight. |
@@ -56,7 +56,7 @@ Lie groups are groups that are also smooth manifolds; their infinitesimal versio
 
 - [ ] Maschke's theorem; Schur's lemma; character orthogonality
 - [ ] Matrix Lie groups as closed subgroups of $GL(n,\mathbb{C})$; examples and their dimensions
-- [ ] Matrix exponential: properties, $\det e^X=e^{\operatorname{tr}X}$, Lie product formula
+- [ ] Matrix exponential: properties, $\det e^X=e^{\mathrm{tr}\,X}$, Lie product formula
 - [ ] Lie algebra of a matrix Lie group; adjoint representation; $\mathrm{Ad}$ and $\mathrm{ad}$
 - [ ] Closed subgroup theorem (statement)
 - [ ] $SU(2)\to SO(3)$ is a 2-to-1 cover; $\pi_1(SO(3))=\mathbb{Z}/2$

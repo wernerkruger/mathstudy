@@ -14,7 +14,7 @@ Attempt each problem for at least 30 minutes before reading [solutions.md](solut
 
 **4.** Let $C$ be the unit circle. Compute $\int_C \bar z\,dz$ and $\int_C z^n\,dz$ for every integer $n$. Why does the first answer not contradict Cauchy's theorem?
 
-**5.** Find the Laurent series of $f(z) = \dfrac{1}{z(z-1)}$ on (a) $0 < |z| < 1$ and (b) $|z| > 1$. What is $\operatorname{Res}(f,0)$?
+**5.** Find the Laurent series of $f(z) = \dfrac{1}{z(z-1)}$ on (a) $0 < |z| < 1$ and (b) $|z| > 1$. What is $\mathrm{Res}(f,0)$?
 
 **6.** Show that $\varphi(z) = \dfrac{z - i}{z + i}$ is a conformal bijection from $\mathbb H$ onto $\mathbb D$, and find its inverse.
 
@@ -22,7 +22,7 @@ Attempt each problem for at least 30 minutes before reading [solutions.md](solut
 
 **7.** Let $f$ be entire and suppose there are constants $A, B$ and an integer $n \ge 0$ with $|f(z)| \le A + B|z|^n$ for all $z$. Show that $f$ is a polynomial of degree at most $n$.
 
-**8.** Let $f$ be entire with $\operatorname{Re} f(z) \le M$ for all $z$. Show that $f$ is constant.
+**8.** Let $f$ be entire with $\mathrm{Re}\, f(z) \le M$ for all $z$. Show that $f$ is constant.
 
 **9.** Show that $\displaystyle\int_{-\infty}^{\infty} \frac{dx}{1+x^4} = \frac{\pi}{\sqrt 2}$.
 

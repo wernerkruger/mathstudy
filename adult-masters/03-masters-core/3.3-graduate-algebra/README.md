@@ -26,7 +26,7 @@ By the end of the module you can:
 1. Use universal properties to define and compare constructions (products, coproducts, tensor products, localisations), and recognise functors and natural transformations.
 2. Work with exact sequences: the splitting lemma, left exactness of Hom, right exactness of tensor products.
 3. Compute tensor products and Hom groups of abelian groups and modules over a PID, and decide whether modules are projective, injective or flat.
-4. Prove Nakayama's lemma, the Hilbert basis theorem and basic facts about localisation, and describe $\operatorname{Spec}A$ for simple rings.
+4. Prove Nakayama's lemma, the Hilbert basis theorem and basic facts about localisation, and describe $\mathrm{Spec}\,A$ for simple rings.
 5. Prove lying over and going up for integral extensions, and the weak and strong Nullstellensatz.
 6. Define Dedekind domains, factor ideals in simple quadratic rings, and explain why unique factorisation of ideals replaces unique factorisation of elements.
 7. Prove Maschke's and Schur's theorems and the orthogonality relations, and compute character tables of small groups.
@@ -65,7 +65,7 @@ Abbreviations: **DF** = Dummit–Foote; **AM** = Atiyah–Macdonald; **AK** = Al
 | 4 | Projective, injective and flat modules; Baer's criterion; divisible groups: DF 10.5; AK §9; Al ch. VIII; N §4 | — | P3, P4, P10 | |
 | 5 | Prime and maximal ideals, nilradical, Jacobson radical, Nakayama's lemma: AM ch. 1, 2.5–2.8; AK §1–3, §10; N §5 | Borcherds, commutative algebra (early lectures) | P12, P13 | |
 | 6 | Localisation of rings and modules, exactness, local properties: AM ch. 3; AK §11–12; DF 15.4; N §6 | Borcherds, commutative algebra (localisation) | P11 | |
-| 7 | Prime spectrum and the Zariski topology: AM ch. 1 exercises 15–21; DF 15.1–15.2; N §7 | Borcherds, commutative algebra (Spec) | P14, P22 | Draw pictures of $\operatorname{Spec}\mathbb{Z}$ and $\operatorname{Spec}\mathbb{C}[x]$. |
+| 7 | Prime spectrum and the Zariski topology: AM ch. 1 exercises 15–21; DF 15.1–15.2; N §7 | Borcherds, commutative algebra (Spec) | P14, P22 | Draw pictures of $\mathrm{Spec}\,\mathbb{Z}$ and $\mathrm{Spec}\,\mathbb{C}[x]$. |
 | 8 | Noetherian rings and modules, Hilbert basis theorem: AM ch. 6–7; AK §16; DF 15.1; N §8 | Borcherds, commutative algebra (Noetherian rings) | P15, P21 | Catch-up week if behind. |
 | 9 | Integral extensions, integral closure, lying over, going up: AM ch. 5 (to 5.11); AK §10, §14; DF 15.3; N §9 | Borcherds, commutative algebra (integral extensions) | P17 | |
 | 10 | Noether normalisation, Zariski's lemma, Nullstellensatz, varieties and radical ideals: AM 5.23–5.24, 7.9; AK §15; DF 15.2–15.3; N §10 | Borcherds, commutative algebra (Nullstellensatz) | P18 | |
@@ -80,7 +80,7 @@ Abbreviations: **DF** = Dummit–Foote; **AM** = Atiyah–Macdonald; **AK** = Al
 - [ ] Adjoint functors (example: Hom–tensor adjunction; free ⊣ forgetful)
 - [ ] Exact sequence; short exact sequence; splitting lemma
 - [ ] Five lemma; snake lemma (statement and use)
-- [ ] $\operatorname{Hom}_A(M,-)$ and $\operatorname{Hom}_A(-,N)$ are left exact
+- [ ] $\mathrm{Hom}_A(M,-)$ and $\mathrm{Hom}_A(-,N)$ are left exact
 - [ ] Tensor product: universal property, existence, $A\otimes_AM\cong M$, associativity, base change
 - [ ] $M\otimes_A-$ is right exact; Hom–tensor adjunction
 - [ ] Projective modules: lifting property; direct summands of free modules
@@ -89,7 +89,7 @@ Abbreviations: **DF** = Dummit–Foote; **AM** = Atiyah–Macdonald; **AK** = Al
 - [ ] Nilradical = intersection of primes; Jacobson radical = intersection of maximal ideals
 - [ ] Nakayama's lemma and minimal generators over a local ring
 - [ ] Localisation $S^{-1}A$, $S^{-1}M$: universal property, exactness, primes of $S^{-1}A$; local properties
-- [ ] $\operatorname{Spec}A$ with the Zariski topology; $V(I)$, $D(f)$; quasi-compactness; functoriality
+- [ ] $\mathrm{Spec}\,A$ with the Zariski topology; $V(I)$, $D(f)$; quasi-compactness; functoriality
 - [ ] Noetherian rings and modules (ACC, maximal condition, finitely generated submodules)
 - [ ] Hilbert basis theorem; finitely generated algebras over Noetherian rings are Noetherian
 - [ ] Integral elements; finite ⇔ integral + finitely generated; integral closure; lying over; going up
@@ -107,6 +107,6 @@ Abbreviations: **DF** = Dummit–Foote; **AM** = Atiyah–Macdonald; **AK** = Al
 You are ready to move on when you can:
 
 1. Prove without notes: the splitting lemma, right exactness of $\otimes$ (via adjunction), Nakayama's lemma, the Hilbert basis theorem, lying over, the weak Nullstellensatz (for $\mathbb{C}$ by the uncountability argument, and in general from Zariski's lemma), Maschke's theorem and the first orthogonality relation.
-2. Compute quickly: $\mathbb{Z}/m\otimes\mathbb{Z}/n$, $\operatorname{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)$, $\mathbb{Q}\otimes\mathbb{Q}/\mathbb{Z}$, $\operatorname{Spec}\mathbb{Z}$, the ring of integers of $\mathbb{Q}(\sqrt d)$, the factorisation of $(6)$ in $\mathbb{Z}[\sqrt{-5}]$, and the character tables of $S_3$, $D_4$, $Q_8$ and $A_4$.
+2. Compute quickly: $\mathbb{Z}/m\otimes\mathbb{Z}/n$, $\mathrm{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)$, $\mathbb{Q}\otimes\mathbb{Q}/\mathbb{Z}$, $\mathrm{Spec}\,\mathbb{Z}$, the ring of integers of $\mathbb{Q}(\sqrt d)$, the factorisation of $(6)$ in $\mathbb{Z}[\sqrt{-5}]$, and the character tables of $S_3$, $D_4$, $Q_8$ and $A_4$.
 3. Solve at least 3 of the 5 Qualifying-exam level problems in [problems.md](problems.md) in 45 minutes each, closed book.
 4. Tick every item in the checklist above in [PROGRESS.md](../../PROGRESS.md).

@@ -55,17 +55,17 @@ a. 36 equally likely outcomes. Double six: 1 outcome. Other doubles: 5 outcomes.
 
 b. $E(Y) = 5 \cdot \frac{5}{36} + 20 \cdot \frac{1}{36} = \frac{45}{36} = 1.25$ euro. The player pays €2, so the expected profit is $1.25 - 2 = -0.75$ euro per game (a loss of 75 cents; good for the school).
 
-c. $E(Y^2) = 25 \cdot \frac5{36} + 400 \cdot \frac1{36} = \frac{525}{36} \approx 14.583$. $\operatorname{Var}(Y) = \frac{525}{36} - 1.25^2 \approx 13.021$, so $\sigma(Y) \approx 3.61$ euro. (GR: L1 = {0, 5, 20}, L2 = {30/36, 5/36, 1/36}, 1-Var Stats L1, L2.)
+c. $E(Y^2) = 25 \cdot \frac5{36} + 400 \cdot \frac1{36} = \frac{525}{36} \approx 14.583$. $\mathrm{Var}(Y) = \frac{525}{36} - 1.25^2 \approx 13.021$, so $\sigma(Y) \approx 3.61$ euro. (GR: L1 = {0, 5, 20}, L2 = {30/36, 5/36, 1/36}, 1-Var Stats L1, L2.)
 
 **7.**
 a. Probabilities sum to 1: $0.1 + a + b + 0.2 = 1$, so $a + b = 0.7$. Expected value: $0 + a + 2b + 3 \cdot 0.2 = 1.6$, so $a + 2b = 1$. Subtracting: $b = 0.3$, $a = 0.4$.
 
-b. $E(X^2) = 0 + 1 \cdot 0.4 + 4 \cdot 0.3 + 9 \cdot 0.2 = 3.4$. $\operatorname{Var}(X) = 3.4 - 1.6^2 = 0.84$, so $\sigma(X) = \sqrt{0.84} \approx 0.917$.
+b. $E(X^2) = 0 + 1 \cdot 0.4 + 4 \cdot 0.3 + 9 \cdot 0.2 = 3.4$. $\mathrm{Var}(X) = 3.4 - 1.6^2 = 0.84$, so $\sigma(X) = \sqrt{0.84} \approx 0.917$.
 
 **8.** Square-root law with $n = 16$, $\mu = 25$, $\sigma = 1.2$.
 a. Total: $E = 16 \cdot 25 = 400$ g, $\sigma = 1.2\sqrt{16} = 4.8$ g.
 b. Mean: $E = 25$ g, $\sigma = 1.2/\sqrt{16} = 0.3$ g.
-c. Full box $= $ packets $+$ box, independent, so the variances add: $\sigma = \sqrt{4.8^2 + 2^2} = \sqrt{23.04 + 4} = \sqrt{27.04} = 5.2$ g.
+c. Full box $=$ packets $+$ box, independent, so the variances add: $\sigma = \sqrt{4.8^2 + 2^2} = \sqrt{23.04 + 4} = \sqrt{27.04} = 5.2$ g.
 d. The full box is normal with $\mu = 430$ g and $\sigma = 5.2$ g. $P(W < 420)$ = normalcdf($-10^{99}$, 420, 430, 5.2) $\approx 0.027$.
 
 **9.**
@@ -197,7 +197,7 @@ a. $X = 1$: six at once, $\frac16$. $X = 2$: no six, then a six, $\frac56 \cdot 
 
 b. $E(X) = 1 \cdot \frac{6}{36} + 2 \cdot \frac{5}{36} + 3 \cdot \frac{25}{36} = \frac{6 + 10 + 75}{36} = \frac{91}{36}$.
 
-c. $E(X^2) = \frac{6 + 20 + 225}{36} = \frac{251}{36}$. $\operatorname{Var}(X) = \frac{251}{36} - \left(\frac{91}{36}\right)^2 = \frac{755}{1296} \approx 0.583$, so $\sigma(X) \approx 0.763$.
+c. $E(X^2) = \frac{6 + 20 + 225}{36} = \frac{251}{36}$. $\mathrm{Var}(X) = \frac{251}{36} - \left(\frac{91}{36}\right)^2 = \frac{755}{1296} \approx 0.583$, so $\sigma(X) \approx 0.763$.
 
 ---
 
@@ -205,9 +205,9 @@ c. $E(X^2) = \frac{6 + 20 + 225}{36} = \frac{251}{36}$. $\operatorname{Var}(X) =
 
 **22.** Write $\mu = E(X)$ and $p_x = P(X = x)$.
 
-a. $\operatorname{Var}(X) = \sum (x - \mu)^2 p_x = \sum x^2 p_x - 2\mu \sum x p_x + \mu^2 \sum p_x = E(X^2) - 2\mu \cdot \mu + \mu^2 \cdot 1 = E(X^2) - \mu^2$.
+a. $\mathrm{Var}(X) = \sum (x - \mu)^2 p_x = \sum x^2 p_x - 2\mu \sum x p_x + \mu^2 \sum p_x = E(X^2) - 2\mu \cdot \mu + \mu^2 \cdot 1 = E(X^2) - \mu^2$.
 
-b. $E(aX + b) = \sum (ax + b)p_x = a\mu + b$. So $(aX + b) - E(aX + b) = a(X - \mu)$, and $\operatorname{Var}(aX + b) = \sum a^2(x - \mu)^2 p_x = a^2 \operatorname{Var}(X)$.
+b. $E(aX + b) = \sum (ax + b)p_x = a\mu + b$. So $(aX + b) - E(aX + b) = a(X - \mu)$, and $\mathrm{Var}(aX + b) = \sum a^2(x - \mu)^2 p_x = a^2 \mathrm{Var}(X)$.
 
 c. Each term $(x - \mu)^2 p_x$ is $\ge 0$, so the sum is $\ge 0$. The sum is 0 only if every term is 0, so every value $x$ with $p_x > 0$ equals $\mu$: $X$ is constant with probability 1. By (a), $E(X^2) - E(X)^2 \ge 0$.
 

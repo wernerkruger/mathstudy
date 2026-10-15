@@ -142,7 +142,7 @@ A **deck transformation** is a homeomorphism $\tau:\tilde X\to\tilde X$ with $p\
 
 ### 4.1 Chain complexes
 
-A **chain complex** $(C_\bullet,\partial)$ is a sequence of abelian groups with $\partial_n:C_n\to C_{n-1}$ and $\partial\partial=0$. Its homology is $H_n=\ker\partial_n/\operatorname{im}\partial_{n+1}$. A **chain map** $f_\#$ commutes with $\partial$ and induces $f_*$ on homology. A **chain homotopy** is $P:C_n\to D_{n+1}$ with $\partial P+P\partial=f_\#-g_\#$; chain homotopic maps induce the same map on homology.
+A **chain complex** $(C_\bullet,\partial)$ is a sequence of abelian groups with $\partial_n:C_n\to C_{n-1}$ and $\partial\partial=0$. Its homology is $H_n=\ker\partial_n/\mathrm{im}\,\partial_{n+1}$. A **chain map** $f_\#$ commutes with $\partial$ and induces $f_*$ on homology. A **chain homotopy** is $P:C_n\to D_{n+1}$ with $\partial P+P\partial=f_\#-g_\#$; chain homotopic maps induce the same map on homology.
 
 **Zig-zag lemma.** A short exact sequence of chain complexes $0\to A_\bullet\to B_\bullet\to C_\bullet\to0$ gives a long exact sequence
 $$
@@ -168,7 +168,7 @@ $$
 $$
 \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots
 $$
-- **Excision.** If $\overline Z\subseteq\operatorname{int}A$, then $H_n(X\setminus Z,A\setminus Z)\to H_n(X,A)$ is an isomorphism. Equivalently, for $A,B$ with interiors covering $X$, $H_n(B,A\cap B)\cong H_n(X,A)$. Proof uses barycentric subdivision to replace chains by "small" chains; this is the hardest technical proof of the course. Learn the statement and what it buys you.
+- **Excision.** If $\overline Z\subseteq\mathrm{int}\,A$, then $H_n(X\setminus Z,A\setminus Z)\to H_n(X,A)$ is an isomorphism. Equivalently, for $A,B$ with interiors covering $X$, $H_n(B,A\cap B)\cong H_n(X,A)$. Proof uses barycentric subdivision to replace chains by "small" chains; this is the hardest technical proof of the course. Learn the statement and what it buys you.
 - **Good pairs.** If $A$ is a nonempty closed subspace that is a deformation retract of a neighborhood (true for CW pairs), then $H_n(X,A)\cong\tilde H_n(X/A)$.
 - Simplicial and singular homology agree for $\Delta$-complexes (five lemma plus induction on skeleta).
 
@@ -197,7 +197,7 @@ $$
 
 ### 4.4 Mayer–Vietoris
 
-If $X=\operatorname{int}A\cup\operatorname{int}B$, the short exact sequence $0\to C_\bullet(A\cap B)\to C_\bullet(A)\oplus C_\bullet(B)\to C_\bullet(A+B)\to0$ (where $C(A+B)$ are sums of chains in $A$ or $B$, which compute $H_*(X)$ by the small-chains theorem) gives
+If $X=\mathrm{int}\,A\cup\mathrm{int}\,B$, the short exact sequence $0\to C_\bullet(A\cap B)\to C_\bullet(A)\oplus C_\bullet(B)\to C_\bullet(A+B)\to0$ (where $C(A+B)$ are sums of chains in $A$ or $B$, which compute $H_*(X)$ by the small-chains theorem) gives
 $$
 \cdots\to H_n(A\cap B)\xrightarrow{(i_*,\,-j_*)}H_n(A)\oplus H_n(B)\xrightarrow{k_*+l_*}H_n(X)\xrightarrow{\partial}H_{n-1}(A\cap B)\to\cdots
 $$
@@ -227,7 +227,7 @@ giving $H_0=\mathbb{Z}$; $H_k=\mathbb{Z}/2$ for $k$ odd, $0<k<n$; $H_k=0$ for $k
 
 **Example: $\mathbb{CP}^n$.** Cells only in even degrees, so all $d=0$ and $H_{2k}=\mathbb{Z}$ for $0\le k\le n$, zero otherwise.
 
-**Euler characteristic.** For a finite CW complex, $\chi(X)=\sum_n(-1)^nc_n$ where $c_n$ is the number of $n$-cells. **Theorem:** $\chi(X)=\sum_n(-1)^n\operatorname{rank}H_n(X)$. (Rank is additive along exact sequences of finitely generated abelian groups; apply to $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$.) So $\chi$ is a homotopy invariant. $\chi(M_g)=2-2g$, $\chi(N_h)=2-h$, $\chi(S^n)=1+(-1)^n$. For an $n$-sheeted cover $\tilde X\to X$ of a finite CW complex, $\chi(\tilde X)=n\,\chi(X)$ (lift the cells).
+**Euler characteristic.** For a finite CW complex, $\chi(X)=\sum_n(-1)^nc_n$ where $c_n$ is the number of $n$-cells. **Theorem:** $\chi(X)=\sum_n(-1)^n\mathrm{rank}\,H_n(X)$. (Rank is additive along exact sequences of finitely generated abelian groups; apply to $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$.) So $\chi$ is a homotopy invariant. $\chi(M_g)=2-2g$, $\chi(N_h)=2-h$, $\chi(S^n)=1+(-1)^n$. For an $n$-sheeted cover $\tilde X\to X$ of a finite CW complex, $\chi(\tilde X)=n\,\chi(X)$ (lift the cells).
 
 ### 4.6 Homology with coefficients
 
@@ -239,13 +239,13 @@ Replace $C_n(X)$ by $C_n(X)\otimes G$. With $G=\mathbb{Z}/2$, orientation signs 
 
 ### 5.1 Cohomology
 
-Dualize: $C^n(X;G)=\operatorname{Hom}(C_n(X),G)$, $\delta\varphi=\varphi\circ\partial$, so $\delta:C^n\to C^{n+1}$. Then $H^n(X;G)=\ker\delta/\operatorname{im}\delta$. Cohomology is contravariant: $f:X\to Y$ gives $f^*:H^n(Y)\to H^n(X)$. It satisfies homotopy invariance, long exact sequences, excision and Mayer–Vietoris, all with arrows reversed.
+Dualize: $C^n(X;G)=\mathrm{Hom}(C_n(X),G)$, $\delta\varphi=\varphi\circ\partial$, so $\delta:C^n\to C^{n+1}$. Then $H^n(X;G)=\ker\delta/\mathrm{im}\,\delta$. Cohomology is contravariant: $f:X\to Y$ gives $f^*:H^n(Y)\to H^n(X)$. It satisfies homotopy invariance, long exact sequences, excision and Mayer–Vietoris, all with arrows reversed.
 
 **Universal coefficient theorem.** There is a split short exact sequence
 $$
-0\to\operatorname{Ext}(H_{n-1}(X),G)\to H^n(X;G)\to\operatorname{Hom}(H_n(X),G)\to0.
+0\to\mathrm{Ext}(H_{n-1}(X),G)\to H^n(X;G)\to\mathrm{Hom}(H_n(X),G)\to0.
 $$
-For finitely generated groups, $\operatorname{Ext}(\mathbb{Z},G)=0$ and $\operatorname{Ext}(\mathbb{Z}/m,G)=G/mG$. Consequence with $G=\mathbb{Z}$: if $H_n=\mathbb{Z}^{b_n}\oplus T_n$ (torsion $T_n$), then $H^n(X;\mathbb{Z})\cong\mathbb{Z}^{b_n}\oplus T_{n-1}$. Torsion moves up one degree. Example: $H^2(\mathbb{RP}^2;\mathbb{Z})\cong\mathbb{Z}/2$ while $H_2(\mathbb{RP}^2)=0$.
+For finitely generated groups, $\mathrm{Ext}(\mathbb{Z},G)=0$ and $\mathrm{Ext}(\mathbb{Z}/m,G)=G/mG$. Consequence with $G=\mathbb{Z}$: if $H_n=\mathbb{Z}^{b_n}\oplus T_n$ (torsion $T_n$), then $H^n(X;\mathbb{Z})\cong\mathbb{Z}^{b_n}\oplus T_{n-1}$. Torsion moves up one degree. Example: $H^2(\mathbb{RP}^2;\mathbb{Z})\cong\mathbb{Z}/2$ while $H_2(\mathbb{RP}^2)=0$.
 
 ### 5.2 Cup product
 
@@ -274,7 +274,7 @@ Then $\delta(\varphi\smile\psi)=\delta\varphi\smile\psi+(-1)^k\varphi\smile\delt
 4. **Signs in boundary maps.** Always check $\partial\partial=0$ on an example. In cellular homology, compute degrees of attaching maps carefully, especially with orientation-reversing identifications ($\mathbb{RP}^n$, Klein bottle).
 5. **Homology does not detect everything.** The Poincaré homology sphere has the homology of $S^3$ but nontrivial $\pi_1$. $\mathbb{CP}^2$ and $S^2\vee S^4$ have equal homology but are distinguished by cup products.
 6. **Contravariance.** Cohomology reverses arrows; the connecting map in Mayer–Vietoris goes $H^n(A\cap B)\to H^{n+1}(X)$.
-7. **Torsion and Hom.** $\operatorname{Hom}(\mathbb{Z}/2,\mathbb{Z})=0$: torsion in $H_n$ is invisible in $\operatorname{Hom}(H_n,\mathbb{Z})$ and reappears in $H^{n+1}$ via Ext.
+7. **Torsion and Hom.** $\mathrm{Hom}(\mathbb{Z}/2,\mathbb{Z})=0$: torsion in $H_n$ is invisible in $\mathrm{Hom}(H_n,\mathbb{Z})$ and reappears in $H^{n+1}$ via Ext.
 8. **$H_1$ is the abelianization, not $\pi_1$.** $S^1\vee S^1$ and $T^2$ minus a point both have $H_1=\mathbb{Z}^2$; they are in fact homotopy equivalent, but $T^2$ itself is not homotopy equivalent to $S^1\vee S^1$ ($H_2$ differs).
 
 ---

@@ -1,6 +1,6 @@
 # 2.2 Complex Analysis: Study Notes
 
-Notation: $\Omega$ is an open subset of $\mathbb{C}$; a *domain* (or *region*) is a non-empty open connected set. $D(a,r)$ is the open disc, $\mathbb{D} = D(0,1)$, $\mathbb{H} = \lbrace \operatorname{Im} z > 0\rbrace$.
+Notation: $\Omega$ is an open subset of $\mathbb{C}$; a *domain* (or *region*) is a non-empty open connected set. $D(a,r)$ is the open disc, $\mathbb{D} = D(0,1)$, $\mathbb{H} = \lbrace \mathrm{Im}\, z > 0\rbrace$.
 
 ---
 
@@ -36,7 +36,7 @@ Conversely, if $u,v$ have *continuous* partial derivatives on $\Omega$ satisfyin
 
 **Theorem.** A power series is holomorphic inside its disc of convergence, and its derivative is the term-by-term derivative, which has the same radius of convergence. Hence power series are infinitely differentiable, and $a_n = f^{(n)}(a)/n!$.
 
-**The exponential and logarithm.** $e^z = \sum z^n/n!$ is entire, $e^{z+w} = e^z e^w$, and $e^z$ is $2\pi i$-periodic. On a simply connected domain not containing $0$ there is a holomorphic *branch of the logarithm*: a holomorphic $\log$ with $e^{\log z} = z$. The *principal branch* on $\mathbb{C}\setminus(-\infty,0]$ is $\operatorname{Log} z = \ln|z| + i\operatorname{Arg} z$ with $\operatorname{Arg} z \in (-\pi,\pi)$. Then $z^\alpha := e^{\alpha \log z}$.
+**The exponential and logarithm.** $e^z = \sum z^n/n!$ is entire, $e^{z+w} = e^z e^w$, and $e^z$ is $2\pi i$-periodic. On a simply connected domain not containing $0$ there is a holomorphic *branch of the logarithm*: a holomorphic $\log$ with $e^{\log z} = z$. The *principal branch* on $\mathbb{C}\setminus(-\infty,0]$ is $\mathrm{Log} z = \ln|z| + i\mathrm{Arg}\, z$ with $\mathrm{Arg}\, z \in (-\pi,\pi)$. Then $z^\alpha := e^{\alpha \log z}$.
 
 **Pitfall.** $\log(zw) = \log z + \log w$ holds only modulo $2\pi i$. There is no continuous logarithm on $\mathbb{C}\setminus\lbrace 0\rbrace$: going once around the origin changes $\arg$ by $2\pi$.
 
@@ -48,7 +48,7 @@ Conversely, if $u,v$ have *continuous* partial derivatives on $\Omega$ satisfyin
 $$
 \int_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\gamma'(t)\,dt.
 $$
-**ML-inequality:** $\left|\int_\gamma f\right| \le \operatorname{length}(\gamma) \cdot \sup_\gamma |f|$.
+**ML-inequality:** $\left|\int_\gamma f\right| \le \mathrm{length}(\gamma) \cdot \sup_\gamma |f|$.
 
 **Primitives.** If $F' = f$ on $\Omega$ then $\int_\gamma f = F(\gamma(b)) - F(\gamma(a))$. In particular the integral of $f$ around any closed curve is $0$.
 
@@ -144,18 +144,18 @@ A function is *meromorphic* on $\Omega$ if it is holomorphic except at isolated 
 
 ## 6. Residues
 
-**Definition.** The *residue* of $f$ at an isolated singularity $a$ is $\operatorname{Res}(f,a) = c_{-1}$, the coefficient of $(z-a)^{-1}$.
+**Definition.** The *residue* of $f$ at an isolated singularity $a$ is $\mathrm{Res}(f,a) = c_{-1}$, the coefficient of $(z-a)^{-1}$.
 
 **Residue theorem.** Let $f$ be holomorphic on an open set containing a closed disc (or any closed region with a positively oriented piecewise smooth boundary $\gamma$), except at finitely many points $a_1,\dots,a_k$ inside. Then
 $$
-\int_\gamma f(z)\,dz = 2\pi i \sum_{j} \operatorname{Res}(f, a_j).
+\int_\gamma f(z)\,dz = 2\pi i \sum_{j} \mathrm{Res}(f, a_j).
 $$
 (Subtract principal parts; only the $(z-a_j)^{-1}$ terms survive integration.)
 
 **Computing residues.**
 
-- Simple pole: $\operatorname{Res}(f,a) = \lim_{z\to a}(z-a)f(z)$. If $f = g/h$ with $g(a)\ne0$, $h(a)=0$, $h'(a)\ne0$: $\operatorname{Res} = g(a)/h'(a)$.
-- Pole of order $m$: $\operatorname{Res}(f,a) = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]$.
+- Simple pole: $\mathrm{Res}(f,a) = \lim_{z\to a}(z-a)f(z)$. If $f = g/h$ with $g(a)\ne0$, $h(a)=0$, $h'(a)\ne0$: $\mathrm{Res} = g(a)/h'(a)$.
+- Pole of order $m$: $\mathrm{Res}(f,a) = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]$.
 - Essential singularity: expand the Laurent series directly (for example $e^{1/z}$ has residue 1 at 0).
 
 **Standard real integrals.**
@@ -167,7 +167,7 @@ $$
 \Big|\int_{C_R} g(z)e^{iz}\,dz\Big| \le \pi \max_{C_R}|g|,
 $$
 because $\int_0^\pi e^{-R\sin\theta}\,d\theta < \pi/R$.
-4. *Indented contours:* for a simple pole on the real axis, go around it on a small semicircle of radius $\varepsilon$; as $\varepsilon \to 0$ the small semicircle contributes $-\pi i \operatorname{Res}$ (clockwise, half the full-circle value). Gives $\int_0^\infty \frac{\sin x}{x}\,dx = \frac\pi2$.
+4. *Indented contours:* for a simple pole on the real axis, go around it on a small semicircle of radius $\varepsilon$; as $\varepsilon \to 0$ the small semicircle contributes $-\pi i \mathrm{Res}$ (clockwise, half the full-circle value). Gives $\int_0^\infty \frac{\sin x}{x}\,dx = \frac\pi2$.
 5. *Keyhole contours:* for $\int_0^\infty x^{a-1}R(x)\,dx$ or integrals with $\log x$: cut along $[0,\infty)$, use the branch with $\arg \in (0,2\pi)$; the two sides of the cut differ by the factor $e^{2\pi i(a-1)}$.
 
 ---
@@ -216,7 +216,7 @@ So a Möbius map is determined by the images of three points.
 - $\mathrm{Aut}(\mathbb{D}) = \left\lbrace z \mapsto e^{i\theta}\dfrac{z - a}{1 - \bar a z} : \theta\in\mathbb{R}, |a|<1 \right\rbrace$ (proof via Schwarz lemma; see Problem 22).
 - $\mathrm{Aut}(\mathbb{H}) = \left\lbrace z\mapsto \dfrac{az+b}{cz+d} : a,b,c,d\in\mathbb{R}, ad-bc = 1\right\rbrace \cong \mathrm{PSL}_2(\mathbb{R})$.
 - $\mathrm{Aut}(\mathbb{C}) = \lbrace az+b : a\ne0\rbrace$ (Problem 20).
-- Other building blocks: $z \mapsto z^\alpha$ opens or closes sectors; $e^z$ maps the strip $\lbrace 0 < \operatorname{Im} z < \pi\rbrace$ onto $\mathbb{H}$; $\log$ maps $\mathbb{H}$ back onto the strip.
+- Other building blocks: $z \mapsto z^\alpha$ opens or closes sectors; $e^z$ maps the strip $\lbrace 0 < \mathrm{Im}\, z < \pi\rbrace$ onto $\mathbb{H}$; $\log$ maps $\mathbb{H}$ back onto the strip.
 
 **Riemann mapping theorem (statement).** If $\Omega \subsetneq \mathbb{C}$ is a non-empty simply connected open set and $z_0 \in \Omega$, there is a unique conformal map $F : \Omega \to \mathbb{D}$ with $F(z_0) = 0$ and $F'(z_0) > 0$.
 

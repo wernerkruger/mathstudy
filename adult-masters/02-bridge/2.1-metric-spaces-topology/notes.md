@@ -155,7 +155,7 @@ $X$ is *path connected* if any two points are joined by a continuous path $\gamm
 
 **Definition.** A *topology* on $X$ is a collection $\mathcal{T}$ of subsets ("open sets") containing $\emptyset$ and $X$, closed under arbitrary unions and finite intersections.
 
-**Examples.** Discrete topology (all subsets), indiscrete topology ($\lbrace \emptyset, X\rbrace$), metric topologies, the *cofinite* topology (open sets are $\emptyset$ and complements of finite sets), the *Zariski topology* on $k^n$ (closed sets are common zero sets of polynomials; on $k = $ an infinite field and $n=1$ it is the cofinite topology).
+**Examples.** Discrete topology (all subsets), indiscrete topology ($\lbrace \emptyset, X\rbrace$), metric topologies, the *cofinite* topology (open sets are $\emptyset$ and complements of finite sets), the *Zariski topology* on $k^n$ (closed sets are common zero sets of polynomials; on $k =$ an infinite field and $n=1$ it is the cofinite topology).
 
 **Bases.** A collection $\mathcal{B}$ is a *basis* for a topology if (i) it covers $X$ and (ii) whenever $x \in B_1 \cap B_2$ with $B_i \in \mathcal{B}$, there is $B_3 \in \mathcal{B}$ with $x \in B_3 \subseteq B_1 \cap B_2$. The open sets are then the unions of basis elements. A *subbasis* is any collection whose finite intersections form a basis.
 

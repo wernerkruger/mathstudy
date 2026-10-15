@@ -26,7 +26,7 @@ No calculator, unless a problem says otherwise. For the proofs, write full sente
 **4.** Write as a product of primes (*ontbind in priemfactoren*), using powers where possible.
 (a) $360$  (b) $1001$  (c) $2310$  (d) $4096$  (e) $2024$
 
-**5.** Use prime factorisations to find $\gcd(84, 120)$ and $\operatorname{lcm}(84, 120)$. Check that $\gcd \cdot \operatorname{lcm} = 84 \cdot 120$.
+**5.** Use prime factorisations to find $\gcd(84, 120)$ and $\mathrm{lcm}(84, 120)$. Check that $\gcd \cdot \mathrm{lcm} = 84 \cdot 120$.
 
 **6.** Use Euclid's algorithm to find
 (a) $\gcd(2024, 1771)$  (b) $\gcd(252, 198)$.
@@ -58,8 +58,8 @@ No calculator, unless a problem says otherwise. For the proofs, write full sente
 (a) What is the temperature at 13:00 and at 22:00?
 (b) At what two times is the temperature exactly $0\,^\circ$C?
 
-**16.** (a) Find $\gcd(36, 60)$ and $\operatorname{lcm}(36, 60)$, and check that their product is $36 \cdot 60$.
-(b) Explain, using prime factorisations, why $\gcd(a,b)\cdot\operatorname{lcm}(a,b) = ab$ always.
+**16.** (a) Find $\gcd(36, 60)$ and $\mathrm{lcm}(36, 60)$, and check that their product is $36 \cdot 60$.
+(b) Explain, using prime factorisations, why $\gcd(a,b)\cdot\mathrm{lcm}(a,b) = ab$ always.
 (c) Two numbers have gcd 6 and lcm 180. One of them is 36. What is the other?
 
 **17.** A number leaves remainder 1 when divided by 2, by 3, by 4, by 5 and by 6, and it is divisible by 7. What is the smallest such number?

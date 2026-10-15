@@ -54,7 +54,7 @@ Number fields and their rings of integers: unique factorization of ideals in Ded
 ## Key theorems checklist
 
 - [ ] Integral closure is a ring; $\mathcal{O}_K$ is a free $\mathbb{Z}$-module of rank $[K:\mathbb{Q}]$
-- [ ] Discriminant; $\operatorname{disc}$ and integral bases; $\mathcal{O}_K$ for quadratic fields
+- [ ] Discriminant; $\mathrm{disc}$ and integral bases; $\mathcal{O}_K$ for quadratic fields
 - [ ] Dedekind domains: equivalent characterizations; unique factorization of ideals
 - [ ] Norm of ideals; $\sum_{i}e_if_i=[K:\mathbb{Q}]$
 - [ ] Dedekind–Kummer factorization theorem

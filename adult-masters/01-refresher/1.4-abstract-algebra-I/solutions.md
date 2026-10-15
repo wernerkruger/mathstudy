@@ -51,11 +51,11 @@ So every nonzero element of $\mathbb{Z}_n$ is a unit iff every $k$ with $1\le k\
 
 No element has order 8, so $U(15)$ is **not cyclic**. It is abelian of order 8 with an element of order 4 and is not cyclic. Among $\mathbb{Z}_8$, $\mathbb{Z}_4\times\mathbb{Z}_2$ and $\mathbb{Z}_2^3$, only $\mathbb{Z}_4\times\mathbb{Z}_2$ fits. So $U(15)\cong\mathbb{Z}_2\times\mathbb{Z}_4$. This also follows from CRT: $U(15)\cong U(3)\times U(5)\cong\mathbb{Z}_2\times\mathbb{Z}_4$.
 
-**6.** In a direct product, $|(a,b)|=\operatorname{lcm}(|a|,|b|)$.
+**6.** In a direct product, $|(a,b)|=\mathrm{lcm}(|a|,|b|)$.
 
-(⇐) If $\gcd(m,n)=1$, then $|(1,1)|=\operatorname{lcm}(m,n)=mn$, which is the order of the group. So $(1,1)$ generates.
+(⇐) If $\gcd(m,n)=1$, then $|(1,1)|=\mathrm{lcm}(m,n)=mn$, which is the order of the group. So $(1,1)$ generates.
 
-(⇒) If $d=\gcd(m,n)>1$, then every element has order dividing $\operatorname{lcm}(m,n)=mn/d<mn$. So no element generates.
+(⇒) If $d=\gcd(m,n)>1$, then every element has order dividing $\mathrm{lcm}(m,n)=mn/d<mn$. So no element generates.
 
 ## Core
 
@@ -72,16 +72,16 @@ So $|G|=[G:H]\cdot|H|$.
 
 **8.** Let $K=\ker\varphi$. It is a subgroup: $\varphi(e)=e$, and if $a,b\in K$ then $\varphi(ab^{-1})=\varphi(a)\varphi(b)^{-1}=e$. It is normal: for $g\in G$ and $k\in K$, $\varphi(gkg^{-1})=\varphi(g)\,e\,\varphi(g)^{-1}=e$.
 
-*First Isomorphism Theorem.* Define $\bar\varphi:G/K\to\operatorname{im}\varphi$ by $\bar\varphi(gK)=\varphi(g)$.
+*First Isomorphism Theorem.* Define $\bar\varphi:G/K\to\mathrm{im}\,\varphi$ by $\bar\varphi(gK)=\varphi(g)$.
 - *Well defined and injective:* $aK=bK\iff a^{-1}b\in K\iff\varphi(a^{-1}b)=e\iff\varphi(a)=\varphi(b)$. The forward direction gives well-definedness, and the backward direction gives injectivity.
 - *Homomorphism:* $\bar\varphi(aK\,bK)=\bar\varphi(abK)=\varphi(ab)=\varphi(a)\varphi(b)$.
-- *Surjective onto $\operatorname{im}\varphi$:* immediate from the definition.
+- *Surjective onto $\mathrm{im}\,\varphi$:* immediate from the definition.
 
 **9.** Let $[G:H]=2$. The left cosets are $H$ and $G\setminus H$, and so are the right cosets. If $g\in H$, then $gH=H=Hg$. If $g\notin H$, then $gH=G\setminus H=Hg$. So $gH=Hg$ for all $g$, which is equivalent to normality.
 
 In $S_3$, let $H=\lbrace e,(1\,2)\rbrace$. Then $(1\,3)(1\,2)(1\,3)^{-1}=(3\,2)\notin H$, using the conjugation formula with $\sigma=(1\,3)$. So $H$ is not normal. Its index is 3, which is consistent with the first part.
 
-**10.** $\det:GL_n(\mathbb{R})\to\mathbb{R}^\times$ is a homomorphism, since $\det(AB)=\det A\det B$. It is surjective: $\det\operatorname{diag}(t,1,\dots,1)=t$. Its kernel is $SL_n(\mathbb{R})$, which is therefore normal by Problem 8. The First Isomorphism Theorem gives $GL_n(\mathbb{R})/SL_n(\mathbb{R})\cong\mathbb{R}^\times$.
+**10.** $\det:GL_n(\mathbb{R})\to\mathbb{R}^\times$ is a homomorphism, since $\det(AB)=\det A\det B$. It is surjective: $\det\mathrm{diag}(t,1,\dots,1)=t$. Its kernel is $SL_n(\mathbb{R})$, which is therefore normal by Problem 8. The First Isomorphism Theorem gives $GL_n(\mathbb{R})/SL_n(\mathbb{R})\cong\mathbb{R}^\times$.
 
 **11.**
 (a) $\varphi:\mathbb{Z}\times\mathbb{Z}\to\mathbb{Z}$, $(a,b)\mapsto a-b$, is a surjective homomorphism: $(n,0)\mapsto n$. Its kernel is $\lbrace(a,a)\rbrace=\langle(1,1)\rangle$. So the quotient is $\cong\mathbb{Z}$.
@@ -220,11 +220,11 @@ So $(p)$ is maximal.
 
 ## Challenge
 
-**23.** Let $\lambda:G\to\operatorname{Sym}(G)$, $\lambda_g(x)=gx$. This is an injective homomorphism (Cayley). Since $|G|$ is even, Cauchy's theorem gives $t\in G$ of order 2.
+**23.** Let $\lambda:G\to\mathrm{Sym}(G)$, $\lambda_g(x)=gx$. This is an injective homomorphism (Cayley). Since $|G|$ is even, Cauchy's theorem gives $t\in G$ of order 2.
 
 The permutation $\lambda_t$ has no fixed points, because $tx=x$ forces $t=e$. Also $\lambda_t^2=\lambda_{t^2}=\mathrm{id}$. So $\lambda_t$ is a product of $|G|/2=m$ disjoint transpositions $(x\ \ tx)$. Since $m$ is odd, $\lambda_t$ is an odd permutation.
 
-So $\operatorname{sgn}\circ\lambda:G\to\lbrace\pm1\rbrace$ is a surjective homomorphism. Its kernel $N$ is normal of index 2, so $|N|=m$. If $m>1$, then $N$ is neither trivial nor all of $G$, so $G$ is not simple.
+So $\mathrm{sgn}\,\circ\lambda:G\to\lbrace\pm1\rbrace$ is a surjective homomorphism. Its kernel $N$ is normal of index 2, so $|N|=m$. If $m>1$, then $N$ is neither trivial nor all of $G$, so $G$ is not simple.
 
 **24.** *Splitting criterion.* Let $x\in A_n$ and let $c=|\text{class of }x\text{ in }S_n|=n!/|C_{S_n}(x)|$. We have $C_{A_n}(x)=C_{S_n}(x)\cap A_n$, which is either all of $C_{S_n}(x)$ or a subgroup of index 2 in it.
 - If $C_{S_n}(x)\subseteq A_n$, the $A_n$-class of $x$ has size $(n!/2)/|C_{S_n}(x)|=c/2$. The $S_n$-class splits into two $A_n$-classes of size $c/2$, which are interchanged by conjugating by any odd permutation.

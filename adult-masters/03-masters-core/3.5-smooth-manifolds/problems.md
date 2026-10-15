@@ -75,6 +75,6 @@ Find $\sigma_N^{-1}$, compute the transition map $\sigma_S\circ\sigma_N^{-1}$, a
 
 **21.** Let $X,Y$ be complete vector fields on $M$ with flows $\theta,\psi$. Prove that $[X,Y]=0$ if and only if $\theta_t\circ\psi_s=\psi_s\circ\theta_t$ for all $s,t$. (You may use $\frac{d}{dt}\big|_{t=t_0}d(\theta_{-t})_{\theta_t(p)}\big(Y_{\theta_t(p)}\big)=d(\theta_{-t_0})\big([X,Y]_{\theta_{t_0}(p)}\big)$.)
 
-**22.** (a) Show that $d(\det)_A(B)=\det(A)\operatorname{tr}(A^{-1}B)$ for $A\in GL(n,\mathbb{R})$.
-(b) Deduce that $SL(n,\mathbb{R})$ is an embedded submanifold of dimension $n^2-1$ with $T_ISL(n,\mathbb{R})=\lbrace B:\operatorname{tr}B=0\rbrace$.
-(c) Show that $\det(e^{B})=e^{\operatorname{tr}B}$ by considering the curve $t\mapsto\det(e^{tB})$, and conclude that $\exp$ maps trace-zero matrices into $SL(n,\mathbb{R})$.
+**22.** (a) Show that $d(\det)_A(B)=\det(A)\mathrm{tr}(A^{-1}B)$ for $A\in GL(n,\mathbb{R})$.
+(b) Deduce that $SL(n,\mathbb{R})$ is an embedded submanifold of dimension $n^2-1$ with $T_ISL(n,\mathbb{R})=\lbrace B:\mathrm{tr}\,B=0\rbrace$.
+(c) Show that $\det(e^{B})=e^{\mathrm{tr}\,B}$ by considering the curve $t\mapsto\det(e^{tB})$, and conclude that $\exp$ maps trace-zero matrices into $SL(n,\mathbb{R})$.

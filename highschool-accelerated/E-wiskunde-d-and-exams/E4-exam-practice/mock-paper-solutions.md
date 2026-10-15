@@ -214,7 +214,7 @@ $P(\text{double}) = \frac{6}{36} = \frac16$; $P(\text{sum } 7) = \frac{6}{36} = 
 | $P(G = g)$ | $\frac16$ | $\frac16$ | $\frac46$ |
 
 $E(G) = 3\cdot\frac16 + 0 - 1\cdot\frac46 = -\frac16 \approx -€0.17$.
-$E(G^2) = 9\cdot\frac16 + 1\cdot\frac46 = \frac{13}6$; $\operatorname{Var}(G) = \frac{13}6 - \frac1{36} = \frac{77}{36}$; $\sigma(G) = \frac{\sqrt{77}}6 \approx 1.46$.
+$E(G^2) = 9\cdot\frac16 + 1\cdot\frac46 = \frac{13}6$; $\mathrm{Var}(G) = \frac{13}6 - \frac1{36} = \frac{77}{36}$; $\sigma(G) = \frac{\sqrt{77}}6 \approx 1.46$.
 
 - Probability distribution of $G$ (net gain, so $3$, $0$, $-1$): **1**
 - $E(G) = -\frac16$: **1**

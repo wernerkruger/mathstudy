@@ -1,0 +1,13 @@
+\usepackage{newunicodechar}
+\newfontfamily\symfont{DejaVu Sans}
+\newfontfamily\cjkfb{Droid Sans Fallback}
+\newunicodechar{✓}{{\symfont ✓}}
+\newunicodechar{✗}{{\symfont ✗}}
+\newunicodechar{▢}{{\symfont ▢}}
+\newunicodechar{█}{{\symfont █}}
+\newunicodechar{■}{{\symfont ■}}
+\newunicodechar{⊣}{{\symfont ⊣}}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\emergencystretch}{3em}
+\usepackage{fancyhdr}\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\AtBeginDocument{\renewcommand{\setminus}{\mathbin{\backslash}}}

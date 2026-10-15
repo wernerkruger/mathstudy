@@ -43,7 +43,7 @@ $N_h$ ($h\ge1$) has one 0-cell, $h$ 1-cells and one 2-cell: $\chi(N_h)=2-h$.
 
 They agree exactly when $h=2g$ (with $g\ge1$), e.g. $\chi(T^2)=\chi(K)=0$.
 
-$H_1$ from the cellular chain complex (or as the abelianization of $\pi_1$): with one 0-cell, $d_1=0$, so $H_1=\mathbb{Z}^{\#\text{1-cells}}/\operatorname{im}d_2$, and $d_2$ sends the 2-cell to the exponent sums of its attaching word.
+$H_1$ from the cellular chain complex (or as the abelianization of $\pi_1$): with one 0-cell, $d_1=0$, so $H_1=\mathbb{Z}^{\#\text{1-cells}}/\mathrm{im}\,d_2$, and $d_2$ sends the 2-cell to the exponent sums of its attaching word.
 - For $M_g$ the word $[a_1,b_1]\cdots[a_g,b_g]$ has all exponent sums $0$, so $H_1(M_g)\cong\mathbb{Z}^{2g}$, torsion-free.
 - For $N_h$ the word $a_1^2\cdots a_h^2$ gives $d_2(e^2)=2(a_1+\dots+a_h)$. Since $a_1,\dots,a_{h-1},a_1+\dots+a_h$ is a basis of $\mathbb{Z}^h$, $H_1(N_h)\cong\mathbb{Z}^{h-1}\oplus\mathbb{Z}/2$.
 
@@ -92,7 +92,7 @@ $$
 
 The cellular chain complex is $\mathbb{Z}$ in each degree $0..n$ with $d_k=0$ for $k$ odd and $d_k=\pm2$ for $k$ even, $k\ge 2$. Hence:
 - $H_0=\mathbb{Z}$;
-- for odd $k<n$: $\ker d_k=\mathbb{Z}$, $\operatorname{im}d_{k+1}=2\mathbb{Z}$, so $H_k=\mathbb{Z}/2$;
+- for odd $k<n$: $\ker d_k=\mathbb{Z}$, $\mathrm{im}\,d_{k+1}=2\mathbb{Z}$, so $H_k=\mathbb{Z}/2$;
 - for even $k$ with $0<k\le n$: $d_k$ is injective, so $H_k=0$;
 - for $k=n$ odd: $\ker d_n=\mathbb{Z}$ and nothing above, so $H_n=\mathbb{Z}$;
 - $H_k=0$ for $k>n$. $\square$
@@ -195,7 +195,7 @@ Suppose $h:\mathbb{CP}^2\to W$ is a homotopy equivalence. Then $h^*:H^*(W)\to H^
 
 Let $F$ be free on a set $S$. Then $F\cong\pi_1(X)$ for $X=\bigvee_{s\in S}S^1$. Given $H\le F$, the classification theorem gives a connected cover $\tilde X_H\to X$ with $p_*\pi_1(\tilde X_H)=H$, and $p_*$ is injective, so $H\cong\pi_1(\tilde X_H)$. $\tilde X_H$ is a connected graph; collapsing a maximal tree $T$ (contractible subcomplex) is a homotopy equivalence onto a wedge of circles, one per edge not in $T$. So $H$ is free.
 
-(b) Let $X=\bigvee_{i=1}^nS^1$ (one vertex, $n$ edges), so $\chi(X)=1-n$. The cover $\tilde X_H$ has $k$ sheets, so it has $k$ vertices and $kn$ edges: $\chi(\tilde X_H)=k(1-n)$. A connected graph is homotopy equivalent to a wedge of $r$ circles, where $r$ is the rank of its $\pi_1$, and $\chi$ is a homotopy invariant (equal to $\operatorname{rank}H_0-\operatorname{rank}H_1=1-r$). So $1-r=k(1-n)$ and
+(b) Let $X=\bigvee_{i=1}^nS^1$ (one vertex, $n$ edges), so $\chi(X)=1-n$. The cover $\tilde X_H$ has $k$ sheets, so it has $k$ vertices and $kn$ edges: $\chi(\tilde X_H)=k(1-n)$. A connected graph is homotopy equivalent to a wedge of $r$ circles, where $r$ is the rank of its $\pi_1$, and $\chi$ is a homotopy invariant (equal to $\mathrm{rank}\,H_0-\mathrm{rank}\,H_1=1-r$). So $1-r=k(1-n)$ and
 $$
 r=k(n-1)+1.
 $$
