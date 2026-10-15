@@ -9,7 +9,7 @@ build_one() {
   f=$(cd "$(dirname "$1")" && pwd)/$(basename "$1"); d=$(dirname "$f"); b=$(basename "$f" .md)
   w=$(mktemp -d); python3 "$here/prep.py" "$f" "$w/in.md"
   ( cd "$w" && pandoc in.md -f markdown+lists_without_preceding_blankline+pipe_tables+tex_math_dollars+raw_tex-yaml_metadata_block-implicit_figures-subscript-superscript \
-      --pdf-engine=xelatex -H "$here/header.tex" \
+      --pdf-engine=tectonic -H "$here/header.tex" \
       -V geometry:margin=2.2cm -V fontsize=10pt -V colorlinks=true -V linkcolor=blue -V urlcolor=blue \
       -V mainfont="DejaVu Serif" -V sansfont="DejaVu Sans" -V monofont="DejaVu Sans Mono" \
       -o out.pdf 2> err.log ) && cp "$w/out.pdf" "$d/$b.pdf" && echo "OK   $1" || { echo "FAIL $1"; cat "$w/err.log"; }
