@@ -1,0 +1,16 @@
+# LaTeX build output
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.pdf
+
+# OS / editor
+.DS_Store
+.obsidian/
+.vscode/
